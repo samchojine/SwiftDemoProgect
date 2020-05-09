@@ -8,6 +8,6 @@
 
 import UIKit
 
-class PJ_TextViewExtension: NSObject {
-
+extension UITextView {
+    
 }

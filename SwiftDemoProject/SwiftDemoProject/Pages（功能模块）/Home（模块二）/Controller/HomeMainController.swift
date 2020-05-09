@@ -8,14 +8,25 @@
 
 import UIKit
 
+
 class HomeMainController: PJBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "主页";
         view.backgroundColor = UIColor.lightGray;
-        // Do any additional setup after loading the view.
+        navigationItem.rightBarButtonItem =  UIBarButtonItem(title: "随机色", style: .plain, target: self, action: #selector(action_goNext))
+      
+        
     }
+    
+    @objc func action_goNext() {
+        
+        self.navigationController?.pushViewController(PJCustomNaviColorController(),
+                                                      animated: true);
+        
+    }
+    
     
 
     /*

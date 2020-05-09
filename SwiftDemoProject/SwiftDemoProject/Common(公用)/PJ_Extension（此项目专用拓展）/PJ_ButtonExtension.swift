@@ -8,6 +8,6 @@
 
 import UIKit
 
-class PJ_ButtonExtension: NSObject {
-
+extension UIButton {
+    
 }

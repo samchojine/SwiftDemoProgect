@@ -8,25 +8,19 @@
 
 import UIKit
 
-extension UILabel{
+extension UILabel {
     
-    /// 创建一个默认的label
-
-    static func baseLabel(text:String? = "",
-                                   font:CGFloat? = 14,
-                                   fontWeight:UIFont.Weight? = .regular,
-                                   textColor:UIColor? = .darkText,
-                                   textAlignment:NSTextAlignment? = .left) -> UILabel{
+    /// 创建一个默认的 label
+    static func pj_normalLabel(text:String? = "",
+                                   font:CGFloat = 14,
+                                   fontWeight:UIFont.Weight = .regular,
+                                   textColor:UIColor = .darkText,
+                                   textAlignment:NSTextAlignment = .left) -> UILabel{
         let label = UILabel()
         label.text = text
-        label.font = UIFont.systemFont(ofSize:font!, weight: fontWeight!)
-        label.textAlignment = textAlignment!
+        label.font = UIFont.systemFont(ofSize:font, weight: fontWeight)
+        label.textAlignment = textAlignment
         label.textColor = textColor
         return label
     }
-    
-    
-
-    
-    
 }

@@ -9,6 +9,7 @@
 import Foundation
 
 extension Date {
+    
     /// 获取当前时间戳 秒级 10位
     func getTimeStamp() -> Int{
         let timeInterval: TimeInterval = self.timeIntervalSince1970

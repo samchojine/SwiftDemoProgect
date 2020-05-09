@@ -12,7 +12,7 @@ import UIKit
 
 extension UIButton{
     
-     // MARK: *********** 调整按钮图片的上左下右 **********
+     // MARK: -调整按钮图片的上左下右
     enum LCButtonEdgeInsetsStyle {
         case Top  //图片上
         case Left
@@ -73,7 +73,7 @@ extension UIButton{
         })
     }
     
-    // MARK: *********** 按钮倒计时 **********
+    // MARK: -按钮倒计时
     public func startCountDown(count: Int,countDownBgColor:UIColor){
            // 倒计时开始,禁止点击事件
            isEnabled = false
@@ -113,5 +113,38 @@ extension UIButton{
            codeTimer.resume()
        }
     
+}
+
+
+// MARK: *********** 给button添加点击回调 **********
+extension UIButton{
+    
+    typealias buttonClick = (_ btn:UIButton) -> Void
+    
+   private struct HWRuntimeKey {
+       static let actionBlock = UnsafeRawPointer.init(bitPattern: "actionBlock".hashValue)
+       /// ...其他Key声明
+   }
+   /// 运行时关联
+   private var actionBlock: buttonClick? {
+       set {
+           objc_setAssociatedObject(self, UIButton.HWRuntimeKey.actionBlock!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+       }
+       get {
+           return objc_getAssociatedObject(self, UIButton.HWRuntimeKey.actionBlock!) as? buttonClick
+       }
+   }
+
+   /// 点击回调
+   @objc private func tapped(button:UIButton) {
+       actionBlock?(button)
+
+   }
+   /// 添加点击事件
+   func addClickAction( action:@escaping buttonClick) {
+       addTarget(self, action:#selector(tapped(button:)) , for:.touchUpInside)
+       actionBlock = action
+   }
+
 }
 

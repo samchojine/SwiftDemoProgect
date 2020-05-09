@@ -70,7 +70,7 @@ class PJTabBarController: UITabBarController {
         tabbar.setBadgeTextAttributes([NSAttributedString.Key.font:UIFont.systemFont(ofSize: 13)], for: .selected)
         
         //iOS 13 选中的颜色 需要调用如下
-        //tabcontroller.tabBar.tintColor = UIColor.black
+        tabBar.tintColor = UIColor.black
         
         return tabbar;
     }

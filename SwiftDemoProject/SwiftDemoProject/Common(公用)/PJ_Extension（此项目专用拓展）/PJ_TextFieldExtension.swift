@@ -8,6 +8,6 @@
 
 import UIKit
 
-class PJ_TextFieldExtension: NSObject {
-
+extension UITextField {
+    
 }
