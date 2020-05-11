@@ -24,7 +24,7 @@
 		1487E3EB2463F92500D7FA59 /* WKWebView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3E42463F92500D7FA59 /* WKWebView+Extension.swift */; };
 		1487E3EC2463F92500D7FA59 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3E52463F92500D7FA59 /* Date+Extension.swift */; };
 		1487E3ED2463F92500D7FA59 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3E62463F92500D7FA59 /* String+Extension.swift */; };
-		1487E3EE2463F92500D7FA59 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3E72463F92500D7FA59 /* View+Extension.swift */; };
+		1487E3EE2463F92500D7FA59 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3E72463F92500D7FA59 /* UIView+Extension.swift */; };
 		1487E3F02463FC3B00D7FA59 /* PJ_LabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3EF2463FC3B00D7FA59 /* PJ_LabelExtension.swift */; };
 		1487E3F22464008800D7FA59 /* PJ_ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3F12464008800D7FA59 /* PJ_ButtonExtension.swift */; };
 		1487E3F4246400A800D7FA59 /* PJ_TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3F3246400A800D7FA59 /* PJ_TextFieldExtension.swift */; };
@@ -43,6 +43,9 @@
 		1487E41824664AB600D7FA59 /* PJFontConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E41724664AB600D7FA59 /* PJFontConstant.swift */; };
 		1487E41A24668D6600D7FA59 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E41924668D6600D7FA59 /* UIImage+Extension.swift */; };
 		1487E41C2466B28D00D7FA59 /* UITextView+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E41B2466B28D00D7FA59 /* UITextView+ Extension.swift */; };
+		1499928B2469305900EE786C /* PJBaseStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499928A2469305900EE786C /* PJBaseStackViewController.swift */; };
+		1499928D24693FEF00EE786C /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499928C24693FEF00EE786C /* UITableView+Extension.swift */; };
+		1499929224694FEA00EE786C /* HomeNaviColor1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499929124694FEA00EE786C /* HomeNaviColor1VC.swift */; };
 		3CEB5490B435E9A5C4BCF11E /* Pods_SwiftDemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517B35535A3A3AB1ECDDE2F2 /* Pods_SwiftDemoProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +70,7 @@
 		1487E3E42463F92500D7FA59 /* WKWebView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKWebView+Extension.swift"; sourceTree = "<group>"; };
 		1487E3E52463F92500D7FA59 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		1487E3E62463F92500D7FA59 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
-		1487E3E72463F92500D7FA59 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		1487E3E72463F92500D7FA59 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		1487E3EF2463FC3B00D7FA59 /* PJ_LabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJ_LabelExtension.swift; sourceTree = "<group>"; };
 		1487E3F12464008800D7FA59 /* PJ_ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJ_ButtonExtension.swift; sourceTree = "<group>"; };
 		1487E3F3246400A800D7FA59 /* PJ_TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJ_TextFieldExtension.swift; sourceTree = "<group>"; };
@@ -86,6 +89,10 @@
 		1487E41724664AB600D7FA59 /* PJFontConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJFontConstant.swift; sourceTree = "<group>"; };
 		1487E41924668D6600D7FA59 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		1487E41B2466B28D00D7FA59 /* UITextView+ Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+ Extension.swift"; sourceTree = "<group>"; };
+		1499928A2469305900EE786C /* PJBaseStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJBaseStackViewController.swift; sourceTree = "<group>"; };
+		1499928C24693FEF00EE786C /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		1499929124694FEA00EE786C /* HomeNaviColor1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNaviColor1VC.swift; sourceTree = "<group>"; };
+		14999293246953F200EE786C /* FLAnimatedImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FLAnimatedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B7994FEB59996D46CE61AF /* Pods-SwiftDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemoProject/Pods-SwiftDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 		517B35535A3A3AB1ECDDE2F2 /* Pods_SwiftDemoProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemoProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92525CC53A4A0C24B4A0D76 /* Pods-SwiftDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoProject.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemoProject/Pods-SwiftDemoProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,7 +160,7 @@
 			children = (
 				140472DE245A7297000367DA /* PJ_Service(服务器) */,
 				140472BF24597E10000367DA /* PJ_Constant(公用常量) */,
-				140472CF24598429000367DA /* PJ_Extension（此项目专用拓展） */,
+				140472CF24598429000367DA /* PJ_Extension（此项目业务专用拓展） */,
 				140472C024597F1E000367DA /* PJ_View (公用View) */,
 				140472C124597FD2000367DA /* PJ_Tool (一些工具类) */,
 			);
@@ -209,6 +216,7 @@
 				140472D3245A662D000367DA /* PJNavigationController.swift */,
 				140472D5245A6651000367DA /* PJBaseViewController.swift */,
 				140472D7245A6675000367DA /* PJBaseTableViewController.swift */,
+				1499928A2469305900EE786C /* PJBaseStackViewController.swift */,
 			);
 			path = "Base(基类)";
 			sourceTree = "<group>";
@@ -241,8 +249,7 @@
 		140472C9245982FE000367DA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				140472DB245A6948000367DA /* HomeMainController.swift */,
-				1487E3DB2462C02D00D7FA59 /* PJCustomNaviColorController.swift */,
+				1499928E24694D1400EE786C /* NaviColor(导航颜色) */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -262,7 +269,7 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		140472CF24598429000367DA /* PJ_Extension（此项目专用拓展） */ = {
+		140472CF24598429000367DA /* PJ_Extension（此项目业务专用拓展） */ = {
 			isa = PBXGroup;
 			children = (
 				1487E3EF2463FC3B00D7FA59 /* PJ_LabelExtension.swift */,
@@ -273,7 +280,7 @@
 				1487E3F92464018600D7FA59 /* PJ_TextViewExtension.swift */,
 				1487E3FB2464036700D7FA59 /* PJ_WKWebViewExtension.swift */,
 			);
-			path = "PJ_Extension（此项目专用拓展）";
+			path = "PJ_Extension（此项目业务专用拓展）";
 			sourceTree = "<group>";
 		};
 		140472D024598479000367DA /* Extension(通用拓展) */ = {
@@ -302,12 +309,13 @@
 		1487E3FD24640A9700D7FA59 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				1487E3E72463F92500D7FA59 /* View+Extension.swift */,
+				1487E3E72463F92500D7FA59 /* UIView+Extension.swift */,
 				1487E41924668D6600D7FA59 /* UIImage+Extension.swift */,
 				1487E3E32463F92500D7FA59 /* UIButton+Extension.swift */,
 				1487E3E42463F92500D7FA59 /* WKWebView+Extension.swift */,
 				1487E3E12463F92500D7FA59 /* UITextField+Extension.swift */,
 				1487E41B2466B28D00D7FA59 /* UITextView+ Extension.swift */,
+				1499928C24693FEF00EE786C /* UITableView+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -342,6 +350,16 @@
 			path = Hud_bundle;
 			sourceTree = "<group>";
 		};
+		1499928E24694D1400EE786C /* NaviColor(导航颜色) */ = {
+			isa = PBXGroup;
+			children = (
+				140472DB245A6948000367DA /* HomeMainController.swift */,
+				1487E3DB2462C02D00D7FA59 /* PJCustomNaviColorController.swift */,
+				1499929124694FEA00EE786C /* HomeNaviColor1VC.swift */,
+			);
+			path = "NaviColor(导航颜色)";
+			sourceTree = "<group>";
+		};
 		302DABF0636F900222B59658 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +372,7 @@
 		D77221E340B8740492DD9FE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14999293246953F200EE786C /* FLAnimatedImage.framework */,
 				517B35535A3A3AB1ECDDE2F2 /* Pods_SwiftDemoProject.framework */,
 			);
 			name = Frameworks;
@@ -480,7 +499,7 @@
 			files = (
 				140472D4245A662D000367DA /* PJNavigationController.swift in Sources */,
 				1487E41224655D5A00D7FA59 /* PJCommonConstant.swift in Sources */,
-				1487E3EE2463F92500D7FA59 /* View+Extension.swift in Sources */,
+				1487E3EE2463F92500D7FA59 /* UIView+Extension.swift in Sources */,
 				1487E3E02463F74200D7FA59 /* Color+Extension.swift in Sources */,
 				1487E41824664AB600D7FA59 /* PJFontConstant.swift in Sources */,
 				1487E3FC2464036700D7FA59 /* PJ_WKWebViewExtension.swift in Sources */,
@@ -489,6 +508,8 @@
 				1487E41624655E2400D7FA59 /* PJColorConstant.swift in Sources */,
 				1487E41424655DCF00D7FA59 /* PJSizeConstant.swift in Sources */,
 				1487E40A2465047300D7FA59 /* UIViewController+MBHUD.swift in Sources */,
+				1499928B2469305900EE786C /* PJBaseStackViewController.swift in Sources */,
+				1499929224694FEA00EE786C /* HomeNaviColor1VC.swift in Sources */,
 				140472D2245A65ED000367DA /* PJTabBarController.swift in Sources */,
 				1487E3F82464013000D7FA59 /* PJ_ViewExtension.swift in Sources */,
 				1487E3EA2463F92500D7FA59 /* UIButton+Extension.swift in Sources */,
@@ -508,6 +529,7 @@
 				1487E41A24668D6600D7FA59 /* UIImage+Extension.swift in Sources */,
 				140472D6245A6651000367DA /* PJBaseViewController.swift in Sources */,
 				1487E3F02463FC3B00D7FA59 /* PJ_LabelExtension.swift in Sources */,
+				1499928D24693FEF00EE786C /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

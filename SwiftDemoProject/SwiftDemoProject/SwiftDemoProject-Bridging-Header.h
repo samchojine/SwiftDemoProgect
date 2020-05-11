@@ -3,7 +3,5 @@
 //
 
 #import "MBProgressHUD.h"
-#import "XHLaunchAd.h"
 #import "WMPageController.h"
-#import "TZImagePickerController.h"
 #import "MJRefresh.h"

@@ -19,6 +19,9 @@ let PJLongPlaceholdImage = UIImage(named: "common_img_holder_long")
 ///默认头像
 let PJHeaderPlaceholdImage = UIImage(named: "common_img_header")
 
+/// 导航栏返回图片
+let PJNaviBackImage = UIImage(named: "navi_icon_back_black")
+
 ///默认 cell 下一页的箭头
 let PJCellArrowImage = UIImage(named: "")
 

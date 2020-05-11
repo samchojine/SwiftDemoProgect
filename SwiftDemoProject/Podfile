@@ -17,8 +17,8 @@ target 'SwiftDemoProject' do
 	pod 'WMPageController', '2.5.2'
 	pod 'MBProgressHUD', '1.1.0'
 	pod 'MJRefresh', '3.2.2'
-	pod 'XHLaunchAd', '3.9.8'
-	pod 'TZImagePickerController', '3.2.7'
+	#pod 'XHLaunchAd', '3.9.8'
+#	pod 'TZImagePickerController', '3.2.7'
 
   # Pods for SwiftDemoProject
 

@@ -9,7 +9,7 @@
 import UIKit
 
 
-
+// MARK: *********** 给textView 添加 placeholder **********
 extension UITextView : NSTextStorageDelegate{
     
     @IBInspectable
@@ -67,6 +67,40 @@ extension UITextView : NSTextStorageDelegate{
         if editedMask.contains(.editedCharacters) {
             placeholderLabel.isHidden = !text.isEmpty
         }
+    }
+
+}
+
+
+// MARK: *********** 给textView 添加输入框文字改变的时候的回调 **********
+extension UITextView:UITextViewDelegate{
+    
+   typealias TVEditChangedBlock = (_ textView:UITextView) -> Void
+    
+   private struct tVRuntimeKey {
+       static let editChangeBlock = UnsafeRawPointer.init(bitPattern: "editChangeBlock".hashValue)
+       /// ...其他Key声明
+   }
+   /// 运行时关联
+   private var tvEditChangeBlock: TVEditChangedBlock? {
+       set {
+        objc_setAssociatedObject(self, UITextView.tVRuntimeKey.editChangeBlock!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+       }
+       get {
+        return objc_getAssociatedObject(self, UITextView.tVRuntimeKey.editChangeBlock!) as? TVEditChangedBlock
+       }
+   }
+
+
+   /// 添加j监听回调
+   func textDidEditChanged( action:@escaping TVEditChangedBlock ) {
+    self.delegate = self
+    tvEditChangeBlock = action
+    
+   }
+    
+    public func textViewDidChange(_ textView: UITextView) {
+        tvEditChangeBlock?(textView)
     }
 
 }

@@ -38,3 +38,11 @@ var PBottomSafeInset :CGFloat {
     }
     return bottomH
 }
+
+
+///  修复约束，适配尺寸
+func PFixWidth(value:CGFloat) -> CGFloat {
+    
+    return value*PWidthRatio
+
+}

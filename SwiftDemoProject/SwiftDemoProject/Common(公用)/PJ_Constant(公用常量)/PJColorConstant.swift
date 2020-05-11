@@ -8,6 +8,11 @@
 
 import Foundation
 
+// 白色
+let PwhiteColor = UIColor.colorWithHex(hexColor: 0xFFFFFF)
+
+// scrollView 的背景色
+let PBackgroudColor = UIColor.colorWithHex(hexColor: 0xF2F4F6)
 
 let P33COLOR = UIColor.colorWithHex(hexColor: 0x333333)
 
@@ -27,6 +32,8 @@ let PF6COLOR = UIColor.colorWithHex(hexColor: 0xF6AC19)
 
 let P98COLOR = UIColor.colorWithHex(hexColor: 0x9B711D)
 
+/// 设置颜色
+/// - Parameter color: 0x333333
 func PJ_Color(color:Int64) -> UIColor {
     return UIColor.colorWithHex(hexColor: color)
 }

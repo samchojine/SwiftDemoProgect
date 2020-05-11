@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
     
-    /// 截图
+    // MARK: -截图
     func captureToImage() -> UIImage {
         let view = self;
         if #available(iOS 10.0, *) {
@@ -27,7 +27,7 @@ extension UIView {
         }
     }
     
-    /// 获取当前view所在的控制器
+    // MARK: -获取当前view所在的控制器
     func viewController() -> UIViewController? {
         let view = self
         var responder = view.next
@@ -40,13 +40,18 @@ extension UIView {
         return nil
     }
     
+    // MARK: -加载XIB第一个视图
+    func loadViewFromBundle1st(view nibName:String) -> UIView {
+        return ((Bundle.main.loadNibNamed(nibName, owner: nil, options: nil))?.first) as! UIView
+    }
+    
 }
 
 
 // MARK: *********** 绘制 边框 阴影 圆角 **********
 extension UIView {
     
-    // 添加贝塞尔圆角
+    // MARK: -添加贝塞尔圆角
     var cornerRadius: CGFloat {
         get {
             return self.layer.cornerRadius
@@ -57,7 +62,7 @@ extension UIView {
         }
     }
     
-    /// 添加阴影
+    // MARK: -添加阴影
     func drawShawdow(color:UIColor = UIColor.black.withAlphaComponent(0.7),
                     radius:CGFloat = 3,
                     offSet:CGSize = CGSize(width: 0, height: 0),
@@ -69,13 +74,13 @@ extension UIView {
         view.layer.shadowOpacity = opacity
     }
     
-    /// 边框
+    // MARK: -边框
     func drawBorder(color:UIColor = UIColor.black,width:CGFloat = 1){
         self.layer.borderColor = color.cgColor
         self.layer.borderWidth = width
     }
     
-    /// 添加贝塞尔圆角
+    // MARK: -添加贝塞尔圆角
     func drawBeizierCorner(corners: UIRectCorner, radius: CGFloat) {
         DispatchQueue.main.asyncAfter(deadline: .now()+0, execute: {//延时0秒让进程进入下一个runloop获取到真正的frame（使用约束时也可以获取到真实的frame）
             let view = self;
@@ -88,7 +93,7 @@ extension UIView {
         })
     }
     
-    /// 整个tableview section 添加圆角
+    // MARK: -整个tableview section 添加圆角
     func drawTableSectionCorner(radius: CGFloat = 8.0, indexPath:IndexPath, tableView:UITableView) {
         let count =  tableView.numberOfRows(inSection: indexPath.section)
         
@@ -111,7 +116,7 @@ extension UIView {
        
     }
     
-    /// 添加渐变色 startPoint & endPoint设置为(0,0)(1.0,0)代表水平方向渐变,(0,0)(0,1.0)代表竖直方向渐变
+    // MARK: -添加渐变色 startPoint & endPoint设置为(0,0)(1.0,0)代表水平方向渐变,(0,0)(0,1.0)代表竖直方向渐变
     func addGradientColor(colors:[CGColor],startPoint:CGPoint,endPoint:CGPoint){
         DispatchQueue.main.asyncAfter(deadline: .now()+0, execute: {//延时0秒让进程进入下一个runloop获取到真正的frame（使用约束时也可以获取到真实的frame）
             let colorLayer = CAGradientLayer()
@@ -127,7 +132,7 @@ extension UIView {
 }
 
 
-// MARK: *********** 给view添加点击回调 **********
+
 extension UIView{
     
    typealias ViewTapActon = (_ view:UIView) -> Void
@@ -151,7 +156,8 @@ extension UIView{
        actionBlock?(self)
 
    }
-   /// 添加点击事件
+    
+   // MARK: -给view添加点击回调
    func addTapAction( action:@escaping ViewTapActon) {
     
     self.isUserInteractionEnabled = true
