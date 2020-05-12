@@ -14,18 +14,8 @@ class HomeMainController: PJBaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "主页";
-        view.backgroundColor = UIColor.blue;
-        
-        navigationItem.rightBarButtonItem =  UIBarButtonItem(title: "随机色", style: .plain, target: self, action: #selector(action_goNext))
-        
-    }
     
-    @objc func action_goNext() {
-        
-        self.navigationController?.pushViewController(PJCustomNaviColorController(),
-                                                      animated: true);
     }
-    
     
 }
 

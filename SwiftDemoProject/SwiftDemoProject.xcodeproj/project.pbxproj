@@ -17,7 +17,6 @@
 		140472D8245A6675000367DA /* PJBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140472D7245A6675000367DA /* PJBaseTableViewController.swift */; };
 		140472DA245A6934000367DA /* MeMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140472D9245A6934000367DA /* MeMainController.swift */; };
 		140472DC245A6948000367DA /* HomeMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140472DB245A6948000367DA /* HomeMainController.swift */; };
-		1487E3DC2462C02D00D7FA59 /* PJCustomNaviColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3DB2462C02D00D7FA59 /* PJCustomNaviColorController.swift */; };
 		1487E3E02463F74200D7FA59 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3DF2463F74200D7FA59 /* Color+Extension.swift */; };
 		1487E3E82463F92500D7FA59 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3E12463F92500D7FA59 /* UITextField+Extension.swift */; };
 		1487E3EA2463F92500D7FA59 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3E32463F92500D7FA59 /* UIButton+Extension.swift */; };
@@ -46,6 +45,7 @@
 		1499928B2469305900EE786C /* PJBaseStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499928A2469305900EE786C /* PJBaseStackViewController.swift */; };
 		1499928D24693FEF00EE786C /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499928C24693FEF00EE786C /* UITableView+Extension.swift */; };
 		1499929224694FEA00EE786C /* HomeNaviColor1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499929124694FEA00EE786C /* HomeNaviColor1VC.swift */; };
+		1499929B246A753100EE786C /* HomeNaviColor2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499929A246A753100EE786C /* HomeNaviColor2VC.swift */; };
 		3CEB5490B435E9A5C4BCF11E /* Pods_SwiftDemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517B35535A3A3AB1ECDDE2F2 /* Pods_SwiftDemoProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +63,6 @@
 		140472D7245A6675000367DA /* PJBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJBaseTableViewController.swift; sourceTree = "<group>"; };
 		140472D9245A6934000367DA /* MeMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeMainController.swift; sourceTree = "<group>"; };
 		140472DB245A6948000367DA /* HomeMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainController.swift; sourceTree = "<group>"; };
-		1487E3DB2462C02D00D7FA59 /* PJCustomNaviColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJCustomNaviColorController.swift; sourceTree = "<group>"; };
 		1487E3DF2463F74200D7FA59 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		1487E3E12463F92500D7FA59 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		1487E3E32463F92500D7FA59 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
@@ -93,6 +92,7 @@
 		1499928C24693FEF00EE786C /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		1499929124694FEA00EE786C /* HomeNaviColor1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNaviColor1VC.swift; sourceTree = "<group>"; };
 		14999293246953F200EE786C /* FLAnimatedImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FLAnimatedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1499929A246A753100EE786C /* HomeNaviColor2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNaviColor2VC.swift; sourceTree = "<group>"; };
 		29B7994FEB59996D46CE61AF /* Pods-SwiftDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemoProject/Pods-SwiftDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 		517B35535A3A3AB1ECDDE2F2 /* Pods_SwiftDemoProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemoProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92525CC53A4A0C24B4A0D76 /* Pods-SwiftDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoProject.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemoProject/Pods-SwiftDemoProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -354,8 +354,8 @@
 			isa = PBXGroup;
 			children = (
 				140472DB245A6948000367DA /* HomeMainController.swift */,
-				1487E3DB2462C02D00D7FA59 /* PJCustomNaviColorController.swift */,
 				1499929124694FEA00EE786C /* HomeNaviColor1VC.swift */,
+				1499929A246A753100EE786C /* HomeNaviColor2VC.swift */,
 			);
 			path = "NaviColor(导航颜色)";
 			sourceTree = "<group>";
@@ -517,11 +517,11 @@
 				1487E3F22464008800D7FA59 /* PJ_ButtonExtension.swift in Sources */,
 				1487E3FA2464018600D7FA59 /* PJ_TextViewExtension.swift in Sources */,
 				140472D8245A6675000367DA /* PJBaseTableViewController.swift in Sources */,
+				1499929B246A753100EE786C /* HomeNaviColor2VC.swift in Sources */,
 				1487E3F4246400A800D7FA59 /* PJ_TextFieldExtension.swift in Sources */,
 				1487E3E82463F92500D7FA59 /* UITextField+Extension.swift in Sources */,
 				140472DC245A6948000367DA /* HomeMainController.swift in Sources */,
 				140472DA245A6934000367DA /* MeMainController.swift in Sources */,
-				1487E3DC2462C02D00D7FA59 /* PJCustomNaviColorController.swift in Sources */,
 				1487E3F6246400D100D7FA59 /* PJ_ImageViewExtension.swift in Sources */,
 				1487E3EC2463F92500D7FA59 /* Date+Extension.swift in Sources */,
 				1487E3EB2463F92500D7FA59 /* WKWebView+Extension.swift in Sources */,

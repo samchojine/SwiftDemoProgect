@@ -10,19 +10,18 @@ import UIKit
 
 class PJBaseTableViewController: PJBaseViewController {
     
+    // 顶部距离
+    var contenTopSpace :CGFloat = 0.0 {
+        didSet{
+            self.tableView.contentInset = UIEdgeInsets(top: contenTopSpace, left: 0, bottom:  contenBottomSpace, right: 0)
+        }
+    }
     
     /// 底部距离
     var contenBottomSpace :CGFloat = 0.0 {
         
         didSet{
             self.tableView.contentInset = UIEdgeInsets(top: contenTopSpace, left: 0, bottom:  contenBottomSpace + PBottomSafeInset, right: 0)
-        }
-    }
-    
-    // 顶部距离
-    var contenTopSpace :CGFloat = 0.0 {
-        didSet{
-            self.tableView.contentInset = UIEdgeInsets(top: contenTopSpace, left: 0, bottom:  contenBottomSpace, right: 0)
         }
     }
     
@@ -37,7 +36,7 @@ class PJBaseTableViewController: PJBaseViewController {
         t.delegate = self
         t.dataSource = self
         t.tableFooterView = UIView()
-        t.register(UITableViewCell.self, forCellReuseIdentifier: String(describing: UITableViewCell.self) )
+        t.register(UITableViewCell.self, forCellReuseIdentifier: String(describing: UITableViewCell.self))
         return t
     }()
     
@@ -49,6 +48,12 @@ class PJBaseTableViewController: PJBaseViewController {
         self.tableView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.view)
         }
+        
+//        if #available(iOS 11.0, *) {
+//            tableView.contentInsetAdjustmentBehavior = .never
+//        } else {
+//            self.automaticallyAdjustsScrollViewInsets = false
+//        }
     }
 
 }

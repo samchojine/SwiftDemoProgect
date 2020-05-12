@@ -8,40 +8,93 @@
 
 import UIKit
 
-class HomeNaviColor1VC: PJBaseViewController {
+class HomeNaviColor1VC: PJBaseTableViewController {
+    
+    /// 设置渐变完成的最大距离
+    var offsetHeight:CGFloat = 100
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "与导航栏不同颜色"
+        title = "渐变"
+        //naviType = .typeDark
+        
+        
+        let btn =   UIButton()
+        btn.setTitle("下一页", for: .normal)
+        btn.addClickAction { (_) in
+            self.navigationController?.pushViewController(HomeNaviColor2VC(), animated: true)
+        }
+        self.navigationItem.rightBarButtonItem =  UIBarButtonItem.init(customView: btn)
+        
+        let  headerView = UIView()
+        headerView.frame = CGRect(x: 0, y: 0, width: PScreenWidth, height: 200);
+        headerView.backgroundColor = .red
+        tableView.tableHeaderView = headerView;
+        
+        if #available(iOS 11.0, *) {
+            tableView.contentInsetAdjustmentBehavior = .never
+        } else {
+            self.automaticallyAdjustsScrollViewInsets = false
+        }
+
     }
     
-     override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        navigationController?.navigationBar.barTintColor = UIColor.red
-        self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
-        navigationController?.navigationBar.isTranslucent = false
-        self.navigationController!.navigationBar.tintColor = .white;
+//        self.naviBgColor = UIColor.white.withAlphaComponent(0)
+//        self.navigationController?.navigationBar.isTranslucent = true
+//        // 4.设置导航栏背景图片
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+//
+//        // 5.设置导航栏阴影图片
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
         
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.navigationBar.barTintColor = .white
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 30
     }
     
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: UITableViewCell.self))
+        cell?.textLabel?.text = "sdfsdfsfsf"
+        return cell!
     }
-    */
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+          self.navigationController?.pushViewController(HomeNaviColor2VC(), animated: true)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+//        let offsetY = scrollView.contentOffset.y
+//
+//        var alpha:CGFloat = 1
+//        if offsetY >= offsetHeight {
+//            alpha = 1
+//
+//        }else{
+//            alpha = -((offsetHeight - offsetY) / offsetY - 1)
+//
+//        }
+//
+//        self.naviBgColor = UIColor.white
+        
+        
+//        if offsetY > 100 {
+//            self.navi.naviType = .black
+//
+//        }else{
+//            self.navi.naviType = .white
+//        }
+//        self.setNeedsStatusBarAppearanceUpdate()
+    
+    }
+  
+
 
 }

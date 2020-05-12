@@ -12,7 +12,7 @@ class PJNavigationController: UINavigationController {
 
         override func viewDidLoad() {
             super.viewDidLoad()
-       
+
             // 设置左右item的颜色
             let item = UIBarButtonItem.appearance()
             item.tintColor = UIColor.darkText;
@@ -43,7 +43,17 @@ class PJNavigationController: UINavigationController {
             
             super.pushViewController(viewController, animated: animated)
         }
-        
+    
+    
+    // 重写这两个方法 不然状态栏设置不了颜色
+    override var childForStatusBarHidden: UIViewController? {
+        return self.topViewController
+    }
+    
+    override var childForStatusBarStyle: UIViewController? {
+        return self.topViewController
+    }
+    
 
         
     }
