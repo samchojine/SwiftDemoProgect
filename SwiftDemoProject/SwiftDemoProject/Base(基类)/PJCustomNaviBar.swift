@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PJCustomNaviBar: UINavigationBar {
+class PJCustomNaviBar: UIView {
     
     typealias BtnClickBlock = (_ btn:UIButton)->Void
     

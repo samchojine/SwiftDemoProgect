@@ -63,7 +63,7 @@ class HomeNaviColor1VC: PJBaseTableViewController {
       
         view.addSubview(navi)
         
-        navi.isTranslucent = true;
+        navi.isTransparent = true;
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -103,7 +103,7 @@ class HomeNaviColor1VC: PJBaseTableViewController {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        self.navi.addGradualChange(maxValue: 300, scollView: scrollView);
+        self.navi.addGradualChange(maxValue: 100, scollView: scrollView);
         
 
     
