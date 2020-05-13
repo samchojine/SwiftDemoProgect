@@ -46,6 +46,7 @@
 		1499928D24693FEF00EE786C /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499928C24693FEF00EE786C /* UITableView+Extension.swift */; };
 		1499929224694FEA00EE786C /* HomeNaviColor1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499929124694FEA00EE786C /* HomeNaviColor1VC.swift */; };
 		1499929B246A753100EE786C /* HomeNaviColor2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499929A246A753100EE786C /* HomeNaviColor2VC.swift */; };
+		1499929D246B925900EE786C /* PJCustomNaviBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499929C246B925900EE786C /* PJCustomNaviBar.swift */; };
 		3CEB5490B435E9A5C4BCF11E /* Pods_SwiftDemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517B35535A3A3AB1ECDDE2F2 /* Pods_SwiftDemoProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		1499929124694FEA00EE786C /* HomeNaviColor1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNaviColor1VC.swift; sourceTree = "<group>"; };
 		14999293246953F200EE786C /* FLAnimatedImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FLAnimatedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1499929A246A753100EE786C /* HomeNaviColor2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNaviColor2VC.swift; sourceTree = "<group>"; };
+		1499929C246B925900EE786C /* PJCustomNaviBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJCustomNaviBar.swift; sourceTree = "<group>"; };
 		29B7994FEB59996D46CE61AF /* Pods-SwiftDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemoProject/Pods-SwiftDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 		517B35535A3A3AB1ECDDE2F2 /* Pods_SwiftDemoProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemoProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92525CC53A4A0C24B4A0D76 /* Pods-SwiftDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoProject.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemoProject/Pods-SwiftDemoProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				140472D5245A6651000367DA /* PJBaseViewController.swift */,
 				140472D7245A6675000367DA /* PJBaseTableViewController.swift */,
 				1499928A2469305900EE786C /* PJBaseStackViewController.swift */,
+				1499929C246B925900EE786C /* PJCustomNaviBar.swift */,
 			);
 			path = "Base(基类)";
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				1487E41424655DCF00D7FA59 /* PJSizeConstant.swift in Sources */,
 				1487E40A2465047300D7FA59 /* UIViewController+MBHUD.swift in Sources */,
 				1499928B2469305900EE786C /* PJBaseStackViewController.swift in Sources */,
+				1499929D246B925900EE786C /* PJCustomNaviBar.swift in Sources */,
 				1499929224694FEA00EE786C /* HomeNaviColor1VC.swift in Sources */,
 				140472D2245A65ED000367DA /* PJTabBarController.swift in Sources */,
 				1487E3F82464013000D7FA59 /* PJ_ViewExtension.swift in Sources */,

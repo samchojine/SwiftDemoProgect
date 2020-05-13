@@ -12,11 +12,27 @@ class HomeNaviColor1VC: PJBaseTableViewController {
     
     /// 设置渐变完成的最大距离
     var offsetHeight:CGFloat = 100
+    
+    lazy var navi: PJCustomNaviBar = {
+        let v = PJCustomNaviBar()
+        v.title = "渐变的控制器发绿山咖啡就撒了看"
+        v.addRightItem(title: "发表") { (_) in
+            print("13565656")
+        }
+        v.addRightItem(title: "不好") { (_) in
+            print("13565656")
+        }
+        
+        v.addRightItem(title: "dsfsdf") { (_) in
+            
+        }
+        return v
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "渐变"
+        //title = "渐变"
         //naviType = .typeDark
         
         
@@ -32,12 +48,22 @@ class HomeNaviColor1VC: PJBaseTableViewController {
         headerView.backgroundColor = .red
         tableView.tableHeaderView = headerView;
         
-        if #available(iOS 11.0, *) {
-            tableView.contentInsetAdjustmentBehavior = .never
-        } else {
-            self.automaticallyAdjustsScrollViewInsets = false
+        fixTableViewOffsetWhenNaviHide()
+        
+        
+        let v = UIView()
+        v.backgroundColor = .green
+        self.view .addSubview(v)
+        
+        v.snp.makeConstraints { (make) in
+            make.top.equalTo(0);
+            make.left.equalTo(0)
+            make.width.height.equalTo(100)
         }
-
+      
+        view.addSubview(navi)
+        
+        navi.isTranslucent = true;
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,10 +76,16 @@ class HomeNaviColor1VC: PJBaseTableViewController {
 //
 //        // 5.设置导航栏阴影图片
 //        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        
+        print("\(view.frame)")
         
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 30
@@ -71,27 +103,9 @@ class HomeNaviColor1VC: PJBaseTableViewController {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-//        let offsetY = scrollView.contentOffset.y
-//
-//        var alpha:CGFloat = 1
-//        if offsetY >= offsetHeight {
-//            alpha = 1
-//
-//        }else{
-//            alpha = -((offsetHeight - offsetY) / offsetY - 1)
-//
-//        }
-//
-//        self.naviBgColor = UIColor.white
+        self.navi.addGradualChange(maxValue: 300, scollView: scrollView);
         
-        
-//        if offsetY > 100 {
-//            self.navi.naviType = .black
-//
-//        }else{
-//            self.navi.naviType = .white
-//        }
-//        self.setNeedsStatusBarAppearanceUpdate()
+
     
     }
   

@@ -9,18 +9,21 @@
 import UIKit
 
 class HomeNaviColor2VC: PJBaseViewController {
+    
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "另外一种颜色"
         
     }
-        override func viewWillAppear(_ animated: Bool) {
-            super.viewWillAppear(animated)
-            
-
-           
-        }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        
+    }
     
  
     

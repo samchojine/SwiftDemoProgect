@@ -9,15 +9,15 @@
 import UIKit
 
 class PJBaseTableViewController: PJBaseViewController {
-    
-    // 顶部距离
+     
+    // MARK:-顶部距离
     var contenTopSpace :CGFloat = 0.0 {
         didSet{
             self.tableView.contentInset = UIEdgeInsets(top: contenTopSpace, left: 0, bottom:  contenBottomSpace, right: 0)
         }
     }
     
-    /// 底部距离
+    // MARK:-底部距离
     var contenBottomSpace :CGFloat = 0.0 {
         
         didSet{
@@ -25,8 +25,18 @@ class PJBaseTableViewController: PJBaseViewController {
         }
     }
     
-    // style  这个属性在子控制器 loadview 中设置
+    // MARK:-style  这个属性在子控制器 loadview 中设置
     var style :UITableView.Style = .grouped
+
+    // MARK:-如果隐藏了导航栏，tableView会向下偏移22，调用此方法修复
+    func fixTableViewOffsetWhenNaviHide() {
+        
+        if #available(iOS 11.0, *) {
+               tableView.contentInsetAdjustmentBehavior = .never
+           } else {
+               self.automaticallyAdjustsScrollViewInsets = false
+           }
+    }
 
     // tableview
     lazy var tableView: UITableView = {

@@ -94,9 +94,7 @@ class PJBaseViewController: UIViewController {
         
         // 默认导航栏不透明
         navigationController?.navigationBar.isTranslucent = false
-        // 默认导航栏不隐藏
-        navigationController?.setNavigationBarHidden(false, animated: animated)
-        
+ 
         // 设置导航栏样式
         if naviType == .typeDefaut {
             naviContentType = .black
