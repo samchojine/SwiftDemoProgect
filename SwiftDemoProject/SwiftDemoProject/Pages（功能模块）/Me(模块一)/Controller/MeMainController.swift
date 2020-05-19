@@ -22,7 +22,6 @@ class MeMainController: PJBaseViewController {
         label.placeholder = "你好啊"
         label.placeholderColor = .red
         
-
     }
     
     override func viewWillAppear(_ animated: Bool) {

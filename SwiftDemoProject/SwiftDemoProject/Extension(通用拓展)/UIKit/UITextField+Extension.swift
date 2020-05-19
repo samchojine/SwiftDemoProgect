@@ -25,6 +25,13 @@ extension UITextField {
         }
     }
     
+    /// 设置左边间距
+    func addLeftPadding(_ space:CGFloat = 10) {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: space, height: 1))
+        self.leftViewMode = .always
+        self.leftView = view
+    }
+    
 }
 
 // MARK: *********** 给textfield 添加输入框文字改变的时候的回调 **********

@@ -13,11 +13,15 @@ class HomeNaviColor1VC: PJBaseTableViewController {
     /// 设置渐变完成的最大距离
     var offsetHeight:CGFloat = 100
     
+    var datas:[String] = []
+    
     lazy var navi: PJCustomNaviBar = {
         let v = PJCustomNaviBar()
         v.title = "渐变的控制器发绿山咖啡就撒了看"
         v.addRightItem(title: "发表") { (_) in
             print("13565656")
+            self.datas.append("")
+            self.tableView.reloadData()
         }
         v.addRightItem(title: "不好") { (_) in
             print("13565656")
@@ -34,8 +38,8 @@ class HomeNaviColor1VC: PJBaseTableViewController {
 
         //title = "渐变"
         //naviType = .typeDark
-        
-        
+
+        self.tableView.emptyView = EmptyView(type: .normal)
         let btn =   UIButton()
         btn.setTitle("下一页", for: .normal)
         btn.addClickAction { (_) in
@@ -50,20 +54,15 @@ class HomeNaviColor1VC: PJBaseTableViewController {
         
         fixTableViewOffsetWhenNaviHide()
         
-        
-        let v = UIView()
-        v.backgroundColor = .green
-        self.view .addSubview(v)
-        
-        v.snp.makeConstraints { (make) in
-            make.top.equalTo(0);
-            make.left.equalTo(0)
-            make.width.height.equalTo(100)
-        }
       
         view.addSubview(navi)
         
         navi.isTransparent = true;
+        showLoading()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
+            self.dismissHud()
+            self.tableView.reloadData()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -88,7 +87,7 @@ class HomeNaviColor1VC: PJBaseTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return self.datas.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -98,7 +97,10 @@ class HomeNaviColor1VC: PJBaseTableViewController {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-          self.navigationController?.pushViewController(HomeNaviColor2VC(), animated: true)
+          //self.navigationController?.pushViewController(HomeNaviColor2VC(), animated: true)
+        
+        self.datas.removeLast()
+        self.tableView.reloadData()
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
