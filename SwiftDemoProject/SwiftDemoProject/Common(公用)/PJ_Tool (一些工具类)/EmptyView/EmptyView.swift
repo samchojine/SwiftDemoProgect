@@ -18,39 +18,16 @@ class EmptyView: UIView {
         case search      // 搜索不到相关结果
         case netWork     // 暂无网络
         case service     // 服务器崩溃
-        
     }
     
-    var type :EmptyType? {
-        
+    var type :EmptyType = .normal {
+       // 初始化的时候不调用didset 所以加个方法
         didSet {
-            switch type {
-            case .normal:
-                tipsLabel.text = "空空如也"
-                iconImageV.image = UIImage(named:"empty_icon_normal")
-            case .search:
-                tipsLabel.text = "搜索不到相关结果"
-                iconImageV.image = UIImage(named:"empty_icon_search")
-            case .netWork:
-                tipsLabel.text = "服务器崩溃了"
-                iconImageV.image = UIImage(named:"empty_icon_no_service")
-                confirmBtn.isHidden = false
-            case .service:
-                tipsLabel.text = "无法连接到网络"
-                iconImageV.image = UIImage(named:"empty_icon_no_wifi")
-                confirmBtn.isHidden = false
-            default:
-                tipsLabel.text = "空空如也"
-                iconImageV.image = UIImage(named:"empty_icon_normal")
-            }
+           configDataWithType(type: type)
         }
-        
     }
     
     private var callBack: TapCallBack?
-    
-    
-    
     
    private lazy var scrollView: UIScrollView = {
         let v = UIScrollView()
@@ -89,6 +66,28 @@ class EmptyView: UIView {
         return btn
     }()
     
+    func configDataWithType(type:EmptyType?){
+        
+        switch type {
+        case .normal:
+            tipsLabel.text = "空空如也"
+            iconImageV.image = UIImage(named:"empty_icon_normal")
+        case .search:
+            tipsLabel.text = "搜索不到相关结果"
+            iconImageV.image = UIImage(named:"empty_icon_search")
+        case .netWork:
+            tipsLabel.text = "服务器崩溃了"
+            iconImageV.image = UIImage(named:"empty_icon_no_service")
+            confirmBtn.isHidden = false
+        case .service:
+            tipsLabel.text = "无法连接到网络"
+            iconImageV.image = UIImage(named:"empty_icon_no_wifi")
+            confirmBtn.isHidden = false
+        default: break
+
+        }
+    }
+    
     @objc func action_confirm() {
         
     }
@@ -96,13 +95,12 @@ class EmptyView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configUI()
-       tipsLabel.text = "空空如也"
-       iconImageV.image = UIImage(named:"empty_icon_normal")
+        self.configDataWithType(type: .normal)  // 默认是normal
     }
     
     convenience init(type:EmptyType = .normal) {
         self.init()
-        self.type = type
+        self.configDataWithType(type: .normal)  // 默认是normal
     }
     
     required init?(coder: NSCoder) {
@@ -118,7 +116,7 @@ class EmptyView: UIView {
     
     func configUI() {
         
-         self.frame = UIScreen.main.bounds;
+        self.frame = UIScreen.main.bounds;
         
         addSubview(scrollView)
         addSubview(container)

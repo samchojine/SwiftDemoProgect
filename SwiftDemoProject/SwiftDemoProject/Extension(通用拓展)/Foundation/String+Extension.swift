@@ -64,7 +64,19 @@ extension String {
     
     // MARK:- 是否是 数字字母组合
     func isContainNumAndLetter() ->Bool {
-        
+        do {
+            let regular = try NSRegularExpression(pattern: "[A-Za-z]", options: .caseInsensitive)
+            let count = regular.numberOfMatches(in: self, options: .reportProgress, range: NSRange(location: 0, length: self.count))
+            
+            let regular1 = try NSRegularExpression(pattern: "[0-9]", options: .caseInsensitive)
+            let count1 = regular1.numberOfMatches(in: self, options: .reportProgress, range: NSRange(location: 0, length: self.count))
+            if count > 0 && count1 > 0 {
+               return true
+            }
+            return false
+        } catch  {
+            
+        }
         return false
     }
     

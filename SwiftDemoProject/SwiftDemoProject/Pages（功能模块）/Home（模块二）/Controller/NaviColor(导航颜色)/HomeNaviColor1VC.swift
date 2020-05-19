@@ -38,8 +38,12 @@ class HomeNaviColor1VC: PJBaseTableViewController {
 
         //title = "渐变"
         //naviType = .typeDark
-
-        self.tableView.emptyView = EmptyView(type: .normal)
+        let emptyView =  EmptyView()
+        emptyView.type = .search
+        self.tableView.emptyView = EmptyView(type:.search)
+        
+        
+        
         let btn =   UIButton()
         btn.setTitle("下一页", for: .normal)
         btn.addClickAction { (_) in

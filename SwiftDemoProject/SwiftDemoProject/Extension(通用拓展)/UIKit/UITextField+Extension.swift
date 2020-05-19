@@ -68,3 +68,54 @@ extension UITextField{
 
 }
 
+
+// MARK: *********** 给textfield 添加过滤器 **********
+extension UITextField{
+    
+    enum LimitType:Int {
+        // 电话号码
+        case phone = 1
+        // 密码
+        case psw
+        // 金额
+        case amount
+    }
+    
+    struct TextFieldfitterName{
+        // 键盘只能输入纯数字
+        static let number = ""
+        // 键盘只能输入数字和字母
+        static let numberAndLetter = ""
+        // 键盘输入金额
+        static let amount = ""
+    }
+    
+    private struct tfFitterRuntimeKey {
+        static let tfFitter = UnsafeRawPointer.init(bitPattern: "tfFitter".hashValue)
+        static let tfFitterLimit = UnsafeRawPointer.init(bitPattern: "tfFitterLimit".hashValue)
+        /// ...其他Key声明
+    }
+    
+    var fitter: String? {
+        
+        set {
+            objc_setAssociatedObject(self, UITextField.tfFitterRuntimeKey.tfFitter!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+        }
+        get {
+            return objc_getAssociatedObject(self, UITextField.tfFitterRuntimeKey.tfFitter!) as? String
+        }
+    }
+    
+    var limitType: LimitType? {
+        
+        set {
+            objc_setAssociatedObject(self, UITextField.tfFitterRuntimeKey.tfFitterLimit!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+        }
+        get {
+            return objc_getAssociatedObject(self, UITextField.tfFitterRuntimeKey.tfFitterLimit!) as? LimitType
+        }
+    }
+    
+    
+}
+
