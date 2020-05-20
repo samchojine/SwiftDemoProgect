@@ -70,7 +70,7 @@ extension UITextField{
 
 
 // MARK: *********** 给textfield 添加过滤器 **********
-extension UITextField{
+extension UITextField :UITextFieldDelegate{
     
     enum LimitType:Int {
         // 电话号码
@@ -81,25 +81,31 @@ extension UITextField{
         case amount
     }
     
-    struct TextFieldfitterName{
+    struct filterName{
         // 键盘只能输入纯数字
-        static let number = ""
+        static let onlyNumber = "^[0-9]+$"
+        // 键盘只能输入中文
+        static let onlyChinese = "^[\\u4e00-\\u9fa5]{0,}$"
+        // 键盘只能输入字母
+        static let onlyLetter = "^[A-Za-z]+$"
         // 键盘只能输入数字和字母
-        static let numberAndLetter = ""
+        static let numberAndLetter = "^[0-9A-Za-z]+$"
         // 键盘输入金额
-        static let amount = ""
+        static let amount = "^\\d{0,10}([.][0-9]{0,2})?$"
     }
     
     private struct tfFitterRuntimeKey {
         static let tfFitter = UnsafeRawPointer.init(bitPattern: "tfFitter".hashValue)
         static let tfFitterLimit = UnsafeRawPointer.init(bitPattern: "tfFitterLimit".hashValue)
+        static let tfFitterLength = UnsafeRawPointer.init(bitPattern: "tfFitterLength".hashValue)
         /// ...其他Key声明
     }
     
-    var fitter: String? {
+    var filter: String? {
         
         set {
             objc_setAssociatedObject(self, UITextField.tfFitterRuntimeKey.tfFitter!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+            self.delegate = self
         }
         get {
             return objc_getAssociatedObject(self, UITextField.tfFitterRuntimeKey.tfFitter!) as? String
@@ -110,12 +116,82 @@ extension UITextField{
         
         set {
             objc_setAssociatedObject(self, UITextField.tfFitterRuntimeKey.tfFitterLimit!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+            self.delegate = self
+            self.limitConfig(type: limitType)
         }
         get {
             return objc_getAssociatedObject(self, UITextField.tfFitterRuntimeKey.tfFitterLimit!) as? LimitType
         }
     }
     
+    // 最大输入长度
+    var maxLength: Int? {
+        
+        set {
+            objc_setAssociatedObject(self, UITextField.tfFitterRuntimeKey.tfFitterLength!, newValue, .OBJC_ASSOCIATION_ASSIGN)
+            self.delegate = self
+        }
+        get {
+            return objc_getAssociatedObject(self, UITextField.tfFitterRuntimeKey.tfFitterLength!) as? Int
+        }
+    }
+    
+    private func limitConfig(type:LimitType?){
+        
+        if (type != nil) {
+            
+            if type == .phone {
+                self.keyboardType = .numberPad
+                self.maxLength = 11
+            }else if type  == .psw {
+                self.keyboardType = .asciiCapable
+                self.filter = UITextField.filterName.numberAndLetter
+            }else if type  == .amount {
+                self.keyboardType = .decimalPad
+                self.filter = UITextField.filterName.amount
+            }
+        
+        }
+        
+    }
+    
+    
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
+    {
+        
+        let str = (textField.text! as NSString).replacingCharacters(in: range, with: string)//获取输入框接收到的文字
+         
+        //限制长度
+        if self.maxLength != nil {
+            let proposeLength = (textField.text?.lengthOfBytes(using: String.Encoding.utf8))! - range.length + string.lengthOfBytes(using: String.Encoding.utf8)
+            if proposeLength > self.maxLength! {
+                return false
+            }
+            return true
+        }
+        
+        /// 优先判断输入框类型
+        if (self.limitType != nil) {
+            
+            if (self.filter != nil) {
+                return self.authWithFitter(filter: self.filter!, getStr: str)
+            }
+            return true
+        }
+        
+        /// 在判断是否有过滤器l
+        if (self.filter != nil) {
+           return self.authWithFitter(filter: self.filter!, getStr: str)
+        }
+        
+        return true
+    }
+    
+    private func authWithFitter(filter:String, getStr:String) ->Bool {
+        let regex = try! NSRegularExpression(pattern: filter, options: .allowCommentsAndWhitespace)//生成NSRegularExpression实例
+        let numberOfMatches = regex.numberOfMatches(in: getStr, options:.reportProgress, range: NSMakeRange(0, (getStr as NSString).length))//获取匹配的个数
+        return numberOfMatches != 0//如果匹配数量为0则表示不符合输入要求
+    }
     
 }
 

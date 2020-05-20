@@ -8,20 +8,31 @@
 
 import UIKit
 
-class MeMainController: PJBaseViewController {
+class MeMainController: PJBaseViewController,UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "我的";
    
-        let  label = UITextView()
+        let  label = UITextField()
         view.addSubview(label);
         label.backgroundColor = .white
         label.font = UIFont.systemFont(ofSize: 12);
-        label.frame = CGRect(x: 20, y: 100, width: 100, height: 60)
+        label.frame = CGRect(x: 20, y: 100, width: 250, height: 60)
         label.placeholder = "你好啊"
-        label.placeholderColor = .red
+        //label.placeholderColor = .red
         
+        label.limitType = .psw
+        label.maxLength = 15
+        
+       // label.delegate = self
+        
+    }
+    
+   func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
+     {
+       print("-=-=-=-=\(string)")
+        return true
     }
     
     override func viewWillAppear(_ animated: Bool) {

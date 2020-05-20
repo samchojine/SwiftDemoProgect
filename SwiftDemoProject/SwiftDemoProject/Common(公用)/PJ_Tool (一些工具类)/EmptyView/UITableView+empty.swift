@@ -77,7 +77,7 @@ extension UITableView:SelfAware {
     }
     
     
-    //  进行方法交换
+    // 进行方法交换
     static func awake() {
         UITableView.takeOnceTime
     }
