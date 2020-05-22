@@ -214,6 +214,7 @@
 		140472C22459810B000367DA /* Base(基类) */ = {
 			isa = PBXGroup;
 			children = (
+				D24B8C54246D5A8700FAD2D1 /* New Group */,
 				140472D1245A65ED000367DA /* PJTabBarController.swift */,
 				140472D3245A662D000367DA /* PJNavigationController.swift */,
 				140472D5245A6651000367DA /* PJBaseViewController.swift */,
@@ -370,6 +371,13 @@
 				C92525CC53A4A0C24B4A0D76 /* Pods-SwiftDemoProject.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D24B8C54246D5A8700FAD2D1 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		D77221E340B8740492DD9FE0 /* Frameworks */ = {

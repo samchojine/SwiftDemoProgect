@@ -16,7 +16,9 @@ class HomeNaviColor2VC: PJBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "另外一种颜色"
+        self.naviType = .typeDark
         
+        self.statusBarStyle = .default
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

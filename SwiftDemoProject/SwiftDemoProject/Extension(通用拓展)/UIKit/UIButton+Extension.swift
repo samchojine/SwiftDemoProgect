@@ -113,6 +113,14 @@ extension UIButton{
            codeTimer.resume()
        }
     
+    // MARK: -设置统一按钮的图片和文字颜色
+    func setTitleImageColor(color:UIColor) {
+        let image = self.imageView?.image
+        self.setImage(image?.withRenderingMode(.alwaysTemplate), for: .normal)
+        self.imageView?.tintColor = color
+        self.setTitleColor(color, for: .normal)
+    }
+    
 }
 
 
@@ -147,4 +155,5 @@ extension UIButton{
    }
 
 }
+
 

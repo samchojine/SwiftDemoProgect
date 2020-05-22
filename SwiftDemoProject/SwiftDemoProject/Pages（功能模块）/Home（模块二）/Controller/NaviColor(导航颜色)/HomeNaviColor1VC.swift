@@ -11,7 +11,7 @@ import UIKit
 class HomeNaviColor1VC: PJBaseTableViewController {
     
     /// 设置渐变完成的最大距离
-    var offsetHeight:CGFloat = 100
+    var finish:Bool = false
     
     lazy var navi: PJCustomNaviBar = {
         let v = PJCustomNaviBar()
@@ -19,12 +19,23 @@ class HomeNaviColor1VC: PJBaseTableViewController {
         v.addRightItem(title: "发表") { (_) in
             print("13565656")
         }
-        v.addRightItem(title: "不好") { (_) in
-            print("13565656")
+        
+        v.addRightItemWithImage( image: "hud_icon_error") { (_) in
+            
         }
         
-        v.addRightItem(title: "dsfsdf") { (_) in
-            
+        v.addRightItemWithImage( image: "hud_icon_info") { (_) in
+              
+        }
+        
+        v.rightItems[1].setImage(UIImage(named: "tab_Item_icon_02_selected"), for: .selected)
+        v.rightItems[1].isShowEndChangeImage = true
+        
+        v.naviBGColor = .brown
+        v.naviTintColor = .darkText
+        v.naviGradualDidChange { (finish, alpha) in
+            self.statusBarStyle = finish ? .lightContent : .default
+            self.finish = finish
         }
         return v
     }()
@@ -32,10 +43,7 @@ class HomeNaviColor1VC: PJBaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //title = "渐变"
-        //naviType = .typeDark
-        
-        
+
         let btn =   UIButton()
         btn.setTitle("下一页", for: .normal)
         btn.addClickAction { (_) in
@@ -50,16 +58,16 @@ class HomeNaviColor1VC: PJBaseTableViewController {
         
         fixTableViewOffsetWhenNaviHide()
         
-        
-        let v = UIView()
-        v.backgroundColor = .green
-        self.view .addSubview(v)
-        
-        v.snp.makeConstraints { (make) in
-            make.top.equalTo(0);
-            make.left.equalTo(0)
-            make.width.height.equalTo(100)
-        }
+//
+//        let v = UIView()
+//        v.backgroundColor = .green
+//        self.view .addSubview(v)
+//
+//        v.snp.makeConstraints { (make) in
+//            make.top.equalTo(0);
+//            make.left.equalTo(0)
+//            make.width.height.equalTo(100)
+//        }
       
         view.addSubview(navi)
         
@@ -69,6 +77,7 @@ class HomeNaviColor1VC: PJBaseTableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        self.statusBarStyle = self.finish ? .lightContent : .default
 //        self.naviBgColor = UIColor.white.withAlphaComponent(0)
 //        self.navigationController?.navigationBar.isTranslucent = true
 //        // 4.设置导航栏背景图片
@@ -103,8 +112,8 @@ class HomeNaviColor1VC: PJBaseTableViewController {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        self.navi.addGradualChange(maxValue: 100, scollView: scrollView);
-        
+        self.navi.addGradualChange(scollView: scrollView, maxValue: 200, endColor: .white)
+
 
     
     }
