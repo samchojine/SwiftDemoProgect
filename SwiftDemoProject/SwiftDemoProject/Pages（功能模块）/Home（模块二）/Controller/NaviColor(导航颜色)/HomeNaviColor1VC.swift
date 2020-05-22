@@ -11,31 +11,24 @@ import UIKit
 class HomeNaviColor1VC: PJBaseTableViewController {
     
     /// 设置渐变完成的最大距离
-    var finish:Bool = false
+    var offsetHeight:CGFloat = 100
+    
+    var datas:[String] = []
     
     lazy var navi: PJCustomNaviBar = {
         let v = PJCustomNaviBar()
         v.title = "渐变的控制器发绿山咖啡就撒了看"
         v.addRightItem(title: "发表") { (_) in
             print("13565656")
+            self.datas.append("")
+            self.tableView.reloadData()
+        }
+        v.addRightItem(title: "不好") { (_) in
+            print("13565656")
         }
         
-        v.addRightItemWithImage( image: "hud_icon_error") { (_) in
+        v.addRightItem(title: "dsfsdf") { (_) in
             
-        }
-        
-        v.addRightItemWithImage( image: "hud_icon_info") { (_) in
-              
-        }
-        
-        v.rightItems[1].setImage(UIImage(named: "tab_Item_icon_02_selected"), for: .selected)
-        v.rightItems[1].isShowEndChangeImage = true
-        
-        v.naviBGColor = .brown
-        v.naviTintColor = .darkText
-        v.naviGradualDidChange { (finish, alpha) in
-            self.statusBarStyle = finish ? .lightContent : .default
-            self.finish = finish
         }
         return v
     }()
@@ -43,7 +36,14 @@ class HomeNaviColor1VC: PJBaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        //title = "渐变"
+        //naviType = .typeDark
+        let emptyView =  EmptyView()
+        emptyView.type = .search
+        self.tableView.emptyView = EmptyView(type:.search)
+        
+        
+        
         let btn =   UIButton()
         btn.setTitle("下一页", for: .normal)
         btn.addClickAction { (_) in
@@ -58,26 +58,20 @@ class HomeNaviColor1VC: PJBaseTableViewController {
         
         fixTableViewOffsetWhenNaviHide()
         
-//
-//        let v = UIView()
-//        v.backgroundColor = .green
-//        self.view .addSubview(v)
-//
-//        v.snp.makeConstraints { (make) in
-//            make.top.equalTo(0);
-//            make.left.equalTo(0)
-//            make.width.height.equalTo(100)
-//        }
       
         view.addSubview(navi)
         
         navi.isTransparent = true;
+        showLoading()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
+            self.dismissHud()
+            self.tableView.reloadData()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.statusBarStyle = self.finish ? .lightContent : .default
 //        self.naviBgColor = UIColor.white.withAlphaComponent(0)
 //        self.navigationController?.navigationBar.isTranslucent = true
 //        // 4.设置导航栏背景图片
@@ -97,7 +91,7 @@ class HomeNaviColor1VC: PJBaseTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return self.datas.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -107,13 +101,16 @@ class HomeNaviColor1VC: PJBaseTableViewController {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-          self.navigationController?.pushViewController(HomeNaviColor2VC(), animated: true)
+          //self.navigationController?.pushViewController(HomeNaviColor2VC(), animated: true)
+        
+        self.datas.removeLast()
+        self.tableView.reloadData()
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        self.navi.addGradualChange(scollView: scrollView, maxValue: 200, endColor: .white)
-
+        self.navi.addGradualChange(maxValue: 100, scollView: scrollView);
+        
 
     
     }

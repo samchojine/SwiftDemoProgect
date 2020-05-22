@@ -47,6 +47,14 @@
 		1499929224694FEA00EE786C /* HomeNaviColor1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499929124694FEA00EE786C /* HomeNaviColor1VC.swift */; };
 		1499929B246A753100EE786C /* HomeNaviColor2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499929A246A753100EE786C /* HomeNaviColor2VC.swift */; };
 		1499929D246B925900EE786C /* PJCustomNaviBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499929C246B925900EE786C /* PJCustomNaviBar.swift */; };
+		149992A024725E2300EE786C /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499929F24725E2300EE786C /* EmptyView.swift */; };
+		149992A624726A6A00EE786C /* empty_icon_no_wifi.png in Resources */ = {isa = PBXBuildFile; fileRef = 149992A224726A6A00EE786C /* empty_icon_no_wifi.png */; };
+		149992A724726A6A00EE786C /* empty_icon_search.png in Resources */ = {isa = PBXBuildFile; fileRef = 149992A324726A6A00EE786C /* empty_icon_search.png */; };
+		149992A824726A6A00EE786C /* empty_icon_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 149992A424726A6A00EE786C /* empty_icon_normal.png */; };
+		149992A924726A6A00EE786C /* empty_icon_no_service.png in Resources */ = {isa = PBXBuildFile; fileRef = 149992A524726A6A00EE786C /* empty_icon_no_service.png */; };
+		149992AB24726B4700EE786C /* UITableView+empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149992AA24726B4700EE786C /* UITableView+empty.swift */; };
+		149992AD24726B6B00EE786C /* UICollectionView+empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149992AC24726B6B00EE786C /* UICollectionView+empty.swift */; };
+		149992AF2473819500EE786C /* Swizzling+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149992AE2473819500EE786C /* Swizzling+Extension.swift */; };
 		3CEB5490B435E9A5C4BCF11E /* Pods_SwiftDemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517B35535A3A3AB1ECDDE2F2 /* Pods_SwiftDemoProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +103,14 @@
 		14999293246953F200EE786C /* FLAnimatedImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FLAnimatedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1499929A246A753100EE786C /* HomeNaviColor2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNaviColor2VC.swift; sourceTree = "<group>"; };
 		1499929C246B925900EE786C /* PJCustomNaviBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJCustomNaviBar.swift; sourceTree = "<group>"; };
+		1499929F24725E2300EE786C /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		149992A224726A6A00EE786C /* empty_icon_no_wifi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_icon_no_wifi.png; sourceTree = "<group>"; };
+		149992A324726A6A00EE786C /* empty_icon_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_icon_search.png; sourceTree = "<group>"; };
+		149992A424726A6A00EE786C /* empty_icon_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_icon_normal.png; sourceTree = "<group>"; };
+		149992A524726A6A00EE786C /* empty_icon_no_service.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_icon_no_service.png; sourceTree = "<group>"; };
+		149992AA24726B4700EE786C /* UITableView+empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+empty.swift"; sourceTree = "<group>"; };
+		149992AC24726B6B00EE786C /* UICollectionView+empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+empty.swift"; sourceTree = "<group>"; };
+		149992AE2473819500EE786C /* Swizzling+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swizzling+Extension.swift"; sourceTree = "<group>"; };
 		29B7994FEB59996D46CE61AF /* Pods-SwiftDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemoProject/Pods-SwiftDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 		517B35535A3A3AB1ECDDE2F2 /* Pods_SwiftDemoProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemoProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92525CC53A4A0C24B4A0D76 /* Pods-SwiftDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoProject.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemoProject/Pods-SwiftDemoProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +222,7 @@
 		140472C124597FD2000367DA /* PJ_Tool (一些工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				1499929E247258C400EE786C /* EmptyView */,
 				1487E3FF2465047300D7FA59 /* MBHud */,
 			);
 			path = "PJ_Tool (一些工具类)";
@@ -364,6 +381,29 @@
 			path = "NaviColor(导航颜色)";
 			sourceTree = "<group>";
 		};
+		1499929E247258C400EE786C /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				149992A12472675900EE786C /* Empty_bundle */,
+				149992AE2473819500EE786C /* Swizzling+Extension.swift */,
+				149992AC24726B6B00EE786C /* UICollectionView+empty.swift */,
+				149992AA24726B4700EE786C /* UITableView+empty.swift */,
+				1499929F24725E2300EE786C /* EmptyView.swift */,
+			);
+			path = EmptyView;
+			sourceTree = "<group>";
+		};
+		149992A12472675900EE786C /* Empty_bundle */ = {
+			isa = PBXGroup;
+			children = (
+				149992A524726A6A00EE786C /* empty_icon_no_service.png */,
+				149992A224726A6A00EE786C /* empty_icon_no_wifi.png */,
+				149992A424726A6A00EE786C /* empty_icon_normal.png */,
+				149992A324726A6A00EE786C /* empty_icon_search.png */,
+			);
+			path = Empty_bundle;
+			sourceTree = "<group>";
+		};
 		302DABF0636F900222B59658 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,9 +492,13 @@
 			files = (
 				1487E41024655AE300D7FA59 /* hud_icon_info.png in Resources */,
 				1487E40C2465594600D7FA59 /* hud_icon_success.png in Resources */,
+				149992A824726A6A00EE786C /* empty_icon_normal.png in Resources */,
+				149992A924726A6A00EE786C /* empty_icon_no_service.png in Resources */,
 				1487E40F24655AE300D7FA59 /* hud_icon_error.png in Resources */,
 				140472B0245966C8000367DA /* LaunchScreen.storyboard in Resources */,
+				149992A724726A6A00EE786C /* empty_icon_search.png in Resources */,
 				140472AD245966C8000367DA /* Assets.xcassets in Resources */,
+				149992A624726A6A00EE786C /* empty_icon_no_wifi.png in Resources */,
 				140472AB245966C6000367DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,10 +565,12 @@
 				1487E40A2465047300D7FA59 /* UIViewController+MBHUD.swift in Sources */,
 				1499928B2469305900EE786C /* PJBaseStackViewController.swift in Sources */,
 				1499929D246B925900EE786C /* PJCustomNaviBar.swift in Sources */,
+				149992AB24726B4700EE786C /* UITableView+empty.swift in Sources */,
 				1499929224694FEA00EE786C /* HomeNaviColor1VC.swift in Sources */,
 				140472D2245A65ED000367DA /* PJTabBarController.swift in Sources */,
 				1487E3F82464013000D7FA59 /* PJ_ViewExtension.swift in Sources */,
 				1487E3EA2463F92500D7FA59 /* UIButton+Extension.swift in Sources */,
+				149992AD24726B6B00EE786C /* UICollectionView+empty.swift in Sources */,
 				1487E4092465047300D7FA59 /* View+MBHUD.swift in Sources */,
 				1487E3F22464008800D7FA59 /* PJ_ButtonExtension.swift in Sources */,
 				1487E3FA2464018600D7FA59 /* PJ_TextViewExtension.swift in Sources */,
@@ -534,10 +580,12 @@
 				1487E3E82463F92500D7FA59 /* UITextField+Extension.swift in Sources */,
 				140472DC245A6948000367DA /* HomeMainController.swift in Sources */,
 				140472DA245A6934000367DA /* MeMainController.swift in Sources */,
+				149992A024725E2300EE786C /* EmptyView.swift in Sources */,
 				1487E3F6246400D100D7FA59 /* PJ_ImageViewExtension.swift in Sources */,
 				1487E3EC2463F92500D7FA59 /* Date+Extension.swift in Sources */,
 				1487E3EB2463F92500D7FA59 /* WKWebView+Extension.swift in Sources */,
 				1487E3ED2463F92500D7FA59 /* String+Extension.swift in Sources */,
+				149992AF2473819500EE786C /* Swizzling+Extension.swift in Sources */,
 				1487E41A24668D6600D7FA59 /* UIImage+Extension.swift in Sources */,
 				140472D6245A6651000367DA /* PJBaseViewController.swift in Sources */,
 				1487E3F02463FC3B00D7FA59 /* PJ_LabelExtension.swift in Sources */,
