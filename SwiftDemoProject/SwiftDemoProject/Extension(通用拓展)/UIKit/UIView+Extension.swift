@@ -10,6 +10,14 @@ import UIKit
 
 extension UIView {
     
+    // 获取所有子视图，以及子视图里面的子视图
+    var allSubViews : [UIView] {
+        var array = [self.subviews].flatMap {$0}
+        array.forEach { array.append(contentsOf: $0.allSubViews) }
+        return array
+    }
+    
+ 
     // MARK: -截图
     func captureToImage() -> UIImage {
         let view = self;
@@ -44,6 +52,7 @@ extension UIView {
     func loadViewFromBundle1st(view nibName:String) -> UIView {
         return ((Bundle.main.loadNibNamed(nibName, owner: nil, options: nil))?.first) as! UIView
     }
+    
     
 }
 
