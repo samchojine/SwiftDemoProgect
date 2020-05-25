@@ -17,6 +17,7 @@
 		140472D8245A6675000367DA /* PJBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140472D7245A6675000367DA /* PJBaseTableViewController.swift */; };
 		140472DA245A6934000367DA /* MeMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140472D9245A6934000367DA /* MeMainController.swift */; };
 		140472DC245A6948000367DA /* HomeMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140472DB245A6948000367DA /* HomeMainController.swift */; };
+		145A9642247B694800316E42 /* hud_icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 145A9641247B694800316E42 /* hud_icon_info.png */; };
 		1487E3E02463F74200D7FA59 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3DF2463F74200D7FA59 /* Color+Extension.swift */; };
 		1487E3E82463F92500D7FA59 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3E12463F92500D7FA59 /* UITextField+Extension.swift */; };
 		1487E3EA2463F92500D7FA59 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3E32463F92500D7FA59 /* UIButton+Extension.swift */; };
@@ -35,7 +36,6 @@
 		1487E40A2465047300D7FA59 /* UIViewController+MBHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E4052465047300D7FA59 /* UIViewController+MBHUD.swift */; };
 		1487E40C2465594600D7FA59 /* hud_icon_success.png in Resources */ = {isa = PBXBuildFile; fileRef = 1487E40B2465594600D7FA59 /* hud_icon_success.png */; };
 		1487E40F24655AE300D7FA59 /* hud_icon_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 1487E40D24655AE300D7FA59 /* hud_icon_error.png */; };
-		1487E41024655AE300D7FA59 /* hud_icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 1487E40E24655AE300D7FA59 /* hud_icon_info.png */; };
 		1487E41224655D5A00D7FA59 /* PJCommonConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E41124655D5A00D7FA59 /* PJCommonConstant.swift */; };
 		1487E41424655DCF00D7FA59 /* PJSizeConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E41324655DCF00D7FA59 /* PJSizeConstant.swift */; };
 		1487E41624655E2400D7FA59 /* PJColorConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E41524655E2400D7FA59 /* PJColorConstant.swift */; };
@@ -72,6 +72,7 @@
 		140472D7245A6675000367DA /* PJBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJBaseTableViewController.swift; sourceTree = "<group>"; };
 		140472D9245A6934000367DA /* MeMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeMainController.swift; sourceTree = "<group>"; };
 		140472DB245A6948000367DA /* HomeMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainController.swift; sourceTree = "<group>"; };
+		145A9641247B694800316E42 /* hud_icon_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hud_icon_info.png; sourceTree = "<group>"; };
 		1487E3DF2463F74200D7FA59 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		1487E3E12463F92500D7FA59 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		1487E3E32463F92500D7FA59 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
@@ -90,7 +91,6 @@
 		1487E4052465047300D7FA59 /* UIViewController+MBHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+MBHUD.swift"; sourceTree = "<group>"; };
 		1487E40B2465594600D7FA59 /* hud_icon_success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hud_icon_success.png; sourceTree = "<group>"; };
 		1487E40D24655AE300D7FA59 /* hud_icon_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hud_icon_error.png; sourceTree = "<group>"; };
-		1487E40E24655AE300D7FA59 /* hud_icon_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hud_icon_info.png; path = ../../../../../../../../Downloads/hud_icon_info.png; sourceTree = "<group>"; };
 		1487E41124655D5A00D7FA59 /* PJCommonConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJCommonConstant.swift; sourceTree = "<group>"; };
 		1487E41324655DCF00D7FA59 /* PJSizeConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJSizeConstant.swift; sourceTree = "<group>"; };
 		1487E41524655E2400D7FA59 /* PJColorConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJColorConstant.swift; sourceTree = "<group>"; };
@@ -364,8 +364,8 @@
 		1487E4002465047300D7FA59 /* Hud_bundle */ = {
 			isa = PBXGroup;
 			children = (
+				145A9641247B694800316E42 /* hud_icon_info.png */,
 				1487E40D24655AE300D7FA59 /* hud_icon_error.png */,
-				1487E40E24655AE300D7FA59 /* hud_icon_info.png */,
 				1487E40B2465594600D7FA59 /* hud_icon_success.png */,
 			);
 			path = Hud_bundle;
@@ -490,7 +490,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1487E41024655AE300D7FA59 /* hud_icon_info.png in Resources */,
 				1487E40C2465594600D7FA59 /* hud_icon_success.png in Resources */,
 				149992A824726A6A00EE786C /* empty_icon_normal.png in Resources */,
 				149992A924726A6A00EE786C /* empty_icon_no_service.png in Resources */,
@@ -499,6 +498,7 @@
 				149992A724726A6A00EE786C /* empty_icon_search.png in Resources */,
 				140472AD245966C8000367DA /* Assets.xcassets in Resources */,
 				149992A624726A6A00EE786C /* empty_icon_no_wifi.png in Resources */,
+				145A9642247B694800316E42 /* hud_icon_info.png in Resources */,
 				140472AB245966C6000367DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

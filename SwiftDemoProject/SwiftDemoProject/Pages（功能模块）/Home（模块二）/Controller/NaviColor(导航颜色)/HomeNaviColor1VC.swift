@@ -109,7 +109,7 @@ class HomeNaviColor1VC: PJBaseTableViewController {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        self.navi.addGradualChange(maxValue: 100, scollView: scrollView);
+        self.navi.addGradualChange(scollView: scrollView, maxValue: 100);
         
 
     
