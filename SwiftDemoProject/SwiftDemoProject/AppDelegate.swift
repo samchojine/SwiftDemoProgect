@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import HandyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

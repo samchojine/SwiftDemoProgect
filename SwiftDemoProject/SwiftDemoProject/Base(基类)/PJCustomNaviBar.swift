@@ -359,8 +359,6 @@ class PJCustomNaviBar: UIView {
         self.viewController()?.navigationController?.popViewController(animated: true)
     }
     
-    
-
 
 }
 

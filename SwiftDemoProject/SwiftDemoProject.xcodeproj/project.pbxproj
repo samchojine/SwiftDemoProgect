@@ -17,6 +17,8 @@
 		140472D8245A6675000367DA /* PJBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140472D7245A6675000367DA /* PJBaseTableViewController.swift */; };
 		140472DA245A6934000367DA /* MeMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140472D9245A6934000367DA /* MeMainController.swift */; };
 		140472DC245A6948000367DA /* HomeMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140472DB245A6948000367DA /* HomeMainController.swift */; };
+		1442E133248F7BB100B180E2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442E132248F7BB100B180E2 /* UserModel.swift */; };
+		1442E135248F7BC400B180E2 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442E134248F7BC400B180E2 /* UserManager.swift */; };
 		145A9642247B694800316E42 /* hud_icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 145A9641247B694800316E42 /* hud_icon_info.png */; };
 		1487E3E02463F74200D7FA59 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3DF2463F74200D7FA59 /* Color+Extension.swift */; };
 		1487E3E82463F92500D7FA59 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3E12463F92500D7FA59 /* UITextField+Extension.swift */; };
@@ -72,6 +74,8 @@
 		140472D7245A6675000367DA /* PJBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJBaseTableViewController.swift; sourceTree = "<group>"; };
 		140472D9245A6934000367DA /* MeMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeMainController.swift; sourceTree = "<group>"; };
 		140472DB245A6948000367DA /* HomeMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainController.swift; sourceTree = "<group>"; };
+		1442E132248F7BB100B180E2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1442E134248F7BC400B180E2 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		145A9641247B694800316E42 /* hud_icon_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hud_icon_info.png; sourceTree = "<group>"; };
 		1487E3DF2463F74200D7FA59 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		1487E3E12463F92500D7FA59 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 		140472C124597FD2000367DA /* PJ_Tool (一些工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				1442E131248F7B4B00B180E2 /* UserManager */,
 				1499929E247258C400EE786C /* EmptyView */,
 				1487E3FF2465047300D7FA59 /* MBHud */,
 			);
@@ -231,7 +236,6 @@
 		140472C22459810B000367DA /* Base(基类) */ = {
 			isa = PBXGroup;
 			children = (
-				D24B8C54246D5A8700FAD2D1 /* New Group */,
 				140472D1245A65ED000367DA /* PJTabBarController.swift */,
 				140472D3245A662D000367DA /* PJNavigationController.swift */,
 				140472D5245A6651000367DA /* PJBaseViewController.swift */,
@@ -327,6 +331,15 @@
 			path = "PJ_Service(服务器)";
 			sourceTree = "<group>";
 		};
+		1442E131248F7B4B00B180E2 /* UserManager */ = {
+			isa = PBXGroup;
+			children = (
+				1442E132248F7BB100B180E2 /* UserModel.swift */,
+				1442E134248F7BC400B180E2 /* UserManager.swift */,
+			);
+			path = UserManager;
+			sourceTree = "<group>";
+		};
 		1487E3FD24640A9700D7FA59 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,13 +424,6 @@
 				C92525CC53A4A0C24B4A0D76 /* Pods-SwiftDemoProject.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		D24B8C54246D5A8700FAD2D1 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		D77221E340B8740492DD9FE0 /* Frameworks */ = {
@@ -583,12 +589,14 @@
 				149992A024725E2300EE786C /* EmptyView.swift in Sources */,
 				1487E3F6246400D100D7FA59 /* PJ_ImageViewExtension.swift in Sources */,
 				1487E3EC2463F92500D7FA59 /* Date+Extension.swift in Sources */,
+				1442E133248F7BB100B180E2 /* UserModel.swift in Sources */,
 				1487E3EB2463F92500D7FA59 /* WKWebView+Extension.swift in Sources */,
 				1487E3ED2463F92500D7FA59 /* String+Extension.swift in Sources */,
 				149992AF2473819500EE786C /* Swizzling+Extension.swift in Sources */,
 				1487E41A24668D6600D7FA59 /* UIImage+Extension.swift in Sources */,
 				140472D6245A6651000367DA /* PJBaseViewController.swift in Sources */,
 				1487E3F02463FC3B00D7FA59 /* PJ_LabelExtension.swift in Sources */,
+				1442E135248F7BC400B180E2 /* UserManager.swift in Sources */,
 				1499928D24693FEF00EE786C /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

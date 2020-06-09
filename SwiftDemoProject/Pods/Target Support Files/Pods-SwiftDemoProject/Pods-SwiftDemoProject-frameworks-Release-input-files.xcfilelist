@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-SwiftDemoProject/Pods-SwiftDemoProject-frameworks.sh
+${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework
 ${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
 ${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
