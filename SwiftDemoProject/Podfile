@@ -6,13 +6,13 @@ target 'SwiftDemoProject' do
   use_frameworks!
     #swift
 	pod 'SnapKit', '5.0.1'
-       #pod 'Kingfisher', '5.10.0'
 	#pod 'IQKeyboardManagerSwift', '6.5.4'
        #pod 'SwiftyJSON', '5.0.0'
-	#pod 'Moya', '14.0.0-beta.5'
+	pod 'Moya', '14.0.0-beta.5'
+  pod 'Result', '5.0.0'
 	pod 'HandyJSON', '5.0.1'
 	#pod 'SDCycleScrollView', '1.80'
-       #pod 'Result', '5.0.0'
+       
  #OC
 	pod 'WMPageController', '2.5.2'
 	pod 'MBProgressHUD', '1.1.0'

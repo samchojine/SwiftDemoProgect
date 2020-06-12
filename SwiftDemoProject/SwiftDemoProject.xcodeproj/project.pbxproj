@@ -20,6 +20,16 @@
 		1442E133248F7BB100B180E2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442E132248F7BB100B180E2 /* UserModel.swift */; };
 		1442E135248F7BC400B180E2 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442E134248F7BC400B180E2 /* UserManager.swift */; };
 		145A9642247B694800316E42 /* hud_icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 145A9641247B694800316E42 /* hud_icon_info.png */; };
+		1467C8EC249084C000C9E35A /* PJServerConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467C8EB249084C000C9E35A /* PJServerConstant.swift */; };
+		1467C8F92490B34100C9E35A /* PJAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467C8F82490B34100C9E35A /* PJAPI.swift */; };
+		1467C9002490B59D00C9E35A /* Result+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467C8FB2490B59D00C9E35A /* Result+Ex.swift */; };
+		1467C9012490B59D00C9E35A /* SSYLoginDetectMoyaPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467C8FC2490B59D00C9E35A /* SSYLoginDetectMoyaPlugin.swift */; };
+		1467C9022490B59D00C9E35A /* JYTargetType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467C8FD2490B59D00C9E35A /* JYTargetType+Extension.swift */; };
+		1467C9032490B59D00C9E35A /* SSYNetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467C8FE2490B59D00C9E35A /* SSYNetworkLoggerPlugin.swift */; };
+		1467C9042490B59D00C9E35A /* SSYRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467C8FF2490B59D00C9E35A /* SSYRequestError.swift */; };
+		1467C9072493195B00C9E35A /* PJRefreshNormalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467C9062493195B00C9E35A /* PJRefreshNormalHeader.swift */; };
+		1467C90924931A9400C9E35A /* PJRefreshAutoNormalFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467C90824931A9400C9E35A /* PJRefreshAutoNormalFooter.swift */; };
+		1467C90B24931D7400C9E35A /* ScrollView+MJRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467C90A24931D7400C9E35A /* ScrollView+MJRefresh.swift */; };
 		1487E3E02463F74200D7FA59 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3DF2463F74200D7FA59 /* Color+Extension.swift */; };
 		1487E3E82463F92500D7FA59 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3E12463F92500D7FA59 /* UITextField+Extension.swift */; };
 		1487E3EA2463F92500D7FA59 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3E32463F92500D7FA59 /* UIButton+Extension.swift */; };
@@ -57,6 +67,8 @@
 		149992AB24726B4700EE786C /* UITableView+empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149992AA24726B4700EE786C /* UITableView+empty.swift */; };
 		149992AD24726B6B00EE786C /* UICollectionView+empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149992AC24726B6B00EE786C /* UICollectionView+empty.swift */; };
 		149992AF2473819500EE786C /* Swizzling+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149992AE2473819500EE786C /* Swizzling+Extension.swift */; };
+		14DB78F3249324DA005BB224 /* MJRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB78F2249324DA005BB224 /* MJRefreshController.swift */; };
+		14DB78F524932945005BB224 /* DispatchTime+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB78F424932945005BB224 /* DispatchTime+Extension.swift */; };
 		3CEB5490B435E9A5C4BCF11E /* Pods_SwiftDemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517B35535A3A3AB1ECDDE2F2 /* Pods_SwiftDemoProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +89,16 @@
 		1442E132248F7BB100B180E2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1442E134248F7BC400B180E2 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		145A9641247B694800316E42 /* hud_icon_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hud_icon_info.png; sourceTree = "<group>"; };
+		1467C8EB249084C000C9E35A /* PJServerConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJServerConstant.swift; sourceTree = "<group>"; };
+		1467C8F82490B34100C9E35A /* PJAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJAPI.swift; sourceTree = "<group>"; };
+		1467C8FB2490B59D00C9E35A /* Result+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Result+Ex.swift"; sourceTree = "<group>"; };
+		1467C8FC2490B59D00C9E35A /* SSYLoginDetectMoyaPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSYLoginDetectMoyaPlugin.swift; sourceTree = "<group>"; };
+		1467C8FD2490B59D00C9E35A /* JYTargetType+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JYTargetType+Extension.swift"; sourceTree = "<group>"; };
+		1467C8FE2490B59D00C9E35A /* SSYNetworkLoggerPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSYNetworkLoggerPlugin.swift; sourceTree = "<group>"; };
+		1467C8FF2490B59D00C9E35A /* SSYRequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSYRequestError.swift; sourceTree = "<group>"; };
+		1467C9062493195B00C9E35A /* PJRefreshNormalHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJRefreshNormalHeader.swift; sourceTree = "<group>"; };
+		1467C90824931A9400C9E35A /* PJRefreshAutoNormalFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJRefreshAutoNormalFooter.swift; sourceTree = "<group>"; };
+		1467C90A24931D7400C9E35A /* ScrollView+MJRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScrollView+MJRefresh.swift"; sourceTree = "<group>"; };
 		1487E3DF2463F74200D7FA59 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		1487E3E12463F92500D7FA59 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		1487E3E32463F92500D7FA59 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
@@ -115,6 +137,8 @@
 		149992AA24726B4700EE786C /* UITableView+empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+empty.swift"; sourceTree = "<group>"; };
 		149992AC24726B6B00EE786C /* UICollectionView+empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+empty.swift"; sourceTree = "<group>"; };
 		149992AE2473819500EE786C /* Swizzling+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swizzling+Extension.swift"; sourceTree = "<group>"; };
+		14DB78F2249324DA005BB224 /* MJRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJRefreshController.swift; sourceTree = "<group>"; };
+		14DB78F424932945005BB224 /* DispatchTime+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchTime+Extension.swift"; sourceTree = "<group>"; };
 		29B7994FEB59996D46CE61AF /* Pods-SwiftDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemoProject/Pods-SwiftDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 		517B35535A3A3AB1ECDDE2F2 /* Pods_SwiftDemoProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemoProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92525CC53A4A0C24B4A0D76 /* Pods-SwiftDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoProject.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemoProject/Pods-SwiftDemoProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,7 +204,6 @@
 		140472BC24597C65000367DA /* Common(公用) */ = {
 			isa = PBXGroup;
 			children = (
-				140472DE245A7297000367DA /* PJ_Service(服务器) */,
 				140472BF24597E10000367DA /* PJ_Constant(公用常量) */,
 				140472CF24598429000367DA /* PJ_Extension（此项目业务专用拓展） */,
 				140472C024597F1E000367DA /* PJ_View (公用View) */,
@@ -192,6 +215,7 @@
 		140472BD24597CC3000367DA /* APIs（服务器接口） */ = {
 			isa = PBXGroup;
 			children = (
+				1467C8F82490B34100C9E35A /* PJAPI.swift */,
 			);
 			path = "APIs（服务器接口）";
 			sourceTree = "<group>";
@@ -199,8 +223,8 @@
 		140472BE24597D18000367DA /* Pages（功能模块） */ = {
 			isa = PBXGroup;
 			children = (
-				140472C424598234000367DA /* Me(模块一) */,
-				140472C324598227000367DA /* Home（模块二） */,
+				140472C324598227000367DA /* Home（模块一） */,
+				140472C424598234000367DA /* Me(模块二) */,
 			);
 			path = "Pages（功能模块）";
 			sourceTree = "<group>";
@@ -212,6 +236,7 @@
 				1487E41724664AB600D7FA59 /* PJFontConstant.swift */,
 				1487E41524655E2400D7FA59 /* PJColorConstant.swift */,
 				1487E41124655D5A00D7FA59 /* PJCommonConstant.swift */,
+				1467C8EB249084C000C9E35A /* PJServerConstant.swift */,
 			);
 			path = "PJ_Constant(公用常量)";
 			sourceTree = "<group>";
@@ -226,6 +251,8 @@
 		140472C124597FD2000367DA /* PJ_Tool (一些工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				1467C905249207B600C9E35A /* ReflashEX */,
+				1467C8FA2490B59C00C9E35A /* MoyaEX */,
 				1442E131248F7B4B00B180E2 /* UserManager */,
 				1499929E247258C400EE786C /* EmptyView */,
 				1487E3FF2465047300D7FA59 /* MBHud */,
@@ -246,22 +273,22 @@
 			path = "Base(基类)";
 			sourceTree = "<group>";
 		};
-		140472C324598227000367DA /* Home（模块二） */ = {
+		140472C324598227000367DA /* Home（模块一） */ = {
 			isa = PBXGroup;
 			children = (
 				140472C9245982FE000367DA /* Controller */,
 				140472C8245982A5000367DA /* View */,
 			);
-			path = "Home（模块二）";
+			path = "Home（模块一）";
 			sourceTree = "<group>";
 		};
-		140472C424598234000367DA /* Me(模块一) */ = {
+		140472C424598234000367DA /* Me(模块二) */ = {
 			isa = PBXGroup;
 			children = (
 				140472CB2459835A000367DA /* Controller */,
 				140472CA2459833F000367DA /* View */,
 			);
-			path = "Me(模块一)";
+			path = "Me(模块二)";
 			sourceTree = "<group>";
 		};
 		140472C8245982A5000367DA /* View */ = {
@@ -274,7 +301,9 @@
 		140472C9245982FE000367DA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				140472DB245A6948000367DA /* HomeMainController.swift */,
 				1499928E24694D1400EE786C /* NaviColor(导航颜色) */,
+				1467C90C2493215300C9E35A /* MJRefresh封装 */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -324,13 +353,6 @@
 			path = "UIKit(第三方UI库)";
 			sourceTree = "<group>";
 		};
-		140472DE245A7297000367DA /* PJ_Service(服务器) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "PJ_Service(服务器)";
-			sourceTree = "<group>";
-		};
 		1442E131248F7B4B00B180E2 /* UserManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +360,36 @@
 				1442E134248F7BC400B180E2 /* UserManager.swift */,
 			);
 			path = UserManager;
+			sourceTree = "<group>";
+		};
+		1467C8FA2490B59C00C9E35A /* MoyaEX */ = {
+			isa = PBXGroup;
+			children = (
+				1467C8FB2490B59D00C9E35A /* Result+Ex.swift */,
+				1467C8FE2490B59D00C9E35A /* SSYNetworkLoggerPlugin.swift */,
+				1467C8FC2490B59D00C9E35A /* SSYLoginDetectMoyaPlugin.swift */,
+				1467C8FD2490B59D00C9E35A /* JYTargetType+Extension.swift */,
+				1467C8FF2490B59D00C9E35A /* SSYRequestError.swift */,
+			);
+			path = MoyaEX;
+			sourceTree = "<group>";
+		};
+		1467C905249207B600C9E35A /* ReflashEX */ = {
+			isa = PBXGroup;
+			children = (
+				1467C9062493195B00C9E35A /* PJRefreshNormalHeader.swift */,
+				1467C90824931A9400C9E35A /* PJRefreshAutoNormalFooter.swift */,
+				1467C90A24931D7400C9E35A /* ScrollView+MJRefresh.swift */,
+			);
+			path = ReflashEX;
+			sourceTree = "<group>";
+		};
+		1467C90C2493215300C9E35A /* MJRefresh封装 */ = {
+			isa = PBXGroup;
+			children = (
+				14DB78F2249324DA005BB224 /* MJRefreshController.swift */,
+			);
+			path = "MJRefresh封装";
 			sourceTree = "<group>";
 		};
 		1487E3FD24640A9700D7FA59 /* UIKit */ = {
@@ -360,6 +412,7 @@
 				1487E3DF2463F74200D7FA59 /* Color+Extension.swift */,
 				1487E3E62463F92500D7FA59 /* String+Extension.swift */,
 				1487E3E52463F92500D7FA59 /* Date+Extension.swift */,
+				14DB78F424932945005BB224 /* DispatchTime+Extension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -387,7 +440,6 @@
 		1499928E24694D1400EE786C /* NaviColor(导航颜色) */ = {
 			isa = PBXGroup;
 			children = (
-				140472DB245A6948000367DA /* HomeMainController.swift */,
 				1499929124694FEA00EE786C /* HomeNaviColor1VC.swift */,
 				1499929A246A753100EE786C /* HomeNaviColor2VC.swift */,
 			);
@@ -558,25 +610,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14DB78F3249324DA005BB224 /* MJRefreshController.swift in Sources */,
 				140472D4245A662D000367DA /* PJNavigationController.swift in Sources */,
+				1467C9072493195B00C9E35A /* PJRefreshNormalHeader.swift in Sources */,
 				1487E41224655D5A00D7FA59 /* PJCommonConstant.swift in Sources */,
 				1487E3EE2463F92500D7FA59 /* UIView+Extension.swift in Sources */,
 				1487E3E02463F74200D7FA59 /* Color+Extension.swift in Sources */,
 				1487E41824664AB600D7FA59 /* PJFontConstant.swift in Sources */,
+				14DB78F524932945005BB224 /* DispatchTime+Extension.swift in Sources */,
+				1467C9022490B59D00C9E35A /* JYTargetType+Extension.swift in Sources */,
+				1467C8EC249084C000C9E35A /* PJServerConstant.swift in Sources */,
 				1487E3FC2464036700D7FA59 /* PJ_WKWebViewExtension.swift in Sources */,
 				1487E41C2466B28D00D7FA59 /* UITextView+ Extension.swift in Sources */,
 				140472A4245966C6000367DA /* AppDelegate.swift in Sources */,
 				1487E41624655E2400D7FA59 /* PJColorConstant.swift in Sources */,
 				1487E41424655DCF00D7FA59 /* PJSizeConstant.swift in Sources */,
+				1467C9002490B59D00C9E35A /* Result+Ex.swift in Sources */,
+				1467C9042490B59D00C9E35A /* SSYRequestError.swift in Sources */,
 				1487E40A2465047300D7FA59 /* UIViewController+MBHUD.swift in Sources */,
 				1499928B2469305900EE786C /* PJBaseStackViewController.swift in Sources */,
+				1467C9032490B59D00C9E35A /* SSYNetworkLoggerPlugin.swift in Sources */,
 				1499929D246B925900EE786C /* PJCustomNaviBar.swift in Sources */,
+				1467C8F92490B34100C9E35A /* PJAPI.swift in Sources */,
 				149992AB24726B4700EE786C /* UITableView+empty.swift in Sources */,
 				1499929224694FEA00EE786C /* HomeNaviColor1VC.swift in Sources */,
+				1467C90B24931D7400C9E35A /* ScrollView+MJRefresh.swift in Sources */,
 				140472D2245A65ED000367DA /* PJTabBarController.swift in Sources */,
 				1487E3F82464013000D7FA59 /* PJ_ViewExtension.swift in Sources */,
 				1487E3EA2463F92500D7FA59 /* UIButton+Extension.swift in Sources */,
 				149992AD24726B6B00EE786C /* UICollectionView+empty.swift in Sources */,
+				1467C90924931A9400C9E35A /* PJRefreshAutoNormalFooter.swift in Sources */,
 				1487E4092465047300D7FA59 /* View+MBHUD.swift in Sources */,
 				1487E3F22464008800D7FA59 /* PJ_ButtonExtension.swift in Sources */,
 				1487E3FA2464018600D7FA59 /* PJ_TextViewExtension.swift in Sources */,
@@ -594,6 +657,7 @@
 				1487E3ED2463F92500D7FA59 /* String+Extension.swift in Sources */,
 				149992AF2473819500EE786C /* Swizzling+Extension.swift in Sources */,
 				1487E41A24668D6600D7FA59 /* UIImage+Extension.swift in Sources */,
+				1467C9012490B59D00C9E35A /* SSYLoginDetectMoyaPlugin.swift in Sources */,
 				140472D6245A6651000367DA /* PJBaseViewController.swift in Sources */,
 				1487E3F02463FC3B00D7FA59 /* PJ_LabelExtension.swift in Sources */,
 				1442E135248F7BC400B180E2 /* UserManager.swift in Sources */,
@@ -751,6 +815,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = champ.SwiftDemoProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDemoProject/SwiftDemoProject-Bridging-Header.h";
