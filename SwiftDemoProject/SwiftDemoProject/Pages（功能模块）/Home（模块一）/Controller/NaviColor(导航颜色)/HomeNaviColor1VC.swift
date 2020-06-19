@@ -95,9 +95,9 @@ class HomeNaviColor1VC: PJBaseTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: UITableViewCell.self))
-        cell?.textLabel?.text = "sdfsdfsfsf"
-        return cell!
+        let cell = tableView.cell(anyClass: CustomCell.self)
+        cell.title.text = "123"
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -112,9 +112,31 @@ class HomeNaviColor1VC: PJBaseTableViewController {
         self.navi.addGradualChange(scollView: scrollView, maxValue: 100);
         
 
-    
     }
   
 
-
 }
+
+class CustomCell: UITableViewCell {
+    
+    lazy var title: UILabel = {
+        let v = UILabel();
+        v.text = "深度了放假"
+        return v
+    }()
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        
+         super.init(style: style, reuseIdentifier: reuseIdentifier)
+         addSubview(title)
+        title.frame = self.bounds
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+}
+
+
+

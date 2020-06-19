@@ -25,9 +25,6 @@ class MeMainController: PJBaseViewController,UITextFieldDelegate {
         label.placeholder = "你好啊"
         label.limitType = .psw
         label.maxLength = 15
-        
-
-        
     }
     
    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool

@@ -59,11 +59,6 @@ class PJBaseTableViewController: PJBaseViewController {
             make.edges.equalTo(self.view)
         }
         
-//        if #available(iOS 11.0, *) {
-//            tableView.contentInsetAdjustmentBehavior = .never
-//        } else {
-//            self.automaticallyAdjustsScrollViewInsets = false
-//        }
     }
 
 }

@@ -11,8 +11,6 @@ import UIKit
 class HomeNaviColor2VC: PJBaseViewController {
     
     
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "另外一种颜色"
@@ -20,6 +18,7 @@ class HomeNaviColor2VC: PJBaseViewController {
         
         self.statusBarStyle = .default
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -27,9 +26,6 @@ class HomeNaviColor2VC: PJBaseViewController {
         
     }
     
- 
-    
-
     /*
     // MARK: - Navigation
 

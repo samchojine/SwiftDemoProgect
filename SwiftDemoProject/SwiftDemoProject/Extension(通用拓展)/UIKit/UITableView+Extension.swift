@@ -11,18 +11,19 @@ import UIKit
 extension UITableView {
     
     // MARK: *********** 使用下面的方法初始化 cell header footer b就不用自己重新去注册了 **********
+    
     // MARK: -基于直接加载XIB复用Cell的函数
-    func cell(nibClass: UITableViewCell.Type?) -> UITableViewCell? {
-        let className = "\(String(describing: nibClass!))"
+    func cell<T: UITableViewCell>(nibClass: T.Type) ->  T {
+        let className = "\(String(describing: nibClass))"
         var cell = self.dequeueReusableCell(withIdentifier: className)
         if cell == nil {
             cell = (Bundle.main.loadNibNamed(className, owner: nil, options: nil)?.first as! UITableViewCell)
         }
-        return cell
+        return cell as!T
     }
     
     // MARK: -基于直接加载手写代码复用Cell的函数
-    func cell(anyClass: UITableViewCell.Type) -> UITableViewCell? {
+    func cell<T: UITableViewCell>(anyClass: T.Type) ->  T {
         let className = "\(String(describing: anyClass))"
         var cell = self.dequeueReusableCell(withIdentifier: className)
         if cell == nil {
@@ -31,23 +32,23 @@ extension UITableView {
             let initClass = cls as! UITableViewCell.Type
             cell = initClass.init(style: .default, reuseIdentifier: className)
         }
-        return cell
+        return cell as!T
     }
 
     
     // MARK: -复用header或footer视图(XIB)
-    func headerFooter(nibClass: UIView.Type?) -> UIView? {
+    func headerFooter<T: UITableViewHeaderFooterView>(nibClass: T.Type?) -> T {
         let className = "\(String(describing: nibClass!))"
         var headerFooter:UIView? = (self.dequeueReusableHeaderFooterView(withIdentifier: className))
         // 新创建
         if headerFooter == nil {
             headerFooter = ((Bundle.main.loadNibNamed(className, owner: nil, options: nil)?.first) as! UIView)
         }
-        return headerFooter;
+        return headerFooter as!T;
     }
     
     // MARK: -复用header或footer视图(手写代码)
-    func headerFooter(anyClass: UIView.Type?) -> UIView? {
+    func headerFooter<T: UITableViewHeaderFooterView>(anyClass: T.Type?) -> T{
         let className = "\(String(describing: anyClass!))"
         var headerFooter:UIView? = self.dequeueReusableHeaderFooterView(withIdentifier: className)
         // 新创建
@@ -57,6 +58,6 @@ extension UITableView {
             let initClass = cls as! UITableViewHeaderFooterView.Type
             headerFooter = initClass.init(reuseIdentifier: className)
         }
-        return headerFooter;
+        return headerFooter as!T;
     }
 }

@@ -67,6 +67,7 @@
 		149992AB24726B4700EE786C /* UITableView+empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149992AA24726B4700EE786C /* UITableView+empty.swift */; };
 		149992AD24726B6B00EE786C /* UICollectionView+empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149992AC24726B6B00EE786C /* UICollectionView+empty.swift */; };
 		149992AF2473819500EE786C /* Swizzling+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149992AE2473819500EE786C /* Swizzling+Extension.swift */; };
+		14A4EEBD2499FD8B00E42ED9 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A4EEBC2499FD8B00E42ED9 /* UICollectionView+Extension.swift */; };
 		14DB78F3249324DA005BB224 /* MJRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB78F2249324DA005BB224 /* MJRefreshController.swift */; };
 		14DB78F524932945005BB224 /* DispatchTime+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB78F424932945005BB224 /* DispatchTime+Extension.swift */; };
 		3CEB5490B435E9A5C4BCF11E /* Pods_SwiftDemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517B35535A3A3AB1ECDDE2F2 /* Pods_SwiftDemoProject.framework */; };
@@ -137,6 +138,7 @@
 		149992AA24726B4700EE786C /* UITableView+empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+empty.swift"; sourceTree = "<group>"; };
 		149992AC24726B6B00EE786C /* UICollectionView+empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+empty.swift"; sourceTree = "<group>"; };
 		149992AE2473819500EE786C /* Swizzling+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swizzling+Extension.swift"; sourceTree = "<group>"; };
+		14A4EEBC2499FD8B00E42ED9 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		14DB78F2249324DA005BB224 /* MJRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJRefreshController.swift; sourceTree = "<group>"; };
 		14DB78F424932945005BB224 /* DispatchTime+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchTime+Extension.swift"; sourceTree = "<group>"; };
 		29B7994FEB59996D46CE61AF /* Pods-SwiftDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemoProject/Pods-SwiftDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -277,7 +279,6 @@
 			isa = PBXGroup;
 			children = (
 				140472C9245982FE000367DA /* Controller */,
-				140472C8245982A5000367DA /* View */,
 			);
 			path = "Home（模块一）";
 			sourceTree = "<group>";
@@ -291,19 +292,18 @@
 			path = "Me(模块二)";
 			sourceTree = "<group>";
 		};
-		140472C8245982A5000367DA /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		140472C9245982FE000367DA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				14FA19F1249CA5DF00802480 /* 适配UI宽高 字体大小 */,
+				14FA19F0249CA41F00802480 /* 图片拾取 */,
+				14FA19ED249CA35800802480 /* 自适应宽度标签 */,
 				140472DB245A6948000367DA /* HomeMainController.swift */,
 				1499928E24694D1400EE786C /* NaviColor(导航颜色) */,
 				1467C90C2493215300C9E35A /* MJRefresh封装 */,
+				14E09A292498B83C0009E260 /* 图片浏览 */,
+				14FA19EC249CA31A00802480 /* 瀑布流 */,
+				14A4EEBE249A06B400E42ED9 /* 富文本以及富文本点击 */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -402,6 +402,7 @@
 				1487E3E12463F92500D7FA59 /* UITextField+Extension.swift */,
 				1487E41B2466B28D00D7FA59 /* UITextView+ Extension.swift */,
 				1499928C24693FEF00EE786C /* UITableView+Extension.swift */,
+				14A4EEBC2499FD8B00E42ED9 /* UICollectionView+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -467,6 +468,64 @@
 				149992A324726A6A00EE786C /* empty_icon_search.png */,
 			);
 			path = Empty_bundle;
+			sourceTree = "<group>";
+		};
+		14A4EEBE249A06B400E42ED9 /* 富文本以及富文本点击 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "富文本以及富文本点击";
+			sourceTree = "<group>";
+		};
+		14E09A292498B83C0009E260 /* 图片浏览 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "图片浏览";
+			sourceTree = "<group>";
+		};
+		14FA19EC249CA31A00802480 /* 瀑布流 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "瀑布流";
+			sourceTree = "<group>";
+		};
+		14FA19ED249CA35800802480 /* 自适应宽度标签 */ = {
+			isa = PBXGroup;
+			children = (
+				14FA19EF249CA38700802480 /* 使用collectionView写 */,
+				14FA19EE249CA38300802480 /* 普通View */,
+			);
+			path = "自适应宽度标签";
+			sourceTree = "<group>";
+		};
+		14FA19EE249CA38300802480 /* 普通View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "普通View";
+			sourceTree = "<group>";
+		};
+		14FA19EF249CA38700802480 /* 使用collectionView写 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "使用collectionView写";
+			sourceTree = "<group>";
+		};
+		14FA19F0249CA41F00802480 /* 图片拾取 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "图片拾取";
+			sourceTree = "<group>";
+		};
+		14FA19F1249CA5DF00802480 /* 适配UI宽高 字体大小 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "适配UI宽高 字体大小";
 			sourceTree = "<group>";
 		};
 		302DABF0636F900222B59658 /* Pods */ = {
@@ -652,6 +711,7 @@
 				149992A024725E2300EE786C /* EmptyView.swift in Sources */,
 				1487E3F6246400D100D7FA59 /* PJ_ImageViewExtension.swift in Sources */,
 				1487E3EC2463F92500D7FA59 /* Date+Extension.swift in Sources */,
+				14A4EEBD2499FD8B00E42ED9 /* UICollectionView+Extension.swift in Sources */,
 				1442E133248F7BB100B180E2 /* UserModel.swift in Sources */,
 				1487E3EB2463F92500D7FA59 /* WKWebView+Extension.swift in Sources */,
 				1487E3ED2463F92500D7FA59 /* String+Extension.swift in Sources */,

@@ -19,7 +19,7 @@ class HomeMainController: PJBaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "主页";
-       
+ 
     }
     
 }
@@ -32,7 +32,7 @@ extension HomeMainController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.cell(anyClass: UITableViewCell.self)!
+        let cell = tableView.cell(anyClass: UITableViewCell.self)
         let tuple = datas[indexPath.row]
         cell.textLabel?.text = tuple.title
         return cell

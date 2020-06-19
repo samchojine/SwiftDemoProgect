@@ -60,7 +60,7 @@ extension MJRefreshController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.cell(anyClass: UITableViewCell.self)!
+        let cell = tableView.cell(anyClass: UITableViewCell.self)
         cell.textLabel?.text = "+++++++\(indexPath.row)"
         return cell
     }
