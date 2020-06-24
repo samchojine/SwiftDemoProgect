@@ -83,8 +83,20 @@ private extension SSYNetworkLoggerPlugin {
         
         var output = [String]()
         
-        if let data = data, let stringData = String(data: data, encoding: String.Encoding.utf8) {
-            output += [format(identifier: "ResponseData", message: stringData)]
+        if let datajson = data {
+            
+            let dic = try? JSONSerialization.jsonObject(with: datajson, options: .mutableContainers) as? [String : Any] ?? [:]
+            
+            //判断是否JSon格式
+            if !JSONSerialization.isValidJSONObject(dic!) {
+                print("不是一个正确的json对象")
+                return output
+            }
+            
+            let json = try?JSONSerialization.data(withJSONObject: dic!, options: .prettyPrinted)
+            let jsonstr = String(data: json!, encoding: .utf8) ?? ""
+            output += [format(identifier: "ResponseData", message: jsonstr)]
+
         }
         
         return output

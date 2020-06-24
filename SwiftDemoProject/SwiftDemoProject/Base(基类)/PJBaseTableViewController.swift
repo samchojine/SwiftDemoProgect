@@ -58,11 +58,9 @@ class PJBaseTableViewController: PJBaseViewController {
         self.tableView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.view)
         }
-        
     }
 
 }
-
 
 
 extension PJBaseTableViewController :UITableViewDataSource,UITableViewDelegate {
@@ -100,7 +98,6 @@ extension PJBaseTableViewController :UITableViewDataSource,UITableViewDelegate {
         }
         return 0.001
     }
-    
     
     
 }

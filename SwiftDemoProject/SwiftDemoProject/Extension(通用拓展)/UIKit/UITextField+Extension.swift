@@ -91,7 +91,7 @@ extension UITextField :UITextFieldDelegate{
         // 键盘只能输入数字和字母
         static let numberAndLetter = "^[0-9A-Za-z]+$"
         // 键盘输入金额
-        static let amount = "^\\d{0,10}([.][0-9]{0,2})?$"
+        static let amount = "(^(0??|[1-9]\\d{0,19})([.]\\d{0,2})?)$"
     }
     
     private struct tfFitterRuntimeKey {
@@ -101,6 +101,7 @@ extension UITextField :UITextFieldDelegate{
         /// ...其他Key声明
     }
     
+    // 过滤器，填入正则
     var filter: String? {
         
         set {
@@ -112,6 +113,7 @@ extension UITextField :UITextFieldDelegate{
         }
     }
     
+    // 输入框类型
     var limitType: LimitType? {
         
         set {
@@ -160,30 +162,45 @@ extension UITextField :UITextFieldDelegate{
     {
         
         let str = (textField.text! as NSString).replacingCharacters(in: range, with: string)//获取输入框接收到的文字
-         
+        
         //限制长度
+        var boolArr:[Bool] = [];
         if self.maxLength != nil {
-            let proposeLength = (textField.text?.lengthOfBytes(using: String.Encoding.utf8))! - range.length + string.lengthOfBytes(using: String.Encoding.utf8)
-            if proposeLength > self.maxLength! {
-                return false
-            }
-            return true
+          let lengthBool = authWithLength(textField, range: range, string: string)
+          boolArr.append(lengthBool)
         }
         
         /// 优先判断输入框类型
         if (self.limitType != nil) {
-            
-            if (self.filter != nil) {
-                return self.authWithFitter(filter: self.filter!, getStr: str)
-            }
-            return true
+           let limitTypeBool = authWithFitter(filter: self.filter!, getStr: str)
+            boolArr.append(limitTypeBool)
         }
         
         /// 在判断是否有过滤器l
         if (self.filter != nil) {
-           return self.authWithFitter(filter: self.filter!, getStr: str)
+          let filterBool = authWithFitter(filter: self.filter!, getStr: str)
+            boolArr.append(filterBool)
         }
         
+        var canThrough = true
+        // 只要有一个条件不满足就不通过
+        for b in boolArr {
+            if b == false {
+                canThrough = false
+                break
+            }
+        }
+        
+        return canThrough
+    }
+    
+    
+    
+    private func authWithLength(_ textField: UITextField, range: NSRange, string: String) ->Bool {
+        let proposeLength = (textField.text?.lengthOfBytes(using: String.Encoding.utf8))! - range.length + string.lengthOfBytes(using: String.Encoding.utf8)
+        if proposeLength > self.maxLength! {
+            return false
+        }
         return true
     }
     

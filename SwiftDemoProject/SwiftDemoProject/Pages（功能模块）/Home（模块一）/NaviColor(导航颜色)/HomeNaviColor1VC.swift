@@ -72,13 +72,6 @@ class HomeNaviColor1VC: PJBaseTableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-//        self.naviBgColor = UIColor.white.withAlphaComponent(0)
-//        self.navigationController?.navigationBar.isTranslucent = true
-//        // 4.设置导航栏背景图片
-//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-//
-//        // 5.设置导航栏阴影图片
-//        self.navigationController?.navigationBar.shadowImage = UIImage()
     self.navigationController?.setNavigationBarHidden(true, animated: animated)
         
         print("\(view.frame)")
@@ -121,7 +114,6 @@ class CustomCell: UITableViewCell {
     
     lazy var title: UILabel = {
         let v = UILabel();
-        v.text = "深度了放假"
         return v
     }()
     

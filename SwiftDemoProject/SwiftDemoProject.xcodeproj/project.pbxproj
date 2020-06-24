@@ -70,6 +70,33 @@
 		14A4EEBD2499FD8B00E42ED9 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A4EEBC2499FD8B00E42ED9 /* UICollectionView+Extension.swift */; };
 		14DB78F3249324DA005BB224 /* MJRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB78F2249324DA005BB224 /* MJRefreshController.swift */; };
 		14DB78F524932945005BB224 /* DispatchTime+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB78F424932945005BB224 /* DispatchTime+Extension.swift */; };
+		14F7552F24A0562D00875981 /* AttributeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7552E24A0562D00875981 /* AttributeController.swift */; };
+		14F7557324A0810D00875981 /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7555824A0810D00875981 /* Attachment.swift */; };
+		14F7557424A0810D00875981 /* ShadowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7555A24A0810D00875981 /* ShadowExtension.swift */; };
+		14F7557524A0810D00875981 /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7555C24A0810D00875981 /* CGSizeExtension.swift */; };
+		14F7557624A0810D00875981 /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7555D24A0810D00875981 /* CGPointExtension.swift */; };
+		14F7557724A0810D00875981 /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7555E24A0810D00875981 /* CGRectExtension.swift */; };
+		14F7557824A0810D00875981 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7556024A0810D00875981 /* UIButtonExtension.swift */; };
+		14F7557924A0810D00875981 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7556124A0810D00875981 /* UITextViewExtension.swift */; };
+		14F7557A24A0810D00875981 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7556224A0810D00875981 /* UITextFieldExtension.swift */; };
+		14F7557B24A0810D00875981 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7556324A0810D00875981 /* UILabelExtension.swift */; };
+		14F7557C24A0810D00875981 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7556424A0810D00875981 /* Extension.swift */; };
+		14F7557D24A0810D00875981 /* NSTextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7556624A0810D00875981 /* NSTextFieldExtension.swift */; };
+		14F7557E24A0810D00875981 /* WKInterfaceTextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7556824A0810D00875981 /* WKInterfaceTextFieldExtension.swift */; };
+		14F7557F24A0810D00875981 /* WKInterfaceLabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7556924A0810D00875981 /* WKInterfaceLabelExtension.swift */; };
+		14F7558024A0810D00875981 /* WKInterfaceButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7556A24A0810D00875981 /* WKInterfaceButtonExtension.swift */; };
+		14F7558124A0810D00875981 /* ObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7556B24A0810D00875981 /* ObjectExtension.swift */; };
+		14F7558224A0810D00875981 /* ParagraphStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7556C24A0810D00875981 /* ParagraphStyle.swift */; };
+		14F7558324A0810D00875981 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7556D24A0810D00875981 /* AttributedString.swift */; };
+		14F7558424A0810D00875981 /* Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7556E24A0810D00875981 /* Interpolation.swift */; };
+		14F7558524A0810D00875981 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7557024A0810D00875981 /* Action.swift */; };
+		14F7558724A0810D00875981 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7557224A0810D00875981 /* Attribute.swift */; };
+		14F7558924A087B800875981 /* AutoSizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7558824A087B800875981 /* AutoSizeController.swift */; };
+		14F7558E24A0890900875981 /* Auto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7558B24A0890900875981 /* Auto.swift */; };
+		14F7558F24A0890900875981 /* Inch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7558C24A0890900875981 /* Inch.swift */; };
+		14F7559324A0A78100875981 /* AutoLabelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7559224A0A78000875981 /* AutoLabelController.swift */; };
+		14F7559524A0AA3C00875981 /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7559424A0AA3C00875981 /* TagViewController.swift */; };
+		14F7559724A0AA8900875981 /* collectionTagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7559624A0AA8900875981 /* collectionTagController.swift */; };
 		3CEB5490B435E9A5C4BCF11E /* Pods_SwiftDemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517B35535A3A3AB1ECDDE2F2 /* Pods_SwiftDemoProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +168,35 @@
 		14A4EEBC2499FD8B00E42ED9 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		14DB78F2249324DA005BB224 /* MJRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJRefreshController.swift; sourceTree = "<group>"; };
 		14DB78F424932945005BB224 /* DispatchTime+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchTime+Extension.swift"; sourceTree = "<group>"; };
+		14F7552E24A0562D00875981 /* AttributeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeController.swift; sourceTree = "<group>"; };
+		14F7555824A0810D00875981 /* Attachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attachment.swift; sourceTree = "<group>"; };
+		14F7555A24A0810D00875981 /* ShadowExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowExtension.swift; sourceTree = "<group>"; };
+		14F7555C24A0810D00875981 /* CGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeExtension.swift; sourceTree = "<group>"; };
+		14F7555D24A0810D00875981 /* CGPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
+		14F7555E24A0810D00875981 /* CGRectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
+		14F7556024A0810D00875981 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		14F7556124A0810D00875981 /* UITextViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		14F7556224A0810D00875981 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		14F7556324A0810D00875981 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		14F7556424A0810D00875981 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		14F7556624A0810D00875981 /* NSTextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTextFieldExtension.swift; sourceTree = "<group>"; };
+		14F7556824A0810D00875981 /* WKInterfaceTextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKInterfaceTextFieldExtension.swift; sourceTree = "<group>"; };
+		14F7556924A0810D00875981 /* WKInterfaceLabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKInterfaceLabelExtension.swift; sourceTree = "<group>"; };
+		14F7556A24A0810D00875981 /* WKInterfaceButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKInterfaceButtonExtension.swift; sourceTree = "<group>"; };
+		14F7556B24A0810D00875981 /* ObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectExtension.swift; sourceTree = "<group>"; };
+		14F7556C24A0810D00875981 /* ParagraphStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParagraphStyle.swift; sourceTree = "<group>"; };
+		14F7556D24A0810D00875981 /* AttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
+		14F7556E24A0810D00875981 /* Interpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interpolation.swift; sourceTree = "<group>"; };
+		14F7556F24A0810D00875981 /* AttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedString.h; sourceTree = "<group>"; };
+		14F7557024A0810D00875981 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		14F7557224A0810D00875981 /* Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
+		14F7558824A087B800875981 /* AutoSizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSizeController.swift; sourceTree = "<group>"; };
+		14F7558B24A0890900875981 /* Auto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auto.swift; sourceTree = "<group>"; };
+		14F7558C24A0890900875981 /* Inch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inch.swift; sourceTree = "<group>"; };
+		14F7558D24A0890900875981 /* AutoInch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoInch.h; sourceTree = "<group>"; };
+		14F7559224A0A78000875981 /* AutoLabelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLabelController.swift; sourceTree = "<group>"; };
+		14F7559424A0AA3C00875981 /* TagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
+		14F7559624A0AA8900875981 /* collectionTagController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionTagController.swift; sourceTree = "<group>"; };
 		29B7994FEB59996D46CE61AF /* Pods-SwiftDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemoProject/Pods-SwiftDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 		517B35535A3A3AB1ECDDE2F2 /* Pods_SwiftDemoProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemoProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92525CC53A4A0C24B4A0D76 /* Pods-SwiftDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoProject.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemoProject/Pods-SwiftDemoProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -278,7 +334,15 @@
 		140472C324598227000367DA /* Home（模块一） */ = {
 			isa = PBXGroup;
 			children = (
-				140472C9245982FE000367DA /* Controller */,
+				140472DB245A6948000367DA /* HomeMainController.swift */,
+				1499928E24694D1400EE786C /* NaviColor(导航颜色) */,
+				1467C90C2493215300C9E35A /* MJRefresh封装 */,
+				14A4EEBE249A06B400E42ED9 /* 富文本以及富文本点击 */,
+				14FA19F1249CA5DF00802480 /* 适配UI宽高 字体大小 */,
+				14FA19ED249CA35800802480 /* 自适应宽度标签 */,
+				14FA19EC249CA31A00802480 /* 瀑布流 */,
+				14FA19F0249CA41F00802480 /* 图片拾取 */,
+				14E09A292498B83C0009E260 /* 图片浏览 */,
 			);
 			path = "Home（模块一）";
 			sourceTree = "<group>";
@@ -286,26 +350,11 @@
 		140472C424598234000367DA /* Me(模块二) */ = {
 			isa = PBXGroup;
 			children = (
+				14FA21C824A1FD4A006514A0 /* Model */,
 				140472CB2459835A000367DA /* Controller */,
 				140472CA2459833F000367DA /* View */,
 			);
 			path = "Me(模块二)";
-			sourceTree = "<group>";
-		};
-		140472C9245982FE000367DA /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				14FA19F1249CA5DF00802480 /* 适配UI宽高 字体大小 */,
-				14FA19F0249CA41F00802480 /* 图片拾取 */,
-				14FA19ED249CA35800802480 /* 自适应宽度标签 */,
-				140472DB245A6948000367DA /* HomeMainController.swift */,
-				1499928E24694D1400EE786C /* NaviColor(导航颜色) */,
-				1467C90C2493215300C9E35A /* MJRefresh封装 */,
-				14E09A292498B83C0009E260 /* 图片浏览 */,
-				14FA19EC249CA31A00802480 /* 瀑布流 */,
-				14A4EEBE249A06B400E42ED9 /* 富文本以及富文本点击 */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		140472CA2459833F000367DA /* View */ = {
@@ -349,6 +398,8 @@
 		140472DD245A6EDC000367DA /* UIKit(第三方UI库) */ = {
 			isa = PBXGroup;
 			children = (
+				14F7558A24A0890900875981 /* AutoSize */,
+				14F7555724A0810D00875981 /* AttributedStringHelp */,
 			);
 			path = "UIKit(第三方UI库)";
 			sourceTree = "<group>";
@@ -473,6 +524,7 @@
 		14A4EEBE249A06B400E42ED9 /* 富文本以及富文本点击 */ = {
 			isa = PBXGroup;
 			children = (
+				14F7552E24A0562D00875981 /* AttributeController.swift */,
 			);
 			path = "富文本以及富文本点击";
 			sourceTree = "<group>";
@@ -482,6 +534,84 @@
 			children = (
 			);
 			path = "图片浏览";
+			sourceTree = "<group>";
+		};
+		14F7555724A0810D00875981 /* AttributedStringHelp */ = {
+			isa = PBXGroup;
+			children = (
+				14F7555824A0810D00875981 /* Attachment.swift */,
+				14F7555924A0810D00875981 /* Extension */,
+				14F7556C24A0810D00875981 /* ParagraphStyle.swift */,
+				14F7556D24A0810D00875981 /* AttributedString.swift */,
+				14F7556E24A0810D00875981 /* Interpolation.swift */,
+				14F7556F24A0810D00875981 /* AttributedString.h */,
+				14F7557024A0810D00875981 /* Action.swift */,
+				14F7557224A0810D00875981 /* Attribute.swift */,
+			);
+			path = AttributedStringHelp;
+			sourceTree = "<group>";
+		};
+		14F7555924A0810D00875981 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				14F7555A24A0810D00875981 /* ShadowExtension.swift */,
+				14F7555B24A0810D00875981 /* CoreGraphics */,
+				14F7555F24A0810D00875981 /* UIKit */,
+				14F7556424A0810D00875981 /* Extension.swift */,
+				14F7556524A0810D00875981 /* AppKit */,
+				14F7556724A0810D00875981 /* WatchKit */,
+				14F7556B24A0810D00875981 /* ObjectExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		14F7555B24A0810D00875981 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				14F7555C24A0810D00875981 /* CGSizeExtension.swift */,
+				14F7555D24A0810D00875981 /* CGPointExtension.swift */,
+				14F7555E24A0810D00875981 /* CGRectExtension.swift */,
+			);
+			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		14F7555F24A0810D00875981 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				14F7556024A0810D00875981 /* UIButtonExtension.swift */,
+				14F7556124A0810D00875981 /* UITextViewExtension.swift */,
+				14F7556224A0810D00875981 /* UITextFieldExtension.swift */,
+				14F7556324A0810D00875981 /* UILabelExtension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		14F7556524A0810D00875981 /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				14F7556624A0810D00875981 /* NSTextFieldExtension.swift */,
+			);
+			path = AppKit;
+			sourceTree = "<group>";
+		};
+		14F7556724A0810D00875981 /* WatchKit */ = {
+			isa = PBXGroup;
+			children = (
+				14F7556824A0810D00875981 /* WKInterfaceTextFieldExtension.swift */,
+				14F7556924A0810D00875981 /* WKInterfaceLabelExtension.swift */,
+				14F7556A24A0810D00875981 /* WKInterfaceButtonExtension.swift */,
+			);
+			path = WatchKit;
+			sourceTree = "<group>";
+		};
+		14F7558A24A0890900875981 /* AutoSize */ = {
+			isa = PBXGroup;
+			children = (
+				14F7558B24A0890900875981 /* Auto.swift */,
+				14F7558C24A0890900875981 /* Inch.swift */,
+				14F7558D24A0890900875981 /* AutoInch.h */,
+			);
+			path = AutoSize;
 			sourceTree = "<group>";
 		};
 		14FA19EC249CA31A00802480 /* 瀑布流 */ = {
@@ -494,22 +624,25 @@
 		14FA19ED249CA35800802480 /* 自适应宽度标签 */ = {
 			isa = PBXGroup;
 			children = (
+				14F7559224A0A78000875981 /* AutoLabelController.swift */,
+				14FA19EE249CA38300802480 /* 使用tagView写 */,
 				14FA19EF249CA38700802480 /* 使用collectionView写 */,
-				14FA19EE249CA38300802480 /* 普通View */,
 			);
 			path = "自适应宽度标签";
 			sourceTree = "<group>";
 		};
-		14FA19EE249CA38300802480 /* 普通View */ = {
+		14FA19EE249CA38300802480 /* 使用tagView写 */ = {
 			isa = PBXGroup;
 			children = (
+				14F7559424A0AA3C00875981 /* TagViewController.swift */,
 			);
-			path = "普通View";
+			path = "使用tagView写";
 			sourceTree = "<group>";
 		};
 		14FA19EF249CA38700802480 /* 使用collectionView写 */ = {
 			isa = PBXGroup;
 			children = (
+				14F7559624A0AA8900875981 /* collectionTagController.swift */,
 			);
 			path = "使用collectionView写";
 			sourceTree = "<group>";
@@ -524,8 +657,16 @@
 		14FA19F1249CA5DF00802480 /* 适配UI宽高 字体大小 */ = {
 			isa = PBXGroup;
 			children = (
+				14F7558824A087B800875981 /* AutoSizeController.swift */,
 			);
 			path = "适配UI宽高 字体大小";
+			sourceTree = "<group>";
+		};
+		14FA21C824A1FD4A006514A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		302DABF0636F900222B59658 /* Pods */ = {
@@ -671,40 +812,62 @@
 			files = (
 				14DB78F3249324DA005BB224 /* MJRefreshController.swift in Sources */,
 				140472D4245A662D000367DA /* PJNavigationController.swift in Sources */,
+				14F7558F24A0890900875981 /* Inch.swift in Sources */,
 				1467C9072493195B00C9E35A /* PJRefreshNormalHeader.swift in Sources */,
 				1487E41224655D5A00D7FA59 /* PJCommonConstant.swift in Sources */,
+				14F7557324A0810D00875981 /* Attachment.swift in Sources */,
 				1487E3EE2463F92500D7FA59 /* UIView+Extension.swift in Sources */,
 				1487E3E02463F74200D7FA59 /* Color+Extension.swift in Sources */,
+				14F7557A24A0810D00875981 /* UITextFieldExtension.swift in Sources */,
+				14F7558724A0810D00875981 /* Attribute.swift in Sources */,
 				1487E41824664AB600D7FA59 /* PJFontConstant.swift in Sources */,
 				14DB78F524932945005BB224 /* DispatchTime+Extension.swift in Sources */,
+				14F7552F24A0562D00875981 /* AttributeController.swift in Sources */,
 				1467C9022490B59D00C9E35A /* JYTargetType+Extension.swift in Sources */,
+				14F7557D24A0810D00875981 /* NSTextFieldExtension.swift in Sources */,
+				14F7557524A0810D00875981 /* CGSizeExtension.swift in Sources */,
+				14F7558424A0810D00875981 /* Interpolation.swift in Sources */,
 				1467C8EC249084C000C9E35A /* PJServerConstant.swift in Sources */,
 				1487E3FC2464036700D7FA59 /* PJ_WKWebViewExtension.swift in Sources */,
 				1487E41C2466B28D00D7FA59 /* UITextView+ Extension.swift in Sources */,
 				140472A4245966C6000367DA /* AppDelegate.swift in Sources */,
 				1487E41624655E2400D7FA59 /* PJColorConstant.swift in Sources */,
 				1487E41424655DCF00D7FA59 /* PJSizeConstant.swift in Sources */,
+				14F7557F24A0810D00875981 /* WKInterfaceLabelExtension.swift in Sources */,
 				1467C9002490B59D00C9E35A /* Result+Ex.swift in Sources */,
+				14F7558524A0810D00875981 /* Action.swift in Sources */,
+				14F7558924A087B800875981 /* AutoSizeController.swift in Sources */,
 				1467C9042490B59D00C9E35A /* SSYRequestError.swift in Sources */,
 				1487E40A2465047300D7FA59 /* UIViewController+MBHUD.swift in Sources */,
 				1499928B2469305900EE786C /* PJBaseStackViewController.swift in Sources */,
+				14F7557724A0810D00875981 /* CGRectExtension.swift in Sources */,
 				1467C9032490B59D00C9E35A /* SSYNetworkLoggerPlugin.swift in Sources */,
+				14F7557B24A0810D00875981 /* UILabelExtension.swift in Sources */,
 				1499929D246B925900EE786C /* PJCustomNaviBar.swift in Sources */,
 				1467C8F92490B34100C9E35A /* PJAPI.swift in Sources */,
 				149992AB24726B4700EE786C /* UITableView+empty.swift in Sources */,
+				14F7559524A0AA3C00875981 /* TagViewController.swift in Sources */,
 				1499929224694FEA00EE786C /* HomeNaviColor1VC.swift in Sources */,
 				1467C90B24931D7400C9E35A /* ScrollView+MJRefresh.swift in Sources */,
 				140472D2245A65ED000367DA /* PJTabBarController.swift in Sources */,
 				1487E3F82464013000D7FA59 /* PJ_ViewExtension.swift in Sources */,
 				1487E3EA2463F92500D7FA59 /* UIButton+Extension.swift in Sources */,
+				14F7559324A0A78100875981 /* AutoLabelController.swift in Sources */,
 				149992AD24726B6B00EE786C /* UICollectionView+empty.swift in Sources */,
+				14F7558324A0810D00875981 /* AttributedString.swift in Sources */,
 				1467C90924931A9400C9E35A /* PJRefreshAutoNormalFooter.swift in Sources */,
 				1487E4092465047300D7FA59 /* View+MBHUD.swift in Sources */,
 				1487E3F22464008800D7FA59 /* PJ_ButtonExtension.swift in Sources */,
 				1487E3FA2464018600D7FA59 /* PJ_TextViewExtension.swift in Sources */,
+				14F7557C24A0810D00875981 /* Extension.swift in Sources */,
+				14F7557424A0810D00875981 /* ShadowExtension.swift in Sources */,
 				140472D8245A6675000367DA /* PJBaseTableViewController.swift in Sources */,
+				14F7559724A0AA8900875981 /* collectionTagController.swift in Sources */,
 				1499929B246A753100EE786C /* HomeNaviColor2VC.swift in Sources */,
 				1487E3F4246400A800D7FA59 /* PJ_TextFieldExtension.swift in Sources */,
+				14F7557824A0810D00875981 /* UIButtonExtension.swift in Sources */,
+				14F7557624A0810D00875981 /* CGPointExtension.swift in Sources */,
+				14F7557E24A0810D00875981 /* WKInterfaceTextFieldExtension.swift in Sources */,
 				1487E3E82463F92500D7FA59 /* UITextField+Extension.swift in Sources */,
 				140472DC245A6948000367DA /* HomeMainController.swift in Sources */,
 				140472DA245A6934000367DA /* MeMainController.swift in Sources */,
@@ -713,14 +876,19 @@
 				1487E3EC2463F92500D7FA59 /* Date+Extension.swift in Sources */,
 				14A4EEBD2499FD8B00E42ED9 /* UICollectionView+Extension.swift in Sources */,
 				1442E133248F7BB100B180E2 /* UserModel.swift in Sources */,
+				14F7558E24A0890900875981 /* Auto.swift in Sources */,
+				14F7557924A0810D00875981 /* UITextViewExtension.swift in Sources */,
+				14F7558024A0810D00875981 /* WKInterfaceButtonExtension.swift in Sources */,
 				1487E3EB2463F92500D7FA59 /* WKWebView+Extension.swift in Sources */,
 				1487E3ED2463F92500D7FA59 /* String+Extension.swift in Sources */,
 				149992AF2473819500EE786C /* Swizzling+Extension.swift in Sources */,
 				1487E41A24668D6600D7FA59 /* UIImage+Extension.swift in Sources */,
 				1467C9012490B59D00C9E35A /* SSYLoginDetectMoyaPlugin.swift in Sources */,
 				140472D6245A6651000367DA /* PJBaseViewController.swift in Sources */,
+				14F7558124A0810D00875981 /* ObjectExtension.swift in Sources */,
 				1487E3F02463FC3B00D7FA59 /* PJ_LabelExtension.swift in Sources */,
 				1442E135248F7BC400B180E2 /* UserManager.swift in Sources */,
+				14F7558224A0810D00875981 /* ParagraphStyle.swift in Sources */,
 				1499928D24693FEF00EE786C /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

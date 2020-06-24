@@ -11,14 +11,14 @@ target 'SwiftDemoProject' do
 	pod 'Moya', '14.0.0-beta.5'
   pod 'Result', '5.0.0'
 	pod 'HandyJSON', '5.0.1'
-	#pod 'SDCycleScrollView', '1.80'
-       
+  pod 'TagListView', '~> 1.0'
  #OC
 	pod 'WMPageController', '2.5.2'
 	pod 'MBProgressHUD', '1.1.0'
 	pod 'MJRefresh', '3.2.2'
 	#pod 'XHLaunchAd', '3.9.8'
-#	pod 'TZImagePickerController', '3.2.7'
+  #pod 'TZImagePickerController', '3.2.7'
+  #pod 'SDCycleScrollView', '1.80'
 
   # Pods for SwiftDemoProject
 

@@ -119,5 +119,10 @@ class PJBaseViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    deinit {
+        
+        print("----\(self.classForCoder)----已释放")
+    }
+    
     
 }

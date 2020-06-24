@@ -10,16 +10,22 @@ import UIKit
 
 
 class HomeMainController: PJBaseTableViewController {
+    
+    var value:String? = "abc"
 
-    let datas:[(title: String, vc: UIViewController)] = [
-        (title:"自定义导航栏",vc:HomeNaviColor1VC()),
-        (title:"MJRefresh封装",vc:MJRefreshController())
+
+    let datas:[(title: String, vc: UIViewController.Type)] = [
+        (title:"自定义导航栏",vc:HomeNaviColor1VC.self),
+        (title:"MJRefresh封装",vc:MJRefreshController.self),
+        (title:"富文本及点击",vc:AttributeController.self),
+        (title:"适配UI宽高，字体大小",vc:AutoSizeController.self),
+        (title:"宽度自适应标签",vc:AutoLabelController.self)
         ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "主页";
- 
+     
     }
     
 }
@@ -41,8 +47,9 @@ extension HomeMainController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let tuple = datas[indexPath.row]
-        tuple.vc.title = title
-        self.navigationController?.pushViewController(tuple.vc,animated: true);
+        let vc = tuple.vc.init()
+        vc.title = tuple.title
+        self.navigationController?.pushViewController(vc,animated: true);
         
     }
     

@@ -9,6 +9,7 @@ PODS:
     - Alamofire (= 5.0.0-rc.3)
   - Result (5.0.0)
   - SnapKit (5.0.1)
+  - TagListView (1.4.0)
   - WMPageController (2.5.2)
 
 DEPENDENCIES:
@@ -18,6 +19,7 @@ DEPENDENCIES:
   - Moya (= 14.0.0-beta.5)
   - Result (= 5.0.0)
   - SnapKit (= 5.0.1)
+  - TagListView (~> 1.0)
   - WMPageController (= 2.5.2)
 
 SPEC REPOS:
@@ -29,6 +31,7 @@ SPEC REPOS:
     - Moya
     - Result
     - SnapKit
+    - TagListView
     - WMPageController
 
 SPEC CHECKSUMS:
@@ -39,8 +42,9 @@ SPEC CHECKSUMS:
   Moya: 2c16c3fe92eda302070213452281b59198f946d8
   Result: ed341d2f236af425b803e690e9bd8fd0a0cb7c5a
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
   WMPageController: 0c7624d2b48e4f1ab92371688cf6744ed701575d
 
-PODFILE CHECKSUM: e1a1ba10e192d1b9140ccf6dfee94dda640114bd
+PODFILE CHECKSUM: b0577d4e8219a17657eceab606dc95e0e316035e
 
 COCOAPODS: 1.8.4
