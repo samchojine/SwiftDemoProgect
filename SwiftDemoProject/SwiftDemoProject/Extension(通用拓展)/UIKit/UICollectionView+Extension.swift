@@ -22,12 +22,19 @@ extension UICollectionView {
         let nib = UINib(nibName: nibName, bundle: nil)
         register(nib, forCellWithReuseIdentifier: nibName)
     }
-    // MARK: - 注册手写代码HeaderFooder
-    func registerHeaderFooter<T: UICollectionReusableView>(anyClass: T.Type, forSupplementaryViewOfKind elementKind: String) {
+    
+    // MARK: - 注册手写代码Header
+    func registerHeader<T: UICollectionReusableView>(anyClass: T.Type) {
         let className = "\(String(describing: anyClass))"
-        register(anyClass, forSupplementaryViewOfKind: elementKind, withReuseIdentifier: className)
+        register(anyClass, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: className)
     }
-    // MARK: - 注册手写代码HeaderFooder
+    
+    // MARK: - 注册手写代码Fooder
+    func registerFooter<T: UICollectionReusableView>(anyClass: T.Type) {
+        let className = "\(String(describing: anyClass))"
+        register(anyClass, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: className)
+    }
+    // MARK: - 注册xib HeaderFooder
     func registerHeaderFooter<T: UICollectionReusableView>(nibClass: T.Type, forSupplementaryViewOfKind elementKind: String)  {
         //let bundle = Bundle(for: T.self)
         let nibName = "\(String(describing: nibClass))"
@@ -46,17 +53,28 @@ extension UICollectionView {
         return cell
     }
 
-    // MARK: - 生成HeaderFooder
-    func headerFooter<T: UICollectionReusableView>(anyClass: T.Type, ofKind elementKind: String, for indexPath: IndexPath) -> T  {
+    // MARK: - 生成Header
+    func header<T: UICollectionReusableView>(anyClass: T.Type, for indexPath: IndexPath) -> T  {
         
         let className = "\(String(describing: anyClass))"
-        guard let supplementaryView = dequeueReusableSupplementaryView(ofKind: elementKind, withReuseIdentifier: className, for: indexPath) as? T else {
-            fatalError("Could not dequeue supplementary view of kind '\(elementKind)' with identifier '\(className)'")
+        guard let supplementaryView = dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: className, for: indexPath) as? T else {
+            fatalError("Could not dequeue supplementary view of kind '\(UICollectionView.elementKindSectionHeader)' with identifier '\(className)'")
         }
 
         return supplementaryView
     }
     
+    
+    // MARK: - 生成Fooder
+    func Footer<T: UICollectionReusableView>(anyClass: T.Type, for indexPath: IndexPath) -> T  {
+        
+        let className = "\(String(describing: anyClass))"
+        guard let supplementaryView = dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: className, for: indexPath) as? T else {
+            fatalError("Could not dequeue supplementary view of kind '\(UICollectionView.elementKindSectionFooter)' with identifier '\(className)'")
+        }
+
+        return supplementaryView
+    }
     
     
     

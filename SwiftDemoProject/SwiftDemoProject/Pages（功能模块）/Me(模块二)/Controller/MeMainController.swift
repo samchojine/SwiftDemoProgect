@@ -23,7 +23,7 @@ class MeMainController: PJBaseViewController,UITextFieldDelegate {
         label.font = UIFont.systemFont(ofSize: 12);
         label.frame = CGRect(x: 20, y: 100, width: 250, height: 60)
         label.placeholder = "你好啊"
-        label.filter = UITextField.filterName.onlyLetter
+        label.filter = UITextField.filterName.numberAndLetter
         label.maxLength = 15
     }
     

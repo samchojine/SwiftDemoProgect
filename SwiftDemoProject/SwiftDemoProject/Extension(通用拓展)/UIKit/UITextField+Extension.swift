@@ -205,6 +205,9 @@ extension UITextField :UITextFieldDelegate{
     }
     
     private func authWithFitter(filter:String, getStr:String) ->Bool {
+        if getStr.isEmpty == true {
+            return true
+        }
         let regex = try! NSRegularExpression(pattern: filter, options: .allowCommentsAndWhitespace)//生成NSRegularExpression实例
         let numberOfMatches = regex.numberOfMatches(in: getStr, options:.reportProgress, range: NSMakeRange(0, (getStr as NSString).length))//获取匹配的个数
         return numberOfMatches != 0//如果匹配数量为0则表示不符合输入要求

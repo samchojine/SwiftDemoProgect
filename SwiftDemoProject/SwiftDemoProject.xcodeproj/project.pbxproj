@@ -19,6 +19,16 @@
 		140472DC245A6948000367DA /* HomeMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140472DB245A6948000367DA /* HomeMainController.swift */; };
 		1442E133248F7BB100B180E2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442E132248F7BB100B180E2 /* UserModel.swift */; };
 		1442E135248F7BC400B180E2 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442E134248F7BC400B180E2 /* UserManager.swift */; };
+		144D796924A83331003C5592 /* WaterFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D796824A83331003C5592 /* WaterFlowController.swift */; };
+		144D796E24A83404003C5592 /* SectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D796B24A83404003C5592 /* SectionData.swift */; };
+		144D796F24A83404003C5592 /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D796C24A83404003C5592 /* WaterfallLayout.swift */; };
+		144D797024A83404003C5592 /* WaterfallLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D796D24A83404003C5592 /* WaterfallLayoutDelegate.swift */; };
+		144D797224A836E5003C5592 /* WaterHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D797124A836E5003C5592 /* WaterHeaderView.swift */; };
+		144D797424A84197003C5592 /* ImagePickController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D797324A84197003C5592 /* ImagePickController.swift */; };
+		144D797624A84537003C5592 /* ImagePickVidew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D797524A84536003C5592 /* ImagePickVidew.swift */; };
+		144D797824A86966003C5592 /* SwiftDemoProject-pch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D797724A86966003C5592 /* SwiftDemoProject-pch.swift */; };
+		144D797A24A89073003C5592 /* PhotoBrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D797924A89073003C5592 /* PhotoBrowserController.swift */; };
+		144D797D24A89387003C5592 /* CollectionTagFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D797C24A89387003C5592 /* CollectionTagFlowLayout.swift */; };
 		145A9642247B694800316E42 /* hud_icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 145A9641247B694800316E42 /* hud_icon_info.png */; };
 		1467C8EC249084C000C9E35A /* PJServerConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467C8EB249084C000C9E35A /* PJServerConstant.swift */; };
 		1467C8F92490B34100C9E35A /* PJAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467C8F82490B34100C9E35A /* PJAPI.swift */; };
@@ -116,6 +126,16 @@
 		140472DB245A6948000367DA /* HomeMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainController.swift; sourceTree = "<group>"; };
 		1442E132248F7BB100B180E2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1442E134248F7BC400B180E2 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		144D796824A83331003C5592 /* WaterFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFlowController.swift; sourceTree = "<group>"; };
+		144D796B24A83404003C5592 /* SectionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionData.swift; sourceTree = "<group>"; };
+		144D796C24A83404003C5592 /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
+		144D796D24A83404003C5592 /* WaterfallLayoutDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayoutDelegate.swift; sourceTree = "<group>"; };
+		144D797124A836E5003C5592 /* WaterHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterHeaderView.swift; sourceTree = "<group>"; };
+		144D797324A84197003C5592 /* ImagePickController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickController.swift; sourceTree = "<group>"; };
+		144D797524A84536003C5592 /* ImagePickVidew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickVidew.swift; sourceTree = "<group>"; };
+		144D797724A86966003C5592 /* SwiftDemoProject-pch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftDemoProject-pch.swift"; sourceTree = "<group>"; };
+		144D797924A89073003C5592 /* PhotoBrowserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserController.swift; sourceTree = "<group>"; };
+		144D797C24A89387003C5592 /* CollectionTagFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTagFlowLayout.swift; sourceTree = "<group>"; };
 		145A9641247B694800316E42 /* hud_icon_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hud_icon_info.png; sourceTree = "<group>"; };
 		1467C8EB249084C000C9E35A /* PJServerConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJServerConstant.swift; sourceTree = "<group>"; };
 		1467C8F82490B34100C9E35A /* PJAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJAPI.swift; sourceTree = "<group>"; };
@@ -247,6 +267,7 @@
 				140472AE245966C8000367DA /* LaunchScreen.storyboard */,
 				140472B1245966C8000367DA /* Info.plist */,
 				140472B724597B5A000367DA /* SwiftDemoProject-Bridging-Header.h */,
+				144D797724A86966003C5592 /* SwiftDemoProject-pch.swift */,
 			);
 			path = SwiftDemoProject;
 			sourceTree = "<group>";
@@ -398,6 +419,8 @@
 		140472DD245A6EDC000367DA /* UIKit(第三方UI库) */ = {
 			isa = PBXGroup;
 			children = (
+				144D797B24A89327003C5592 /* TagFlowLayout */,
+				144D796A24A83404003C5592 /* WaterFlowLayout */,
 				14F7558A24A0890900875981 /* AutoSize */,
 				14F7555724A0810D00875981 /* AttributedStringHelp */,
 			);
@@ -411,6 +434,24 @@
 				1442E134248F7BC400B180E2 /* UserManager.swift */,
 			);
 			path = UserManager;
+			sourceTree = "<group>";
+		};
+		144D796A24A83404003C5592 /* WaterFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				144D796B24A83404003C5592 /* SectionData.swift */,
+				144D796C24A83404003C5592 /* WaterfallLayout.swift */,
+				144D796D24A83404003C5592 /* WaterfallLayoutDelegate.swift */,
+			);
+			path = WaterFlowLayout;
+			sourceTree = "<group>";
+		};
+		144D797B24A89327003C5592 /* TagFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				144D797C24A89387003C5592 /* CollectionTagFlowLayout.swift */,
+			);
+			path = TagFlowLayout;
 			sourceTree = "<group>";
 		};
 		1467C8FA2490B59C00C9E35A /* MoyaEX */ = {
@@ -532,6 +573,7 @@
 		14E09A292498B83C0009E260 /* 图片浏览 */ = {
 			isa = PBXGroup;
 			children = (
+				144D797924A89073003C5592 /* PhotoBrowserController.swift */,
 			);
 			path = "图片浏览";
 			sourceTree = "<group>";
@@ -617,6 +659,8 @@
 		14FA19EC249CA31A00802480 /* 瀑布流 */ = {
 			isa = PBXGroup;
 			children = (
+				144D796824A83331003C5592 /* WaterFlowController.swift */,
+				144D797124A836E5003C5592 /* WaterHeaderView.swift */,
 			);
 			path = "瀑布流";
 			sourceTree = "<group>";
@@ -650,6 +694,8 @@
 		14FA19F0249CA41F00802480 /* 图片拾取 */ = {
 			isa = PBXGroup;
 			children = (
+				144D797324A84197003C5592 /* ImagePickController.swift */,
+				144D797524A84536003C5592 /* ImagePickVidew.swift */,
 			);
 			path = "图片拾取";
 			sourceTree = "<group>";
@@ -810,9 +856,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				144D797624A84537003C5592 /* ImagePickVidew.swift in Sources */,
 				14DB78F3249324DA005BB224 /* MJRefreshController.swift in Sources */,
 				140472D4245A662D000367DA /* PJNavigationController.swift in Sources */,
 				14F7558F24A0890900875981 /* Inch.swift in Sources */,
+				144D796F24A83404003C5592 /* WaterfallLayout.swift in Sources */,
 				1467C9072493195B00C9E35A /* PJRefreshNormalHeader.swift in Sources */,
 				1487E41224655D5A00D7FA59 /* PJCommonConstant.swift in Sources */,
 				14F7557324A0810D00875981 /* Attachment.swift in Sources */,
@@ -821,12 +869,15 @@
 				14F7557A24A0810D00875981 /* UITextFieldExtension.swift in Sources */,
 				14F7558724A0810D00875981 /* Attribute.swift in Sources */,
 				1487E41824664AB600D7FA59 /* PJFontConstant.swift in Sources */,
+				144D797224A836E5003C5592 /* WaterHeaderView.swift in Sources */,
 				14DB78F524932945005BB224 /* DispatchTime+Extension.swift in Sources */,
 				14F7552F24A0562D00875981 /* AttributeController.swift in Sources */,
 				1467C9022490B59D00C9E35A /* JYTargetType+Extension.swift in Sources */,
 				14F7557D24A0810D00875981 /* NSTextFieldExtension.swift in Sources */,
 				14F7557524A0810D00875981 /* CGSizeExtension.swift in Sources */,
 				14F7558424A0810D00875981 /* Interpolation.swift in Sources */,
+				144D796E24A83404003C5592 /* SectionData.swift in Sources */,
+				144D797A24A89073003C5592 /* PhotoBrowserController.swift in Sources */,
 				1467C8EC249084C000C9E35A /* PJServerConstant.swift in Sources */,
 				1487E3FC2464036700D7FA59 /* PJ_WKWebViewExtension.swift in Sources */,
 				1487E41C2466B28D00D7FA59 /* UITextView+ Extension.swift in Sources */,
@@ -839,6 +890,7 @@
 				14F7558924A087B800875981 /* AutoSizeController.swift in Sources */,
 				1467C9042490B59D00C9E35A /* SSYRequestError.swift in Sources */,
 				1487E40A2465047300D7FA59 /* UIViewController+MBHUD.swift in Sources */,
+				144D797424A84197003C5592 /* ImagePickController.swift in Sources */,
 				1499928B2469305900EE786C /* PJBaseStackViewController.swift in Sources */,
 				14F7557724A0810D00875981 /* CGRectExtension.swift in Sources */,
 				1467C9032490B59D00C9E35A /* SSYNetworkLoggerPlugin.swift in Sources */,
@@ -860,12 +912,15 @@
 				1487E3F22464008800D7FA59 /* PJ_ButtonExtension.swift in Sources */,
 				1487E3FA2464018600D7FA59 /* PJ_TextViewExtension.swift in Sources */,
 				14F7557C24A0810D00875981 /* Extension.swift in Sources */,
+				144D797D24A89387003C5592 /* CollectionTagFlowLayout.swift in Sources */,
 				14F7557424A0810D00875981 /* ShadowExtension.swift in Sources */,
 				140472D8245A6675000367DA /* PJBaseTableViewController.swift in Sources */,
+				144D796924A83331003C5592 /* WaterFlowController.swift in Sources */,
 				14F7559724A0AA8900875981 /* collectionTagController.swift in Sources */,
 				1499929B246A753100EE786C /* HomeNaviColor2VC.swift in Sources */,
 				1487E3F4246400A800D7FA59 /* PJ_TextFieldExtension.swift in Sources */,
 				14F7557824A0810D00875981 /* UIButtonExtension.swift in Sources */,
+				144D797824A86966003C5592 /* SwiftDemoProject-pch.swift in Sources */,
 				14F7557624A0810D00875981 /* CGPointExtension.swift in Sources */,
 				14F7557E24A0810D00875981 /* WKInterfaceTextFieldExtension.swift in Sources */,
 				1487E3E82463F92500D7FA59 /* UITextField+Extension.swift in Sources */,
@@ -882,6 +937,7 @@
 				1487E3EB2463F92500D7FA59 /* WKWebView+Extension.swift in Sources */,
 				1487E3ED2463F92500D7FA59 /* String+Extension.swift in Sources */,
 				149992AF2473819500EE786C /* Swizzling+Extension.swift in Sources */,
+				144D797024A83404003C5592 /* WaterfallLayoutDelegate.swift in Sources */,
 				1487E41A24668D6600D7FA59 /* UIImage+Extension.swift in Sources */,
 				1467C9012490B59D00C9E35A /* SSYLoginDetectMoyaPlugin.swift in Sources */,
 				140472D6245A6651000367DA /* PJBaseViewController.swift in Sources */,

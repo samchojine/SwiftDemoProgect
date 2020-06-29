@@ -20,6 +20,21 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+    <key>NSCameraUsageDescription</key>
+    <string>需要您的同意,才能访问相机, 以便上传您的个人头像和资料</string>
+    <key>NSLocationUsageDescription</key>
+    <string>访问你当前的位置，以请求数据，及作个性化和附近推荐，如不允许，将影响使用体验</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>访问你当前的位置，以请求数据，及作个性化和附近推荐，如不允许，将影响使用体验</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>需要您的同意,才能读取媒体资料库,以便上传您的个人头像和资料</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>需要您的同意,才能访问相机,以便上传您的个人头像和资料</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

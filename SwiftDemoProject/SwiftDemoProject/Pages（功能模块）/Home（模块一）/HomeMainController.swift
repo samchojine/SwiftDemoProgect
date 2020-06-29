@@ -15,17 +15,20 @@ class HomeMainController: PJBaseTableViewController {
 
 
     let datas:[(title: String, vc: UIViewController.Type)] = [
-        (title:"自定义导航栏",vc:HomeNaviColor1VC.self),
-        (title:"MJRefresh封装",vc:MJRefreshController.self),
-        (title:"富文本及点击",vc:AttributeController.self),
-        (title:"适配UI宽高，字体大小",vc:AutoSizeController.self),
-        (title:"宽度自适应标签",vc:AutoLabelController.self)
-        ]
+        (title:"自定义导航栏",         vc:HomeNaviColor1VC.self),
+        (title:"MJRefresh封装",      vc:MJRefreshController.self),
+        (title:"富文本及点击",         vc:AttributeController.self),
+        (title:"适配UI宽高，字体大小",  vc:AutoSizeController.self),
+        (title:"宽度自适应标签",       vc:AutoLabelController.self),
+        (title:"瀑布流",              vc:WaterFlowController.self),
+        (title:"图片拾取",            vc:ImagePickController.self),
+        (title:"图片浏览",            vc:PhotoBrowserController.self),
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "主页";
-     
+      
     }
     
 }
