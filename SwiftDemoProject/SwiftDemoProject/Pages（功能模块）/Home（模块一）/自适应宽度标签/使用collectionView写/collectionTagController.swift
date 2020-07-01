@@ -73,7 +73,7 @@ extension collectionTagController : UICollectionViewDelegate,UICollectionViewDat
         
         if kind == UICollectionView.elementKindSectionHeader {
             let headerV = collectionView.header(anyClass: TagSectionHeader.self, for: indexPath)
-             headerV.titleLabel .text = "sdfsfsfsdfsdfsdf\(indexPath.section)"
+             headerV.titleLabel.text = "sdfsfsfsdfsdfsdf\(indexPath.section)"
             return headerV
         }
         return  collectionView.Footer(anyClass: UICollectionReusableView.self, for: indexPath)

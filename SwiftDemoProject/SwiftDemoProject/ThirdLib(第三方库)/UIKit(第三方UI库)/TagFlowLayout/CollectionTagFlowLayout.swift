@@ -85,12 +85,12 @@ class CollectionTagFlowLayout: UICollectionViewFlowLayout {
             let currentSectionHeight = currentSectionMaxY - currentSectionMinY;
             totalHeight += currentSectionHeight;
             contentMaxY += currentSectionHeight;
-            print("每个 section 的高度\(section) _________\(currentSectionHeight)")
+           // print("每个 section 的高度\(section) _________\(currentSectionHeight)")
             heightOfSections.append(currentSectionHeight)
             
         }
         
-        print("\(totalHeight) __________ \(currentSectionMaxY)");
+        //print("\(totalHeight) __________ \(currentSectionMaxY)");
         self.itemSize = CGSize(contentWidth-self.sectionInset.left-self.sectionInset.right, contentMaxY)
     }
     

@@ -11,9 +11,6 @@ import UIKit
 
 class HomeMainController: PJBaseTableViewController {
     
-    var value:String? = "abc"
-
-
     let datas:[(title: String, vc: UIViewController.Type)] = [
         (title:"自定义导航栏",         vc:HomeNaviColor1VC.self),
         (title:"MJRefresh封装",      vc:MJRefreshController.self),
