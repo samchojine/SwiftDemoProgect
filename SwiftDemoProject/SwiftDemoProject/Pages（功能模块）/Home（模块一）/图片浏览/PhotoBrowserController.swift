@@ -9,6 +9,7 @@
 import UIKit
 import JXPhotoBrowser
 
+
 class PhotoBrowserController: UIViewController {
 
     
@@ -50,6 +51,8 @@ class PhotoBrowserController: UIViewController {
         collectionView.snp.makeConstraints { (make) in
             make.edges.equalTo(view)
         }
+        
+        
     }
     
 

@@ -17,14 +17,14 @@ class MeMainController: PJBaseViewController,UITextFieldDelegate {
         super.viewDidLoad()
         self.title = "我的";
    
-        let  label = UITextField()
-        view.addSubview(label);
-        label.backgroundColor = .lightGray
-        label.font = UIFont.systemFont(ofSize: 12);
-        label.frame = CGRect(x: 20, y: 100, width: 250, height: 60)
-        label.placeholder = "你好啊"
-        label.filter = UITextField.filterName.numberAndLetter
-        label.maxLength = 15
+        let  tf = UITextField()
+        view.addSubview(tf);
+        tf.backgroundColor = .lightGray
+        tf.font = UIFont.systemFont(ofSize: 12);
+        tf.frame = CGRect(x: 20, y: 100, width: 250, height: 60)
+        tf.placeholder = "你好啊"
+        tf.filter = UITextField.filterName.numberAndLetter
+        tf.maxLength = 15
     }
     
    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool

@@ -19,9 +19,9 @@ class ImagePickController: ZYBaseStackViewController{
         super.viewDidLoad()
         
         self.title = "图片拾取"
-        
+    
         stackV.addArrangedSubview(self.collectionImageV)
-
+        
     }
     
 }

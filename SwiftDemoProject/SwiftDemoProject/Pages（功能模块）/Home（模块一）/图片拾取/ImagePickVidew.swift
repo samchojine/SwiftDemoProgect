@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import TZImagePickerController
-
 
 class ImagePickVidew: UIView {
     
@@ -142,6 +140,7 @@ extension ImagePickVidew : TZImagePickerControllerDelegate{
 class ZYMeEvaluateCCell: UICollectionViewCell {
     
     var deleteBlock:((Int)->Void)?
+    
     
     var index : Int = 0
     

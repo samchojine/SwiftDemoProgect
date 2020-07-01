@@ -6,4 +6,5 @@
 #import "WMPageController.h"
 #import "MJRefresh.h"
 #import "TZImagePickerController.h"
+#import "BRPickerView.h"
 

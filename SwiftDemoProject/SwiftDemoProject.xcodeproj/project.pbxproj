@@ -40,6 +40,16 @@
 		1467C9072493195B00C9E35A /* PJRefreshNormalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467C9062493195B00C9E35A /* PJRefreshNormalHeader.swift */; };
 		1467C90924931A9400C9E35A /* PJRefreshAutoNormalFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467C90824931A9400C9E35A /* PJRefreshAutoNormalFooter.swift */; };
 		1467C90B24931D7400C9E35A /* ScrollView+MJRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467C90A24931D7400C9E35A /* ScrollView+MJRefresh.swift */; };
+		1472070724AC2CF000DADCA1 /* BRResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 147206EF24AC2CF000DADCA1 /* BRResultModel.m */; };
+		1472070824AC2CF000DADCA1 /* BRStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 147206F224AC2CF000DADCA1 /* BRStringPickerView.m */; };
+		1472070924AC2CF000DADCA1 /* NSDate+BRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 147206F624AC2CF000DADCA1 /* NSDate+BRPickerView.m */; };
+		1472070A24AC2CF000DADCA1 /* BRDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 147206F724AC2CF000DADCA1 /* BRDatePickerView.m */; };
+		1472070B24AC2CF000DADCA1 /* BRPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 147206FC24AC2CF000DADCA1 /* BRPickerView.bundle */; };
+		1472070C24AC2CF000DADCA1 /* BRPickerStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 147206FD24AC2CF000DADCA1 /* BRPickerStyle.m */; };
+		1472070D24AC2CF000DADCA1 /* BRBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 147206FE24AC2CF000DADCA1 /* BRBaseView.m */; };
+		1472070E24AC2CF000DADCA1 /* NSBundle+BRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 147206FF24AC2CF000DADCA1 /* NSBundle+BRPickerView.m */; };
+		1472070F24AC2CF000DADCA1 /* BRAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1472070324AC2CF000DADCA1 /* BRAddressModel.m */; };
+		1472071024AC2CF000DADCA1 /* BRAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1472070624AC2CF000DADCA1 /* BRAddressPickerView.m */; };
 		1487E3E02463F74200D7FA59 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3DF2463F74200D7FA59 /* Color+Extension.swift */; };
 		1487E3E82463F92500D7FA59 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3E12463F92500D7FA59 /* UITextField+Extension.swift */; };
 		1487E3EA2463F92500D7FA59 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3E32463F92500D7FA59 /* UIButton+Extension.swift */; };
@@ -147,6 +157,27 @@
 		1467C9062493195B00C9E35A /* PJRefreshNormalHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJRefreshNormalHeader.swift; sourceTree = "<group>"; };
 		1467C90824931A9400C9E35A /* PJRefreshAutoNormalFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJRefreshAutoNormalFooter.swift; sourceTree = "<group>"; };
 		1467C90A24931D7400C9E35A /* ScrollView+MJRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScrollView+MJRefresh.swift"; sourceTree = "<group>"; };
+		147206EF24AC2CF000DADCA1 /* BRResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRResultModel.m; sourceTree = "<group>"; };
+		147206F024AC2CF000DADCA1 /* BRStringPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRStringPickerView.h; sourceTree = "<group>"; };
+		147206F124AC2CF000DADCA1 /* BRResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRResultModel.h; sourceTree = "<group>"; };
+		147206F224AC2CF000DADCA1 /* BRStringPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRStringPickerView.m; sourceTree = "<group>"; };
+		147206F324AC2CF000DADCA1 /* BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerView.h; sourceTree = "<group>"; };
+		147206F524AC2CF000DADCA1 /* BRDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDatePickerView.h; sourceTree = "<group>"; };
+		147206F624AC2CF000DADCA1 /* NSDate+BRPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BRPickerView.m"; sourceTree = "<group>"; };
+		147206F724AC2CF000DADCA1 /* BRDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDatePickerView.m; sourceTree = "<group>"; };
+		147206F824AC2CF000DADCA1 /* NSDate+BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BRPickerView.h"; sourceTree = "<group>"; };
+		147206FA24AC2CF000DADCA1 /* NSBundle+BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+BRPickerView.h"; sourceTree = "<group>"; };
+		147206FB24AC2CF000DADCA1 /* BRPickerViewMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerViewMacro.h; sourceTree = "<group>"; };
+		147206FC24AC2CF000DADCA1 /* BRPickerView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BRPickerView.bundle; sourceTree = "<group>"; };
+		147206FD24AC2CF000DADCA1 /* BRPickerStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPickerStyle.m; sourceTree = "<group>"; };
+		147206FE24AC2CF000DADCA1 /* BRBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBaseView.m; sourceTree = "<group>"; };
+		147206FF24AC2CF000DADCA1 /* NSBundle+BRPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+BRPickerView.m"; sourceTree = "<group>"; };
+		1472070024AC2CF000DADCA1 /* BRBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBaseView.h; sourceTree = "<group>"; };
+		1472070124AC2CF000DADCA1 /* BRPickerStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerStyle.h; sourceTree = "<group>"; };
+		1472070324AC2CF000DADCA1 /* BRAddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressModel.m; sourceTree = "<group>"; };
+		1472070424AC2CF000DADCA1 /* BRAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressPickerView.h; sourceTree = "<group>"; };
+		1472070524AC2CF000DADCA1 /* BRAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressModel.h; sourceTree = "<group>"; };
+		1472070624AC2CF000DADCA1 /* BRAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressPickerView.m; sourceTree = "<group>"; };
 		1487E3DF2463F74200D7FA59 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		1487E3E12463F92500D7FA59 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		1487E3E32463F92500D7FA59 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
@@ -419,6 +450,7 @@
 		140472DD245A6EDC000367DA /* UIKit(第三方UI库) */ = {
 			isa = PBXGroup;
 			children = (
+				147206ED24AC2CF000DADCA1 /* BRPickerView */,
 				144D797B24A89327003C5592 /* TagFlowLayout */,
 				144D796A24A83404003C5592 /* WaterFlowLayout */,
 				14F7558A24A0890900875981 /* AutoSize */,
@@ -482,6 +514,66 @@
 				14DB78F2249324DA005BB224 /* MJRefreshController.swift */,
 			);
 			path = "MJRefresh封装";
+			sourceTree = "<group>";
+		};
+		147206ED24AC2CF000DADCA1 /* BRPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				147206EE24AC2CF000DADCA1 /* StringPickerView */,
+				147206F324AC2CF000DADCA1 /* BRPickerView.h */,
+				147206F424AC2CF000DADCA1 /* DatePickerView */,
+				147206F924AC2CF000DADCA1 /* Base */,
+				1472070224AC2CF000DADCA1 /* AddressPickerView */,
+			);
+			path = BRPickerView;
+			sourceTree = "<group>";
+		};
+		147206EE24AC2CF000DADCA1 /* StringPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				147206EF24AC2CF000DADCA1 /* BRResultModel.m */,
+				147206F024AC2CF000DADCA1 /* BRStringPickerView.h */,
+				147206F124AC2CF000DADCA1 /* BRResultModel.h */,
+				147206F224AC2CF000DADCA1 /* BRStringPickerView.m */,
+			);
+			path = StringPickerView;
+			sourceTree = "<group>";
+		};
+		147206F424AC2CF000DADCA1 /* DatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				147206F524AC2CF000DADCA1 /* BRDatePickerView.h */,
+				147206F624AC2CF000DADCA1 /* NSDate+BRPickerView.m */,
+				147206F724AC2CF000DADCA1 /* BRDatePickerView.m */,
+				147206F824AC2CF000DADCA1 /* NSDate+BRPickerView.h */,
+			);
+			path = DatePickerView;
+			sourceTree = "<group>";
+		};
+		147206F924AC2CF000DADCA1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				147206FA24AC2CF000DADCA1 /* NSBundle+BRPickerView.h */,
+				147206FB24AC2CF000DADCA1 /* BRPickerViewMacro.h */,
+				147206FC24AC2CF000DADCA1 /* BRPickerView.bundle */,
+				147206FD24AC2CF000DADCA1 /* BRPickerStyle.m */,
+				147206FE24AC2CF000DADCA1 /* BRBaseView.m */,
+				147206FF24AC2CF000DADCA1 /* NSBundle+BRPickerView.m */,
+				1472070024AC2CF000DADCA1 /* BRBaseView.h */,
+				1472070124AC2CF000DADCA1 /* BRPickerStyle.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1472070224AC2CF000DADCA1 /* AddressPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				1472070324AC2CF000DADCA1 /* BRAddressModel.m */,
+				1472070424AC2CF000DADCA1 /* BRAddressPickerView.h */,
+				1472070524AC2CF000DADCA1 /* BRAddressModel.h */,
+				1472070624AC2CF000DADCA1 /* BRAddressPickerView.m */,
+			);
+			path = AddressPickerView;
 			sourceTree = "<group>";
 		};
 		1487E3FD24640A9700D7FA59 /* UIKit */ = {
@@ -797,6 +889,7 @@
 				1487E40C2465594600D7FA59 /* hud_icon_success.png in Resources */,
 				149992A824726A6A00EE786C /* empty_icon_normal.png in Resources */,
 				149992A924726A6A00EE786C /* empty_icon_no_service.png in Resources */,
+				1472070B24AC2CF000DADCA1 /* BRPickerView.bundle in Resources */,
 				1487E40F24655AE300D7FA59 /* hud_icon_error.png in Resources */,
 				140472B0245966C8000367DA /* LaunchScreen.storyboard in Resources */,
 				149992A724726A6A00EE786C /* empty_icon_search.png in Resources */,
@@ -870,12 +963,17 @@
 				14F7558724A0810D00875981 /* Attribute.swift in Sources */,
 				1487E41824664AB600D7FA59 /* PJFontConstant.swift in Sources */,
 				144D797224A836E5003C5592 /* WaterHeaderView.swift in Sources */,
+				1472070C24AC2CF000DADCA1 /* BRPickerStyle.m in Sources */,
+				1472071024AC2CF000DADCA1 /* BRAddressPickerView.m in Sources */,
 				14DB78F524932945005BB224 /* DispatchTime+Extension.swift in Sources */,
 				14F7552F24A0562D00875981 /* AttributeController.swift in Sources */,
+				1472070D24AC2CF000DADCA1 /* BRBaseView.m in Sources */,
 				1467C9022490B59D00C9E35A /* JYTargetType+Extension.swift in Sources */,
 				14F7557D24A0810D00875981 /* NSTextFieldExtension.swift in Sources */,
+				1472070F24AC2CF000DADCA1 /* BRAddressModel.m in Sources */,
 				14F7557524A0810D00875981 /* CGSizeExtension.swift in Sources */,
 				14F7558424A0810D00875981 /* Interpolation.swift in Sources */,
+				1472070724AC2CF000DADCA1 /* BRResultModel.m in Sources */,
 				144D796E24A83404003C5592 /* SectionData.swift in Sources */,
 				144D797A24A89073003C5592 /* PhotoBrowserController.swift in Sources */,
 				1467C8EC249084C000C9E35A /* PJServerConstant.swift in Sources */,
@@ -885,10 +983,12 @@
 				1487E41624655E2400D7FA59 /* PJColorConstant.swift in Sources */,
 				1487E41424655DCF00D7FA59 /* PJSizeConstant.swift in Sources */,
 				14F7557F24A0810D00875981 /* WKInterfaceLabelExtension.swift in Sources */,
+				1472070A24AC2CF000DADCA1 /* BRDatePickerView.m in Sources */,
 				1467C9002490B59D00C9E35A /* Result+Ex.swift in Sources */,
 				14F7558524A0810D00875981 /* Action.swift in Sources */,
 				14F7558924A087B800875981 /* AutoSizeController.swift in Sources */,
 				1467C9042490B59D00C9E35A /* SSYRequestError.swift in Sources */,
+				1472070924AC2CF000DADCA1 /* NSDate+BRPickerView.m in Sources */,
 				1487E40A2465047300D7FA59 /* UIViewController+MBHUD.swift in Sources */,
 				144D797424A84197003C5592 /* ImagePickController.swift in Sources */,
 				1499928B2469305900EE786C /* PJBaseStackViewController.swift in Sources */,
@@ -919,6 +1019,7 @@
 				14F7559724A0AA8900875981 /* collectionTagController.swift in Sources */,
 				1499929B246A753100EE786C /* HomeNaviColor2VC.swift in Sources */,
 				1487E3F4246400A800D7FA59 /* PJ_TextFieldExtension.swift in Sources */,
+				1472070E24AC2CF000DADCA1 /* NSBundle+BRPickerView.m in Sources */,
 				14F7557824A0810D00875981 /* UIButtonExtension.swift in Sources */,
 				144D797824A86966003C5592 /* SwiftDemoProject-pch.swift in Sources */,
 				14F7557624A0810D00875981 /* CGPointExtension.swift in Sources */,
@@ -930,6 +1031,7 @@
 				1487E3F6246400D100D7FA59 /* PJ_ImageViewExtension.swift in Sources */,
 				1487E3EC2463F92500D7FA59 /* Date+Extension.swift in Sources */,
 				14A4EEBD2499FD8B00E42ED9 /* UICollectionView+Extension.swift in Sources */,
+				1472070824AC2CF000DADCA1 /* BRStringPickerView.m in Sources */,
 				1442E133248F7BB100B180E2 /* UserModel.swift in Sources */,
 				14F7558E24A0890900875981 /* Auto.swift in Sources */,
 				14F7557924A0810D00875981 /* UITextViewExtension.swift in Sources */,
