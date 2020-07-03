@@ -50,6 +50,13 @@
 		1472070E24AC2CF000DADCA1 /* NSBundle+BRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 147206FF24AC2CF000DADCA1 /* NSBundle+BRPickerView.m */; };
 		1472070F24AC2CF000DADCA1 /* BRAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1472070324AC2CF000DADCA1 /* BRAddressModel.m */; };
 		1472071024AC2CF000DADCA1 /* BRAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1472070624AC2CF000DADCA1 /* BRAddressPickerView.m */; };
+		1472071424ADB98E00DADCA1 /* ClassMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1472071324ADB98E00DADCA1 /* ClassMainController.swift */; };
+		1472071624ADB9BF00DADCA1 /* RxSwiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1472071524ADB9BF00DADCA1 /* RxSwiftController.swift */; };
+		1472071824ADCE9B00DADCA1 /* RxLabel_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1472071724ADCE9B00DADCA1 /* RxLabel_Controller.swift */; };
+		1472071A24ADD23700DADCA1 /* RxTextfield_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1472071924ADD23700DADCA1 /* RxTextfield_Controller.swift */; };
+		1472071C24ADE1AB00DADCA1 /* RxTextView_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1472071B24ADE1AB00DADCA1 /* RxTextView_Controller.swift */; };
+		1472071E24AECBA500DADCA1 /* RxButton_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1472071D24AECBA500DADCA1 /* RxButton_Controller.swift */; };
+		1472072024AF03C800DADCA1 /* RxPicker_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1472071F24AF03C800DADCA1 /* RxPicker_Controller.swift */; };
 		1487E3E02463F74200D7FA59 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3DF2463F74200D7FA59 /* Color+Extension.swift */; };
 		1487E3E82463F92500D7FA59 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3E12463F92500D7FA59 /* UITextField+Extension.swift */; };
 		1487E3EA2463F92500D7FA59 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487E3E32463F92500D7FA59 /* UIButton+Extension.swift */; };
@@ -178,6 +185,13 @@
 		1472070424AC2CF000DADCA1 /* BRAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressPickerView.h; sourceTree = "<group>"; };
 		1472070524AC2CF000DADCA1 /* BRAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressModel.h; sourceTree = "<group>"; };
 		1472070624AC2CF000DADCA1 /* BRAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressPickerView.m; sourceTree = "<group>"; };
+		1472071324ADB98E00DADCA1 /* ClassMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassMainController.swift; sourceTree = "<group>"; };
+		1472071524ADB9BF00DADCA1 /* RxSwiftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftController.swift; sourceTree = "<group>"; };
+		1472071724ADCE9B00DADCA1 /* RxLabel_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxLabel_Controller.swift; sourceTree = "<group>"; };
+		1472071924ADD23700DADCA1 /* RxTextfield_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTextfield_Controller.swift; sourceTree = "<group>"; };
+		1472071B24ADE1AB00DADCA1 /* RxTextView_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTextView_Controller.swift; sourceTree = "<group>"; };
+		1472071D24AECBA500DADCA1 /* RxButton_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxButton_Controller.swift; sourceTree = "<group>"; };
+		1472071F24AF03C800DADCA1 /* RxPicker_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxPicker_Controller.swift; sourceTree = "<group>"; };
 		1487E3DF2463F74200D7FA59 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		1487E3E12463F92500D7FA59 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		1487E3E32463F92500D7FA59 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
@@ -334,7 +348,8 @@
 			isa = PBXGroup;
 			children = (
 				140472C324598227000367DA /* Home（模块一） */,
-				140472C424598234000367DA /* Me(模块二) */,
+				1472071124ADB85000DADCA1 /* Class(模块二) */,
+				140472C424598234000367DA /* Me(模块三) */,
 			);
 			path = "Pages（功能模块）";
 			sourceTree = "<group>";
@@ -399,14 +414,14 @@
 			path = "Home（模块一）";
 			sourceTree = "<group>";
 		};
-		140472C424598234000367DA /* Me(模块二) */ = {
+		140472C424598234000367DA /* Me(模块三) */ = {
 			isa = PBXGroup;
 			children = (
 				14FA21C824A1FD4A006514A0 /* Model */,
 				140472CB2459835A000367DA /* Controller */,
 				140472CA2459833F000367DA /* View */,
 			);
-			path = "Me(模块二)";
+			path = "Me(模块三)";
 			sourceTree = "<group>";
 		};
 		140472CA2459833F000367DA /* View */ = {
@@ -574,6 +589,28 @@
 				1472070624AC2CF000DADCA1 /* BRAddressPickerView.m */,
 			);
 			path = AddressPickerView;
+			sourceTree = "<group>";
+		};
+		1472071124ADB85000DADCA1 /* Class(模块二) */ = {
+			isa = PBXGroup;
+			children = (
+				1472071324ADB98E00DADCA1 /* ClassMainController.swift */,
+				1472071224ADB8BA00DADCA1 /* RxSwift */,
+			);
+			path = "Class(模块二)";
+			sourceTree = "<group>";
+		};
+		1472071224ADB8BA00DADCA1 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				1472071524ADB9BF00DADCA1 /* RxSwiftController.swift */,
+				1472071724ADCE9B00DADCA1 /* RxLabel_Controller.swift */,
+				1472071924ADD23700DADCA1 /* RxTextfield_Controller.swift */,
+				1472071B24ADE1AB00DADCA1 /* RxTextView_Controller.swift */,
+				1472071D24AECBA500DADCA1 /* RxButton_Controller.swift */,
+				1472071F24AF03C800DADCA1 /* RxPicker_Controller.swift */,
+			);
+			path = RxSwift;
 			sourceTree = "<group>";
 		};
 		1487E3FD24640A9700D7FA59 /* UIKit */ = {
@@ -956,6 +993,7 @@
 				144D796F24A83404003C5592 /* WaterfallLayout.swift in Sources */,
 				1467C9072493195B00C9E35A /* PJRefreshNormalHeader.swift in Sources */,
 				1487E41224655D5A00D7FA59 /* PJCommonConstant.swift in Sources */,
+				1472071424ADB98E00DADCA1 /* ClassMainController.swift in Sources */,
 				14F7557324A0810D00875981 /* Attachment.swift in Sources */,
 				1487E3EE2463F92500D7FA59 /* UIView+Extension.swift in Sources */,
 				1487E3E02463F74200D7FA59 /* Color+Extension.swift in Sources */,
@@ -976,12 +1014,15 @@
 				1472070724AC2CF000DADCA1 /* BRResultModel.m in Sources */,
 				144D796E24A83404003C5592 /* SectionData.swift in Sources */,
 				144D797A24A89073003C5592 /* PhotoBrowserController.swift in Sources */,
+				1472071824ADCE9B00DADCA1 /* RxLabel_Controller.swift in Sources */,
 				1467C8EC249084C000C9E35A /* PJServerConstant.swift in Sources */,
 				1487E3FC2464036700D7FA59 /* PJ_WKWebViewExtension.swift in Sources */,
 				1487E41C2466B28D00D7FA59 /* UITextView+ Extension.swift in Sources */,
 				140472A4245966C6000367DA /* AppDelegate.swift in Sources */,
 				1487E41624655E2400D7FA59 /* PJColorConstant.swift in Sources */,
 				1487E41424655DCF00D7FA59 /* PJSizeConstant.swift in Sources */,
+				1472071C24ADE1AB00DADCA1 /* RxTextView_Controller.swift in Sources */,
+				1472071624ADB9BF00DADCA1 /* RxSwiftController.swift in Sources */,
 				14F7557F24A0810D00875981 /* WKInterfaceLabelExtension.swift in Sources */,
 				1472070A24AC2CF000DADCA1 /* BRDatePickerView.m in Sources */,
 				1467C9002490B59D00C9E35A /* Result+Ex.swift in Sources */,
@@ -992,11 +1033,13 @@
 				1487E40A2465047300D7FA59 /* UIViewController+MBHUD.swift in Sources */,
 				144D797424A84197003C5592 /* ImagePickController.swift in Sources */,
 				1499928B2469305900EE786C /* PJBaseStackViewController.swift in Sources */,
+				1472072024AF03C800DADCA1 /* RxPicker_Controller.swift in Sources */,
 				14F7557724A0810D00875981 /* CGRectExtension.swift in Sources */,
 				1467C9032490B59D00C9E35A /* SSYNetworkLoggerPlugin.swift in Sources */,
 				14F7557B24A0810D00875981 /* UILabelExtension.swift in Sources */,
 				1499929D246B925900EE786C /* PJCustomNaviBar.swift in Sources */,
 				1467C8F92490B34100C9E35A /* PJAPI.swift in Sources */,
+				1472071A24ADD23700DADCA1 /* RxTextfield_Controller.swift in Sources */,
 				149992AB24726B4700EE786C /* UITableView+empty.swift in Sources */,
 				14F7559524A0AA3C00875981 /* TagViewController.swift in Sources */,
 				1499929224694FEA00EE786C /* HomeNaviColor1VC.swift in Sources */,
@@ -1045,6 +1088,7 @@
 				140472D6245A6651000367DA /* PJBaseViewController.swift in Sources */,
 				14F7558124A0810D00875981 /* ObjectExtension.swift in Sources */,
 				1487E3F02463FC3B00D7FA59 /* PJ_LabelExtension.swift in Sources */,
+				1472071E24AECBA500DADCA1 /* RxButton_Controller.swift in Sources */,
 				1442E135248F7BC400B180E2 /* UserManager.swift in Sources */,
 				14F7558224A0810D00875981 /* ParagraphStyle.swift in Sources */,
 				1499928D24693FEF00EE786C /* UITableView+Extension.swift in Sources */,

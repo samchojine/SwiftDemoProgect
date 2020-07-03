@@ -17,9 +17,6 @@ extension UIView {
         return view
     }
     
-    
-    
-    
 }
 
 
@@ -100,6 +97,47 @@ extension UIView {
             self.pj_x = newValue.x - self.pj_width * 0.5
             self.pj_y = newValue.y - self.pj_height * 0.5
         }
+    }
+    
+    var pj_left :CGFloat {
+        
+        get{
+            return frame.origin.x
+        }
+        set{
+            
+            frame.origin.x = newValue
+        }
+    }
+    
+    var pj_right:CGFloat {
+        
+        get {
+            return frame.origin.x + frame.size.width
+        }
+        set {
+            frame.origin.x = newValue - frame.size.width
+        }
+    }
+    
+    var pj_top:CGFloat {
+        
+        get{
+           return frame.origin.y
+        }
+        set{
+           frame.origin.y = newValue
+        }
+    }
+    
+    var pj_bottom:CGFloat {
+        get {
+          return self.frame.origin.y + self.frame.size.height;
+        }
+        set {
+            frame.origin.y = newValue - frame.size.height;
+        }
+
     }
     
 }

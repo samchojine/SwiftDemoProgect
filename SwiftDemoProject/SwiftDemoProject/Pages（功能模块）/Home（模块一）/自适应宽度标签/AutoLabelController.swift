@@ -8,36 +8,18 @@
 
 import UIKit
 
-class AutoLabelController: PJBaseTableViewController {
+class AutoLabelController:  HomeMainController {
 
-    let datas:[(title: String, vc: UIViewController.Type)] = [
-        (title:"tagView + tableViewCell",vc:TagViewController.self),
-        (title:"使用collectionView",vc:collectionTagController.self),
-         ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "自适应宽度标签"
-       
+        datas = [
+            (title:"tagView + tableViewCell",vc:TagViewController.self),
+            (title:"使用collectionView",vc:collectionTagController.self),
+        ]
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return datas.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.cell(anyClass: UITableViewCell.self)
-        let tuple = datas[indexPath.row]
-        cell.textLabel?.text = tuple.title
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let tuple = datas[indexPath.row]
-        let vc = tuple.vc.init()
-        vc.title = tuple.title
-        self.navigationController?.pushViewController(vc,animated: true);
-    }
+
     
     
     

@@ -68,6 +68,15 @@ extension UITextView : NSTextStorageDelegate{
             placeholderLabel.isHidden = !text.isEmpty
         }
     }
+    
+    open override func layoutSubviews() {
+        
+        let width = frame.width - textContainer.lineFragmentPadding * 2
+            let size = placeholderLabel.sizeThatFits(CGSize(width: width, height: .greatestFiniteMagnitude))
+            placeholderLabel.frame.size.height = size.height
+            placeholderLabel.frame.size.width = width
+            placeholderLabel.frame.origin = CGPoint(x: textContainer.lineFragmentPadding, y: textContainerInset.top)
+    }
 
 }
 

@@ -14,6 +14,8 @@ target 'SwiftDemoProject' do
   pod 'TagListView', '~> 1.0'
   pod 'JXPhotoBrowser'
   pod 'Kingfisher'
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
  #OC
 	pod 'WMPageController', '2.5.2'
 	pod 'MBProgressHUD', '1.1.0'

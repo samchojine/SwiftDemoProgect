@@ -11,7 +11,7 @@ import UIKit
 
 class HomeMainController: PJBaseTableViewController {
     
-    let datas:[(title: String, vc: UIViewController.Type)] = [
+    var datas:[(title: String, vc: UIViewController.Type)] = [
         (title:"自定义导航栏",         vc:HomeNaviColor1VC.self),
         (title:"MJRefresh封装",      vc:MJRefreshController.self),
         (title:"富文本及点击",         vc:AttributeController.self),
@@ -41,7 +41,7 @@ extension HomeMainController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.cell(anyClass: UITableViewCell.self)
         let tuple = datas[indexPath.row]
-        cell.textLabel?.text = tuple.title
+        cell.textLabel?.text = "\(indexPath.row+1). \(tuple.title)"
         return cell
     }
     

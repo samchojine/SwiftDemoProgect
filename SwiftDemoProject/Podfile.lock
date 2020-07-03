@@ -13,6 +13,12 @@ PODS:
   - Moya/Core (14.0.0-beta.5):
     - Alamofire (= 5.0.0-rc.3)
   - Result (5.0.0)
+  - RxCocoa (5.1.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.0)
   - SnapKit (5.0.1)
   - TagListView (1.4.0)
   - TZImagePickerController (3.2.7)
@@ -27,6 +33,8 @@ DEPENDENCIES:
   - MJRefresh (= 3.2.2)
   - Moya (= 14.0.0-beta.5)
   - Result (= 5.0.0)
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
   - SnapKit (= 5.0.1)
   - TagListView (~> 1.0)
   - TZImagePickerController (= 3.2.7)
@@ -43,6 +51,9 @@ SPEC REPOS:
     - MJRefresh
     - Moya
     - Result
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SnapKit
     - TagListView
     - TZImagePickerController
@@ -58,11 +69,14 @@ SPEC CHECKSUMS:
   MJRefresh: 72a46ecaa2a0feaf48fc5198dff95f25f8bb27c6
   Moya: 2c16c3fe92eda302070213452281b59198f946d8
   Result: ed341d2f236af425b803e690e9bd8fd0a0cb7c5a
+  RxCocoa: 13d2a4d7546a34b8ececae8c281e4ea1dbb94f2b
+  RxRelay: a168bd6caf712d00c676ac344e9295afc93b418e
+  RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
   TZImagePickerController: 821b81f83594a736e831a018f2a2ce31822ddf0b
   WMPageController: 0c7624d2b48e4f1ab92371688cf6744ed701575d
 
-PODFILE CHECKSUM: 00f07bdfa0dc38c35a7500a03a556ea64d44e5a7
+PODFILE CHECKSUM: 22b7a587239c475df808d4a9d65e29616fe8e582
 
 COCOAPODS: 1.8.4

@@ -11,6 +11,8 @@ import Foundation
 import SnapKit
 import HandyJSON
 import Kingfisher
+@_exported import RxSwift
+@_exported import RxCocoa
 @_exported import TagListView
 @_exported import IQKeyboardManagerSwift
 @_exported import JXPhotoBrowser

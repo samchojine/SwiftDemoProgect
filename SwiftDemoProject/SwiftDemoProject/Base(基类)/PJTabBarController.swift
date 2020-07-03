@@ -20,17 +20,21 @@ class PJTabBarController: UITabBarController {
         
         //首页
         let home = HomeMainController();
+        //框架
+        let frame = ClassMainController();
         //我的
         let mine = MeMainController();
 
-        let controllers = [home,mine];
+        let controllers = [home,frame,mine];
 
-        let titles = ["主页","我的"];
+        let titles = ["库","框架","我的"];
 
         let selectedImageNames = ["tab_Item_icon_01_selected",
+                                  "tab_Item_icon_01_selected",
                                   "tab_Item_icon_05_selected"];
 
         let normalImageNames = ["tab_Item_icon_01_normal",
+                                "tab_Item_icon_01_selected",
                                 "tab_Item_icon_05_normal"];
         
         var naviContainer : [PJNavigationController] = [];
