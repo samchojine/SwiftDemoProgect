@@ -27,6 +27,8 @@ class HomeMainController: PJBaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "主页";
+        
+         let str = "添加了分支"
     
     }
     
