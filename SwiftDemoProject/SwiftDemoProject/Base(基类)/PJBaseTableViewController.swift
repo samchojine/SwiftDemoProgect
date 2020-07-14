@@ -75,24 +75,24 @@ extension PJBaseTableViewController :UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
+
         return nil
     }
-    
+
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return nil
     }
-    
+
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        
+
         if self.tableView.sectionHeaderHeight > 0 {
             return self.tableView.sectionHeaderHeight
         }
         return 0.001
     }
-    
+
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        
+
         if self.tableView.sectionFooterHeight > 0 {
             return self.tableView.sectionFooterHeight
         }

@@ -21,6 +21,8 @@ class HomeMainController: PJBaseTableViewController {
         (title:"图片拾取",            vc:ImagePickController.self),
         (title:"图片浏览",            vc:PhotoBrowserController.self),
     ]
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,10 +53,11 @@ extension HomeMainController {
         let vc = tuple.vc.init()
         vc.title = tuple.title
         self.navigationController?.pushViewController(vc,animated: true);
-        
     }
     
 }
+
+
 
 
 

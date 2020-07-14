@@ -17,6 +17,7 @@
 		140472D8245A6675000367DA /* PJBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140472D7245A6675000367DA /* PJBaseTableViewController.swift */; };
 		140472DA245A6934000367DA /* MeMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140472D9245A6934000367DA /* MeMainController.swift */; };
 		140472DC245A6948000367DA /* HomeMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140472DB245A6948000367DA /* HomeMainController.swift */; };
+		14087C5024BC5A4C0082F6E9 /* HYPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14087C4F24BC5A4C0082F6E9 /* HYPopView.swift */; };
 		1442E133248F7BB100B180E2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442E132248F7BB100B180E2 /* UserModel.swift */; };
 		1442E135248F7BC400B180E2 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442E134248F7BC400B180E2 /* UserManager.swift */; };
 		144D796924A83331003C5592 /* WaterFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D796824A83331003C5592 /* WaterFlowController.swift */; };
@@ -141,6 +142,7 @@
 		140472D7245A6675000367DA /* PJBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJBaseTableViewController.swift; sourceTree = "<group>"; };
 		140472D9245A6934000367DA /* MeMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeMainController.swift; sourceTree = "<group>"; };
 		140472DB245A6948000367DA /* HomeMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainController.swift; sourceTree = "<group>"; };
+		14087C4F24BC5A4C0082F6E9 /* HYPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYPopView.swift; sourceTree = "<group>"; };
 		1442E132248F7BB100B180E2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1442E134248F7BC400B180E2 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		144D796824A83331003C5592 /* WaterFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFlowController.swift; sourceTree = "<group>"; };
@@ -465,6 +467,7 @@
 		140472DD245A6EDC000367DA /* UIKit(第三方UI库) */ = {
 			isa = PBXGroup;
 			children = (
+				14087C4B24BC57A50082F6E9 /* popView */,
 				147206ED24AC2CF000DADCA1 /* BRPickerView */,
 				144D797B24A89327003C5592 /* TagFlowLayout */,
 				144D796A24A83404003C5592 /* WaterFlowLayout */,
@@ -472,6 +475,14 @@
 				14F7555724A0810D00875981 /* AttributedStringHelp */,
 			);
 			path = "UIKit(第三方UI库)";
+			sourceTree = "<group>";
+		};
+		14087C4B24BC57A50082F6E9 /* popView */ = {
+			isa = PBXGroup;
+			children = (
+				14087C4F24BC5A4C0082F6E9 /* HYPopView.swift */,
+			);
+			path = popView;
 			sourceTree = "<group>";
 		};
 		1442E131248F7B4B00B180E2 /* UserManager */ = {
@@ -1009,6 +1020,7 @@
 				1467C9022490B59D00C9E35A /* JYTargetType+Extension.swift in Sources */,
 				14F7557D24A0810D00875981 /* NSTextFieldExtension.swift in Sources */,
 				1472070F24AC2CF000DADCA1 /* BRAddressModel.m in Sources */,
+				14087C5024BC5A4C0082F6E9 /* HYPopView.swift in Sources */,
 				14F7557524A0810D00875981 /* CGSizeExtension.swift in Sources */,
 				14F7558424A0810D00875981 /* Interpolation.swift in Sources */,
 				1472070724AC2CF000DADCA1 /* BRResultModel.m in Sources */,
