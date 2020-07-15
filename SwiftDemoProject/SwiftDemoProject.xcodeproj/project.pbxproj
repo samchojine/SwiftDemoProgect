@@ -18,6 +18,7 @@
 		140472DA245A6934000367DA /* MeMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140472D9245A6934000367DA /* MeMainController.swift */; };
 		140472DC245A6948000367DA /* HomeMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140472DB245A6948000367DA /* HomeMainController.swift */; };
 		14087C5024BC5A4C0082F6E9 /* HYPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14087C4F24BC5A4C0082F6E9 /* HYPopView.swift */; };
+		14087C5524BEE4680082F6E9 /* AutoConstantHeaderFooterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14087C5424BEE4680082F6E9 /* AutoConstantHeaderFooterController.swift */; };
 		1442E133248F7BB100B180E2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442E132248F7BB100B180E2 /* UserModel.swift */; };
 		1442E135248F7BC400B180E2 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442E134248F7BC400B180E2 /* UserManager.swift */; };
 		144D796924A83331003C5592 /* WaterFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D796824A83331003C5592 /* WaterFlowController.swift */; };
@@ -143,6 +144,7 @@
 		140472D9245A6934000367DA /* MeMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeMainController.swift; sourceTree = "<group>"; };
 		140472DB245A6948000367DA /* HomeMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainController.swift; sourceTree = "<group>"; };
 		14087C4F24BC5A4C0082F6E9 /* HYPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYPopView.swift; sourceTree = "<group>"; };
+		14087C5424BEE4680082F6E9 /* AutoConstantHeaderFooterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoConstantHeaderFooterController.swift; sourceTree = "<group>"; };
 		1442E132248F7BB100B180E2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1442E134248F7BC400B180E2 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		144D796824A83331003C5592 /* WaterFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFlowController.swift; sourceTree = "<group>"; };
@@ -412,6 +414,7 @@
 				14FA19EC249CA31A00802480 /* 瀑布流 */,
 				14FA19F0249CA41F00802480 /* 图片拾取 */,
 				14E09A292498B83C0009E260 /* 图片浏览 */,
+				14087C5124BED8DB0082F6E9 /* TableHeaderFooter自适应 */,
 			);
 			path = "Home（模块一）";
 			sourceTree = "<group>";
@@ -483,6 +486,14 @@
 				14087C4F24BC5A4C0082F6E9 /* HYPopView.swift */,
 			);
 			path = popView;
+			sourceTree = "<group>";
+		};
+		14087C5124BED8DB0082F6E9 /* TableHeaderFooter自适应 */ = {
+			isa = PBXGroup;
+			children = (
+				14087C5424BEE4680082F6E9 /* AutoConstantHeaderFooterController.swift */,
+			);
+			path = "TableHeaderFooter自适应";
 			sourceTree = "<group>";
 		};
 		1442E131248F7B4B00B180E2 /* UserManager */ = {
@@ -557,9 +568,9 @@
 		147206EE24AC2CF000DADCA1 /* StringPickerView */ = {
 			isa = PBXGroup;
 			children = (
+				147206F124AC2CF000DADCA1 /* BRResultModel.h */,
 				147206EF24AC2CF000DADCA1 /* BRResultModel.m */,
 				147206F024AC2CF000DADCA1 /* BRStringPickerView.h */,
-				147206F124AC2CF000DADCA1 /* BRResultModel.h */,
 				147206F224AC2CF000DADCA1 /* BRStringPickerView.m */,
 			);
 			path = StringPickerView;
@@ -579,14 +590,14 @@
 		147206F924AC2CF000DADCA1 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				147206FA24AC2CF000DADCA1 /* NSBundle+BRPickerView.h */,
-				147206FB24AC2CF000DADCA1 /* BRPickerViewMacro.h */,
-				147206FC24AC2CF000DADCA1 /* BRPickerView.bundle */,
-				147206FD24AC2CF000DADCA1 /* BRPickerStyle.m */,
-				147206FE24AC2CF000DADCA1 /* BRBaseView.m */,
-				147206FF24AC2CF000DADCA1 /* NSBundle+BRPickerView.m */,
 				1472070024AC2CF000DADCA1 /* BRBaseView.h */,
+				147206FE24AC2CF000DADCA1 /* BRBaseView.m */,
 				1472070124AC2CF000DADCA1 /* BRPickerStyle.h */,
+				147206FD24AC2CF000DADCA1 /* BRPickerStyle.m */,
+				147206FC24AC2CF000DADCA1 /* BRPickerView.bundle */,
+				147206FB24AC2CF000DADCA1 /* BRPickerViewMacro.h */,
+				147206FA24AC2CF000DADCA1 /* NSBundle+BRPickerView.h */,
+				147206FF24AC2CF000DADCA1 /* NSBundle+BRPickerView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1031,6 +1042,7 @@
 				1487E3FC2464036700D7FA59 /* PJ_WKWebViewExtension.swift in Sources */,
 				1487E41C2466B28D00D7FA59 /* UITextView+ Extension.swift in Sources */,
 				140472A4245966C6000367DA /* AppDelegate.swift in Sources */,
+				14087C5524BEE4680082F6E9 /* AutoConstantHeaderFooterController.swift in Sources */,
 				1487E41624655E2400D7FA59 /* PJColorConstant.swift in Sources */,
 				1487E41424655DCF00D7FA59 /* PJSizeConstant.swift in Sources */,
 				1472071C24ADE1AB00DADCA1 /* RxTextView_Controller.swift in Sources */,

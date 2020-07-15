@@ -18,6 +18,7 @@ class collectionTagController: UIViewController {
         
         let layout = CollectionTagFlowLayout()
         layout.headerReferenceSize = CGSize(PScreenWidth, 30)
+      //  layout.footerReferenceSize = CGSize(PScreenWidth, 30)
         layout.scrollDirection = .vertical
         layout.sectionInset = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
@@ -26,7 +27,7 @@ class collectionTagController: UIViewController {
         collectionView.dataSource = self
         collectionView.registerCell(anyClass:TagCCell.self)
         collectionView.registerHeader(anyClass: TagSectionHeader.self)
-        collectionView.registerFooter(anyClass: UICollectionReusableView.self)
+        collectionView.registerFooter(anyClass: TagSectionHeader.self)
         collectionView.alwaysBounceVertical = true
         
         return collectionView
@@ -52,10 +53,13 @@ class collectionTagController: UIViewController {
 extension collectionTagController : UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 4
+        return 6
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if section == 2 {
+            return 0
+        }
         return dataArr.count
     }
     
@@ -66,6 +70,7 @@ extension collectionTagController : UICollectionViewDelegate,UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
         return CGSize(widthArr[indexPath.row],30)
     }
     
@@ -73,10 +78,16 @@ extension collectionTagController : UICollectionViewDelegate,UICollectionViewDat
         
         if kind == UICollectionView.elementKindSectionHeader {
             let headerV = collectionView.header(anyClass: TagSectionHeader.self, for: indexPath)
-             headerV.titleLabel.text = "sdfsfsfsdfsdfsdf\(indexPath.section)"
+            headerV.titleLabel.text = "头部\(indexPath.section)"
             return headerV
+        }else {
+            
+            let footerV = collectionView.header(anyClass: TagSectionHeader.self, for: indexPath)
+            footerV.titleLabel.backgroundColor = UIColor.red
+            footerV.titleLabel.text = "尾部\(indexPath.section)"
+            return footerV
         }
-        return  collectionView.Footer(anyClass: UICollectionReusableView.self, for: indexPath)
+        
     }
 }
 
@@ -112,8 +123,6 @@ class TagSectionHeader: UICollectionReusableView {
         l.backgroundColor = .groupTableViewBackground
         l.textAlignment = .center
         l.font = UIFont.systemFont(ofSize: 14)
-        l.cornerRadius = 15
-        
         return l
     }()
     

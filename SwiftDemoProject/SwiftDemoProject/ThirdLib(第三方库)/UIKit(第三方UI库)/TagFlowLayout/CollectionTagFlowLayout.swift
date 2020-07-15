@@ -41,7 +41,7 @@ class CollectionTagFlowLayout: UICollectionViewFlowLayout {
         itemLayoutAttributes   = [];
         headerLayoutAttributes = [];
         footerLayoutAttributes = [];
-        
+                
         let collectionView = self.collectionView!;
         //有多少个 sections
         let numberOfSections = collectionView.numberOfSections;
@@ -57,9 +57,10 @@ class CollectionTagFlowLayout: UICollectionViewFlowLayout {
             
             // 每个 section 中有多少个 item
             let numberOfItems = collectionView.numberOfItems(inSection: section);
-            if (numberOfItems <= 0) {
-                continue;
-            }
+ 
+//            if (numberOfItems <= 0) {
+//                 continue;
+//             }
             
             //section 头视图
             headerHeight = self.setupHeaderView(collectionView, section: section, contentWidth: contentWidth, pointY: currentSectionMaxY)
@@ -76,21 +77,29 @@ class CollectionTagFlowLayout: UICollectionViewFlowLayout {
             
             itemLayoutAttributes.append(layoutAttributeOfSection)
             
-            currentSectionMinY = (layoutAttributeOfSection.first?.frame.minY ?? 0.0) - self.sectionInset.top - headerHeight;
-            let  currentSectionLastItemMaxY = (layoutAttributeOfSection.last?.frame.maxY ?? 0.0) - self.sectionInset.bottom;
+            currentSectionMinY = (layoutAttributeOfSection.first?.frame.minY ?? 0.0) - self.sectionInset.top - headerHeight
+            if numberOfItems == 0 {
+                currentSectionMinY = 0
+            }
+            var  currentSectionLastItemMaxY = (layoutAttributeOfSection.last?.frame.maxY ?? 0.0) + self.sectionInset.bottom
+            
+            if numberOfItems == 0 {
+                let lastHeaderlayoutAttibute = headerLayoutAttributes.last
+                currentSectionLastItemMaxY =  lastHeaderlayoutAttibute?.frame.maxY ?? 0.0
+            }
             
             footerHeight = self.setupFooterView(collectionView, section: section, contentWidth: contentWidth, pointY: currentSectionLastItemMaxY)
             
             currentSectionMaxY = currentSectionLastItemMaxY + footerHeight;
             let currentSectionHeight = currentSectionMaxY - currentSectionMinY;
             totalHeight += currentSectionHeight;
-            contentMaxY += currentSectionHeight;
-           // print("每个 section 的高度\(section) _________\(currentSectionHeight)")
+            contentMaxY = footerLayoutAttributes.last?.frame.maxY ?? 0.0;
+           // print("每个 section 的高度\(section) _________\(currentSectionMaxY)")
             heightOfSections.append(currentSectionHeight)
             
         }
         
-        //print("\(totalHeight) __________ \(currentSectionMaxY)");
+       // print("\(totalHeight) __________ \(currentSectionMaxY)");
         self.itemSize = CGSize(contentWidth-self.sectionInset.left-self.sectionInset.right, contentMaxY)
     }
     
@@ -105,10 +114,10 @@ class CollectionTagFlowLayout: UICollectionViewFlowLayout {
     
     private func setupFooterView(_ collectionView:UICollectionView, section:Int, contentWidth:CGFloat, pointY:CGFloat) -> CGFloat{
         let  footerSize = self.delegate?.collectionView?(collectionView, layout: self, referenceSizeForFooterInSection: section)
-        let  footerHeight = footerSize?.height ?? self.headerReferenceSize.height
+        let  footerHeight = footerSize?.height ?? self.footerReferenceSize.height
         let footerLayoutAttribute = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, with: IndexPath(item: 0, section: section))
         footerLayoutAttribute.frame = CGRect(0.0, pointY, contentWidth, footerHeight)
-        headerLayoutAttributes.append(footerLayoutAttribute)
+        footerLayoutAttributes.append(footerLayoutAttribute)
         return footerHeight
     }
     
@@ -116,7 +125,6 @@ class CollectionTagFlowLayout: UICollectionViewFlowLayout {
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         
         let itemSize  = self.delegate?.collectionView?(self.collectionView!, layout: self, sizeForItemAt: indexPath) ?? self.itemSize
-        //itemSize = CGSize(width: itemSize.width , height: itemSize.height)
         let sectionWidth = contentWidth - self.sectionInset.left - self.sectionInset.right;
         var x = self.sectionInset.left;
         var y = self.sectionInset.top;
