@@ -12,6 +12,7 @@ import UIKit
 class HomeMainController: PJBaseTableViewController {
     
     var datas:[(title: String, vc: UIViewController.Type)] = [
+        (title:"页面自适应",           vc:AutoFixUIViewController.self),
         (title:"自定义导航栏",         vc:HomeNaviColor1VC.self),
         (title:"MJRefresh封装",      vc:MJRefreshController.self),
         (title:"富文本及点击",         vc:AttributeController.self),
@@ -20,10 +21,9 @@ class HomeMainController: PJBaseTableViewController {
         (title:"瀑布流",              vc:WaterFlowController.self),
         (title:"图片拾取",            vc:ImagePickController.self),
         (title:"图片浏览",            vc:PhotoBrowserController.self),
+        (title:"TableView高度自适应",   vc:AutoConstantHeaderFooterController.self)
     ]
     
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "主页";

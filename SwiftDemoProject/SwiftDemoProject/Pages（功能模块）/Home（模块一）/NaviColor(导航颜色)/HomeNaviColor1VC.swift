@@ -17,19 +17,19 @@ class HomeNaviColor1VC: PJBaseTableViewController {
     
     lazy var navi: PJCustomNaviBar = {
         let v = PJCustomNaviBar()
-        v.title = "渐变的控制器发绿山咖啡就撒了看"
+        v.title = "渐变的"
         v.addRightItem(title: "发表") { (_) in
             print("13565656")
             self.datas.append("")
             self.tableView.reloadData()
         }
-        v.addRightItem(title: "不好") { (_) in
-            print("13565656")
-        }
-        
-        v.addRightItem(title: "dsfsdf") { (_) in
-            
-        }
+//        v.addRightItem(title: "不好") { (_) in
+//            print("13565656")
+//        }
+//
+//        v.addRightItem(title: "dsfsdf") { (_) in
+//
+//        }
         return v
     }()
 

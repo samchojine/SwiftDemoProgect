@@ -142,7 +142,6 @@ class RxButton_Controller: PJBaseViewController {
         }
         .disposed(by: disposeBag)
         
-        
     }
     
     
