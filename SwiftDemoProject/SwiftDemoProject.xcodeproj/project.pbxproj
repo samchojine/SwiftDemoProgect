@@ -129,6 +129,7 @@
 		3CEB5490B435E9A5C4BCF11E /* Pods_SwiftDemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517B35535A3A3AB1ECDDE2F2 /* Pods_SwiftDemoProject.framework */; };
 		F309B87425A414B700EC5C18 /* AutoFixUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309B87325A414B700EC5C18 /* AutoFixUIViewController.swift */; };
 		F309B87E25A415DF00EC5C18 /* AutoFixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309B87D25A415DF00EC5C18 /* AutoFixView.swift */; };
+		F36BC00D268EEE5C0057A6A1 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BC00C268EEE5C0057A6A1 /* UIStackView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -273,6 +274,7 @@
 		C92525CC53A4A0C24B4A0D76 /* Pods-SwiftDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoProject.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemoProject/Pods-SwiftDemoProject.release.xcconfig"; sourceTree = "<group>"; };
 		F309B87325A414B700EC5C18 /* AutoFixUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFixUIViewController.swift; sourceTree = "<group>"; };
 		F309B87D25A415DF00EC5C18 /* AutoFixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFixView.swift; sourceTree = "<group>"; };
+		F36BC00C268EEE5C0057A6A1 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -651,6 +653,7 @@
 				1487E41B2466B28D00D7FA59 /* UITextView+ Extension.swift */,
 				1499928C24693FEF00EE786C /* UITableView+Extension.swift */,
 				14A4EEBC2499FD8B00E42ED9 /* UICollectionView+Extension.swift */,
+				F36BC00C268EEE5C0057A6A1 /* UIStackView+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1024,6 +1027,7 @@
 			files = (
 				144D797624A84537003C5592 /* ImagePickVidew.swift in Sources */,
 				14DB78F3249324DA005BB224 /* MJRefreshController.swift in Sources */,
+				F36BC00D268EEE5C0057A6A1 /* UIStackView+Extension.swift in Sources */,
 				140472D4245A662D000367DA /* PJNavigationController.swift in Sources */,
 				14F7558F24A0890900875981 /* Inch.swift in Sources */,
 				144D796F24A83404003C5592 /* WaterfallLayout.swift in Sources */,

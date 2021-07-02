@@ -32,6 +32,15 @@ extension UITextField {
         self.leftView = view
     }
     
+    /// 设置左边间距 + 图片
+    func addPaddingLeftIcon(_ image: UIImage, padding: CGFloat) {
+        let imageView = UIImageView(image: image)
+        imageView.contentMode = .center
+        leftView = imageView
+        leftView?.frame.size = CGSize(width: image.size.width + padding, height: image.size.height)
+        leftViewMode = .always
+    }
+    
 }
 
 // MARK: *********** 给textfield 添加输入框文字改变的时候的回调 **********

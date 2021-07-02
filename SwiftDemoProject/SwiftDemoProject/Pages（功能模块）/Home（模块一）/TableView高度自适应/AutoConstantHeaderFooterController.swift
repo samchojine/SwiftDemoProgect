@@ -166,9 +166,9 @@ class HeaderView:UIView {
     
     func updateFrameWithAnimation(){
         self.layoutIfNeeded()
-        self.superV.beginUpdates()
+        //self.superV.beginUpdates()
         self.superV.tableHeaderView = self
-        self.superV.endUpdates()
+        //self.superV.endUpdates()
     }
 
 }

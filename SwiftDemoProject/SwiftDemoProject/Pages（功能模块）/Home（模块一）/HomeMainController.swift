@@ -27,7 +27,7 @@ class HomeMainController: PJBaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "主页";
-    
+   
     }
     
 }
